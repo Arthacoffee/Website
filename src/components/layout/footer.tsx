@@ -26,12 +26,12 @@ export function Footer() {
             <h4 className="text-caption text-background/50 font-medium tracking-[0.16em] uppercase">
               Explore
             </h4>
-            <ul className="mt-5 flex flex-col gap-3">
+            <ul className="mt-2 flex flex-col">
               {footerNav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-body text-background/75 hover:text-bronze-light transition-colors"
+                    className="text-body text-background/75 hover:text-bronze-light block py-2 transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -55,7 +55,7 @@ export function Footer() {
                   href="https://maps.google.com/?q=Plot+820+Defence+Colony+Road+Sainikpuri+Secunderabad+500094"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-body text-background/75 hover:text-bronze-light"
+                  className="text-body text-background/75 hover:text-bronze-light inline-block py-1"
                 >
                   {site.address.streetAddress}, {site.address.addressLocality} –{" "}
                   {site.address.postalCode}
@@ -69,7 +69,7 @@ export function Footer() {
                 />
                 <a
                   href={site.phoneHref}
-                  className="text-body text-background/75 hover:text-bronze-light"
+                  className="text-body text-background/75 hover:text-bronze-light inline-block py-1"
                 >
                   {site.phone}
                 </a>
@@ -82,7 +82,7 @@ export function Footer() {
                 />
                 <a
                   href={`mailto:${site.email}`}
-                  className="text-body text-background/75 hover:text-bronze-light"
+                  className="text-body text-background/75 hover:text-bronze-light inline-block py-1"
                 >
                   {site.email}
                 </a>
