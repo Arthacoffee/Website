@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Loader2, CheckCircle2 } from "lucide-react";
 import { FormField, inputClasses } from "@/components/ui/form-field";
 import { Button } from "@/components/ui/button";
@@ -25,6 +25,15 @@ export function ReservationForm() {
   const [errors, setErrors] = useState<ReservationFieldErrors>({});
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Move focus to the first invalid field once the error state has
+  // actually rendered as aria-invalid — a keyboard/screen-reader user
+  // shouldn't have to hunt for what needs fixing.
+  useEffect(() => {
+    if (Object.keys(errors).length === 0) return;
+    formRef.current?.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus();
+  }, [errors]);
 
   function update<K extends keyof typeof initialValues>(
     key: K,
@@ -83,11 +92,16 @@ export function ReservationForm() {
 
   if (status === "success") {
     return (
-      <div className="border-stone bg-stone/60 flex flex-col items-start gap-4 border p-10 text-left">
+      <div
+        role="status"
+        aria-live="polite"
+        className="border-stone bg-stone/60 flex flex-col items-start gap-4 border p-10 text-left"
+      >
         <CheckCircle2 className="text-forest" size={28} aria-hidden="true" />
         <h3 className="font-display text-coffee text-2xl">Request Received</h3>
         <p className="text-body text-foreground/70">{message}</p>
         <Button
+          type="button"
           variant="outline"
           className="text-coffee"
           onClick={() => setStatus("idle")}
@@ -99,7 +113,12 @@ export function ReservationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-6">
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      noValidate
+      className="flex flex-col gap-6"
+    >
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <FormField id="name" label="Full name" error={errors.name}>
           <input
