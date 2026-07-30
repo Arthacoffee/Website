@@ -5,6 +5,8 @@
    ============================================================ */
 
 :root {
+  color-scheme: light;
+
   /* Color */
   --background: #f8f5f1;
   --foreground: #111111;

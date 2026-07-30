@@ -28,7 +28,9 @@ body {
   outline-offset: 3px;
 }
 
-/* Respect reduced-motion at the root; components also gate via useReducedMotionSafe. */
+/* Respect reduced-motion at the root; Reveal and Hero also gate their own
+   Framer Motion animations via useReducedMotion() for JS-driven properties
+   (filter/transform) this CSS-only rule can't reach. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
