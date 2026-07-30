@@ -1,26 +1,72 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--coffee);
+  color: var(--background);
+}
+
+:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion at the root; components also gate via useReducedMotionSafe. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Long-form editorial copy (Journal articles). */
+.prose-editorial {
+  max-width: var(--prose-max);
+  font-size: var(--text-body-lg);
+  line-height: var(--text-body-lg--line-height);
+  color: color-mix(in srgb, var(--foreground) 84%, transparent);
+}
+
+.prose-editorial p {
+  margin: 0 0 1.6em;
+}
+
+.prose-editorial h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: var(--text-display-h3);
+  color: var(--coffee);
+  margin: 1.8em 0 0.6em;
+}
+
+.prose-editorial blockquote {
+  margin: 2.2em 0;
+  padding-left: 1.5em;
+  border-left: 1px solid var(--bronze);
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--coffee);
+}
+
+.prose-editorial strong {
+  color: var(--coffee);
 }
