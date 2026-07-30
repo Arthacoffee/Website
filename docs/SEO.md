@@ -54,7 +54,7 @@ validity (each block parses as valid JSON and matches its declared
 Results Test or Schema.org validator against a live URL, since this
 codebase was built without a public deployment to point either tool at.
 Do this before launch — it's a five-minute check once the domain is live,
-listed in `docs/LAUNCH.md`.
+listed in `docs/LAUNCH_CHECKLIST.md`.
 
 ## Sitemap & robots
 

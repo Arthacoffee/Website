@@ -1,5 +1,14 @@
 # Visual Review
 
+> **Note:** a later content-hierarchy pass reordered the homepage
+> sections referenced below (Kitchen and Experience now come before the
+> Coffee/brew-bar section, per reviewer feedback on content priority —
+> see `docs/CONTENT_REFINEMENT.md`) and shortened several of the
+> paragraphs this review discusses. The structural and visual findings
+> here — the repetition problem this pass fixed, the `PullQuote`
+> component it introduced, the scores below — are still accurate as a
+> record of that pass; only the specific section order has since moved.
+
 A design critique of this pass's own work, written the way an outside
 studio would write it about someone else's project — not a list of
 accomplishments dressed up as a review.

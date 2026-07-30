@@ -317,9 +317,12 @@ silently deferred:
   accepts `videoSrc`/`posterSrc` — the architecture is done. The photography
   itself requires an actual shoot; inventing stock imagery would be worse
   than the current honest placeholder.
-- **The reservation endpoint validates and logs but sends nothing.**
-  `/api/reservations` needs a real notification channel (email, webhook, or
-  CRM) before a guest's "confirmed" request is actually confirmed by anyone.
+- **The reservation endpoint now sends real email** (restaurant
+  notification + guest confirmation via Resend, plus honeypot spam
+  protection and per-IP rate limiting — see `src/app/api/reservations/route.ts`),
+  but it needs a production `RESEND_API_KEY` and a verified sending domain
+  before it does anything beyond logging to the console. See
+  `docs/LAUNCH_CHECKLIST.md`.
 - **No Lighthouse/PageSpeed run has been independently verified.** This
   repo was built and tested in a sandboxed environment without a public URL
   or a real Chrome DevTools performance trace against production
@@ -327,7 +330,7 @@ silently deferred:
   every structural decision that supports a 100 score and exactly what to
   verify once the site is deployed somewhere reachable.
 - **No privacy policy exists**, despite the reservation form collecting
-  name, phone, email, and visit preferences. See `docs/LAUNCH.md` — this is
+  name, phone, email, and visit preferences. See `docs/LAUNCH_CHECKLIST.md` — this is
   called out as a launch blocker, not something to paper over with
   boilerplate legal text authored without counsel.
 - **`site.geo` coordinates are approximate**, not surveyed. Fine for the
@@ -340,6 +343,9 @@ The site is materially better than "production ready" in the sense of
 "builds and deploys without errors" — it's been through two rounds of
 adversarial review that each found and fixed real, user-facing defects. It
 is not yet finished in the sense that matters most for a hospitality brand:
-nobody has photographed the room, and a submitted reservation doesn't yet
-reach a human. Code quality and design-system discipline are no longer the
-limiting factor; real-world assets and operational wiring are.
+nobody has photographed the room, and a submitted reservation only reaches
+a human once a production Resend API key and verified sending domain are
+actually in place (the code path is done — see
+`docs/LAUNCH_CHECKLIST.md`). Code quality and design-system discipline are
+no longer the limiting factor; real-world assets and operational wiring
+are.

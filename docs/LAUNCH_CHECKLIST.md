@@ -14,16 +14,24 @@ this is not a coding task.
       boilerplate template) — it wasn't fabricated here because inventing
       confident-sounding legal text without counsel is worse than leaving
       the gap visible.
-- [ ] **Reservation notifications.** `/api/reservations` validates a
-      submission and logs it server-side — it does not currently notify
-      anyone. A guest who submits a reservation today gets a "Request
-      Received" confirmation that is not actually true yet. Wire this to
-      a real channel (transactional email via Resend/SES, a webhook to
-      whatever the front-of-house actually watches, or a lightweight CRM)
-      before this form is live for real guests. The validation contract
-      (`src/lib/reservation.ts`) is already the single source of truth for
-      both the client and server — whatever's built should consume that
-      schema, not duplicate it.
+- [ ] **Reservation notifications — set the production API key.**
+      `/api/reservations` now sends a real notification email to the
+      restaurant and a confirmation to the guest via Resend
+      (`src/lib/email-templates.ts`, `src/app/api/reservations/route.ts`).
+      Without `RESEND_API_KEY` set in the production environment it falls
+      back to `console.info` and no email goes out — the "Request
+      Received" message a guest sees would not be true yet. Before launch:
+      create a Resend account, verify the sending domain (SPF/DKIM records
+      on `arthacoffee.com` — unverified domains get flagged as spam or
+      rejected outright), set `RESEND_API_KEY` and
+      `RESERVATIONS_FROM_EMAIL` in the hosting provider's environment
+      variables (see `.env.example`), and send a real test reservation
+      through the deployed form to confirm both emails arrive.
+- [ ] **Rate limiting is single-instance.** `src/lib/rate-limit.ts` is an
+      in-memory per-IP limiter — it resets on cold start and doesn't share
+      state across serverless instances. Fine for a low-traffic reservation
+      form; replace with Upstash Redis (or similar) if the site ever runs
+      on more than one instance behind a load balancer.
 - [ ] **Real photography**, or at minimum a plan for it. The site is fully
       functional and intentionally honest with brand-toned gradient
       placeholders instead of stock photography, but a hospitality brand's
@@ -84,7 +92,10 @@ this is not a coding task.
       leaves the footer icon pointed at a placeholder).
 - [ ] Proofread the three Journal essays one more time with fresh eyes —
       they're carried over from the original site and haven't been
-      re-edited during this rebuild.
+      re-edited during this rebuild (they were deliberately left as the
+      deep-dive, full-detail version of the brew bar/kitchen/concept
+      stories during the content hierarchy pass — see
+      `docs/CONTENT_REFINEMENT.md`).
 
 ## Operational
 
@@ -96,10 +107,14 @@ this is not a coding task.
 - [ ] Decide on error monitoring (Sentry or equivalent) for the
       `/api/reservations` route specifically — it's the only route that
       can fail in a way a guest actually notices in real time.
-- [ ] Confirm who receives/monitors reservation notifications once that
-      integration exists, and what the fallback is if it goes down (the
+- [ ] Confirm `sri@arthacoffee.com` (the address reservation notifications
+      send to — `content/site.ts`'s `email` field) is actually monitored
+      day-to-day, and what the fallback is if Resend delivery fails (the
       footer's phone number is the honest fallback — guests can always
-      call).
+      call). The endpoint fails the guest's request with a clear error if
+      the restaurant notification email itself fails to send, so a silent
+      failure shouldn't reach a guest — but a monitored inbox is still the
+      real safety net.
 
 ## Final pre-launch QA pass
 

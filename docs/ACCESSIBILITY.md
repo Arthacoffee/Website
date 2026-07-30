@@ -101,6 +101,11 @@ No page skips a heading level.
   re-run in `api/reservations/route.ts`) validation exist — a screen
   reader or keyboard user bypassing client JS somehow still gets a
   meaningful server response, not a silent failure.
+- A spam-prevention honeypot field (`company`) is present in the DOM but
+  `tabIndex={-1}`, `aria-hidden="true"`, and positioned off-screen — it's
+  unreachable by keyboard tab order and never announced by a screen
+  reader, so it adds no burden for a real visitor while still catching
+  bots that fill every field they can find.
 
 ## Motion
 

@@ -13,7 +13,7 @@ below is a structural claim ("this choice removes a whole category of
 performance problem") verified via `next build`'s own output, not an
 independently measured score. **Run Lighthouse against the actual
 production deployment before quoting a number.** A checklist for that is
-at the bottom of this doc and in `docs/LAUNCH.md`.
+at the bottom of this doc and in `docs/LAUNCH_CHECKLIST.md`.
 
 ## Rendering: fully static
 
