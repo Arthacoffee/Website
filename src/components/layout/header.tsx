@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { primaryNav, reserveNav, site } from "@/content/site";
 import { useScrolledPast } from "@/hooks/use-scroll-position";
 import { useBodyScrollLock } from "@/hooks/use-body-scroll-lock";
+import { useFocusTrap } from "@/hooks/use-focus-trap";
 import { useHeaderVariant } from "@/components/layout/header-variant-context";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -16,7 +17,9 @@ export function Header() {
   const scrolled = useScrolledPast(72);
   const { variant } = useHeaderVariant();
   const [open, setOpen] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
   useBodyScrollLock(open);
+  useFocusTrap(panelRef, open, () => setOpen(false));
 
   const isTransparent = variant === "dark-hero" && !scrolled && !open;
   const textTone = isTransparent ? "text-background" : "text-foreground";
@@ -42,7 +45,10 @@ export function Header() {
             {site.name}
           </Link>
 
-          <nav className={cn("hidden items-center gap-10 md:flex", textTone)}>
+          <nav
+            aria-label="Primary"
+            className={cn("hidden items-center gap-10 md:flex", textTone)}
+          >
             {primaryNav.map((item) => (
               <Link
                 key={item.href}
@@ -69,6 +75,7 @@ export function Header() {
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
+            aria-controls="mobile-nav-panel"
             onClick={() => setOpen((v) => !v)}
             className={cn("p-2 md:hidden", textTone)}
           >
@@ -91,13 +98,18 @@ export function Header() {
       <AnimatePresence>
         {open && (
           <motion.div
+            id="mobile-nav-panel"
+            ref={panelRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Menu"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="bg-background fixed inset-0 top-20 z-40 md:hidden"
           >
-            <Container as="nav" className="flex flex-col gap-1 pt-6">
+            <Container as="nav" aria-label="Mobile" className="flex flex-col gap-1 pt-6">
               {primaryNav.map((item, i) => (
                 <motion.div
                   key={item.href}
