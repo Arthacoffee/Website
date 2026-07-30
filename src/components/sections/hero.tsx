@@ -14,11 +14,17 @@ const EASE = [0.16, 1, 0.3, 1] as const;
  * exists — it swaps in with no layout change; until then a brand-toned
  * gradient carries the moment instead of a stock image.
  */
-export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: string }) {
+export function Hero({
+  videoSrc,
+  posterSrc,
+}: {
+  videoSrc?: string;
+  posterSrc?: string;
+}) {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative flex min-h-dvh items-end overflow-hidden bg-coffee text-background">
+    <section className="bg-coffee text-background relative flex min-h-dvh items-end overflow-hidden">
       <HeaderOverDarkHero />
 
       <div className="absolute inset-0">
@@ -50,7 +56,7 @@ export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: s
           initial={reduceMotion ? false : { opacity: 0, filter: "blur(8px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="font-display text-xl italic text-bronze-light md:text-2xl"
+          className="font-display text-bronze-light text-xl italic md:text-2xl"
         >
           {site.tagline}
         </motion.p>
@@ -59,7 +65,7 @@ export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: s
           initial={reduceMotion ? false : { opacity: 0, y: 24, filter: "blur(12px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
-          className="mt-4 font-display text-hero leading-[0.98] font-medium tracking-tight text-background"
+          className="font-display text-hero text-background mt-4 leading-[0.98] font-medium tracking-tight"
         >
           Coffee.
           <br />
@@ -72,10 +78,11 @@ export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: s
           initial={reduceMotion ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
-          className="mt-8 max-w-xl text-body-lg text-background/80"
+          className="text-body-lg text-background/80 mt-8 max-w-xl"
         >
           A destination for specialty coffee, thoughtful vegetarian food, and unhurried
-          moments — three levels and a rooftop terrace on Defence Colony Road, Sainikpuri.
+          moments — three levels and a rooftop terrace on Defence Colony Road,
+          Sainikpuri.
         </motion.p>
 
         <motion.div
@@ -89,7 +96,7 @@ export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: s
           </Button>
           <a
             href="#why-we-exist"
-            className="text-[0.8125rem] font-medium tracking-[0.04em] text-background/85 uppercase underline decoration-1 underline-offset-4 decoration-background/40 transition-colors hover:decoration-background"
+            className="text-background/85 decoration-background/40 hover:decoration-background text-[0.8125rem] font-medium tracking-[0.04em] uppercase underline decoration-1 underline-offset-4 transition-colors"
           >
             Explore
           </a>
@@ -102,7 +109,7 @@ export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: s
         initial={reduceMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.8, ease: EASE }}
-        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-background/60 md:flex"
+        className="text-background/60 absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex"
       >
         <span className="text-caption tracking-[0.2em] uppercase">Scroll</span>
         <ChevronDown size={16} aria-hidden="true" />

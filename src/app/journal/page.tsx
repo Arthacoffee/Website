@@ -8,7 +8,8 @@ import { breadcrumbJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Journal",
-  description: "Notes from the brew bar and kitchen at Artha Speciality Coffee, Sainikpuri.",
+  description:
+    "Notes from the brew bar and kitchen at Artha Speciality Coffee, Sainikpuri.",
   alternates: { canonical: "/journal" },
 };
 
@@ -18,7 +19,9 @@ export default function JournalIndexPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd([{ name: "Journal", path: "/journal" }])),
+          __html: JSON.stringify(
+            breadcrumbJsonLd([{ name: "Journal", path: "/journal" }]),
+          ),
         }}
       />
 

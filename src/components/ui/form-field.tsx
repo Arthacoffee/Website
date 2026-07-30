@@ -16,7 +16,7 @@ export function FormField({
 }) {
   return (
     <div className={cn("flex flex-col gap-2", className)}>
-      <label htmlFor={id} className="text-caption font-medium text-coffee">
+      <label htmlFor={id} className="text-caption text-coffee font-medium">
         {label}
       </label>
       {children}

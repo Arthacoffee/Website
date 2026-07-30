@@ -19,7 +19,13 @@ type RevealProps = {
  * bounces, never spins, and always resolves within 0.8s. Fully inert when
  * the visitor prefers reduced motion.
  */
-export function Reveal({ children, className, delay = 0, id, kind = "up" }: RevealProps) {
+export function Reveal({
+  children,
+  className,
+  delay = 0,
+  id,
+  kind = "up",
+}: RevealProps) {
   const reduceMotion = useReducedMotion();
 
   // Reduced-motion variants must explicitly reset every property the

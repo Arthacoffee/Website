@@ -3,12 +3,7 @@ import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type ImageCategory =
-  | "interior"
-  | "coffee"
-  | "kitchen"
-  | "terrace"
-  | "people"
-  | "lifestyle";
+  "interior" | "coffee" | "kitchen" | "terrace" | "people" | "lifestyle";
 
 const categoryGradients: Record<ImageCategory, string> = {
   interior: "linear-gradient(155deg, #3a2c25 0%, #1c140f 100%)",
@@ -65,7 +60,10 @@ export function ImageFrame({
       role="img"
       aria-label={alt || undefined}
       aria-hidden={alt ? undefined : true}
-      className={cn("relative flex items-center justify-center overflow-hidden", className)}
+      className={cn(
+        "relative flex items-center justify-center overflow-hidden",
+        className,
+      )}
       style={{ backgroundImage: categoryGradients[category] }}
     >
       <div
@@ -75,7 +73,9 @@ export function ImageFrame({
             "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
         }}
       />
-      {Icon ? <Icon className="relative h-10 w-10 text-background/50" strokeWidth={1.1} /> : null}
+      {Icon ? (
+        <Icon className="text-background/50 relative h-10 w-10" strokeWidth={1.1} />
+      ) : null}
     </div>
   );
 }

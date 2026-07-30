@@ -20,7 +20,9 @@ export default function CoffeePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd([{ name: "Coffee", path: "/coffee" }])),
+          __html: JSON.stringify(
+            breadcrumbJsonLd([{ name: "Coffee", path: "/coffee" }]),
+          ),
         }}
       />
 
@@ -36,7 +38,10 @@ export default function CoffeePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={brewBarStory.paragraphs}
-        cta={{ label: "Read the Full Story", href: "/journal/why-we-built-our-brew-bar-around-one-machine" }}
+        cta={{
+          label: "Read the Full Story",
+          href: "/journal/why-we-built-our-brew-bar-around-one-machine",
+        }}
         imageCategory="coffee"
         tone="stone"
       />

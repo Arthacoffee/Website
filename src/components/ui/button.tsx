@@ -45,7 +45,12 @@ const sizes: Record<Size, string> = {
 
 export function Button(props: ButtonProps) {
   const { variant = "primary", size = "md", children, className, icon } = props;
-  const classes = cn(base, variants[variant], variant !== "text" && sizes[size], className);
+  const classes = cn(
+    base,
+    variants[variant],
+    variant !== "text" && sizes[size],
+    className,
+  );
 
   if ("href" in props && props.href) {
     return (

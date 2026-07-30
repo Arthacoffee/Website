@@ -98,7 +98,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "\"Vegetarian café\" often means a shorter menu with the meat quietly removed. That's not what we set out to build. Artha runs five full food programmes — Andhra traditional, Italian pasta, Indo-Chinese, evening tandoor, and a bistro small-plates menu — entirely vegetarian, from one kitchen.",
+        text: '"Vegetarian café" often means a shorter menu with the meat quietly removed. That\'s not what we set out to build. Artha runs five full food programmes — Andhra traditional, Italian pasta, Indo-Chinese, evening tandoor, and a bistro small-plates menu — entirely vegetarian, from one kitchen.',
       },
       { type: "h2", text: "Egg dishes, handled properly" },
       {
@@ -117,7 +117,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "quote",
-        text: "Andhra lunch, Italian dinner, an Indo-Chinese craving, or a tandoor evening — the answer to \"is there anything vegetarian?\" here is simply: everything.",
+        text: 'Andhra lunch, Italian dinner, an Indo-Chinese craving, or a tandoor evening — the answer to "is there anything vegetarian?" here is simply: everything.',
       },
       {
         type: "p",

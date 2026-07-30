@@ -20,9 +20,11 @@ export function PageIntro({
       <Container>
         <Reveal className="mx-auto max-w-3xl text-center">
           <Eyebrow>{eyebrow}</Eyebrow>
-          <h1 className="mt-4 text-display-h1 font-display text-coffee">{heading}</h1>
+          <h1 className="text-display-h1 font-display text-coffee mt-4">{heading}</h1>
           {lead ? (
-            <p className="mx-auto mt-6 max-w-2xl text-body-lg text-foreground/70">{lead}</p>
+            <p className="text-body-lg text-foreground/70 mx-auto mt-6 max-w-2xl">
+              {lead}
+            </p>
           ) : null}
           {children}
         </Reveal>

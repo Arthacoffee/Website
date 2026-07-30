@@ -14,11 +14,14 @@ export function JournalCard({ post }: { post: JournalPost }) {
 
   return (
     <Link href={`/journal/${post.slug}`} className="group block">
-      <ImageFrame category={category} className="aspect-[16/11] w-full rounded-[var(--radius-editorial)]" />
-      <span className="mt-5 block text-caption tracking-[0.14em] text-bronze-ink uppercase">
+      <ImageFrame
+        category={category}
+        className="aspect-[16/11] w-full rounded-[var(--radius-editorial)]"
+      />
+      <span className="text-caption text-bronze-ink mt-5 block tracking-[0.14em] uppercase">
         {post.category}
       </span>
-      <h3 className="mt-2 flex items-start gap-2 font-display text-2xl text-coffee">
+      <h3 className="font-display text-coffee mt-2 flex items-start gap-2 text-2xl">
         {post.title}
         <ArrowUpRight
           size={18}
@@ -26,7 +29,7 @@ export function JournalCard({ post }: { post: JournalPost }) {
           aria-hidden="true"
         />
       </h3>
-      <p className="mt-2 text-body text-foreground/65">{post.excerpt}</p>
+      <p className="text-body text-foreground/65 mt-2">{post.excerpt}</p>
     </Link>
   );
 }

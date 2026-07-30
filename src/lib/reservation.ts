@@ -9,7 +9,11 @@ export const reservationSchema = z.object({
   email: z.email("Enter a valid email"),
   date: z.string().min(1, "Choose a date"),
   time: z.string().min(1, "Choose a time"),
-  partySize: z.coerce.number().int().min(1, "At least 1 guest").max(75, "Call us for larger groups"),
+  partySize: z.coerce
+    .number()
+    .int()
+    .min(1, "At least 1 guest")
+    .max(75, "Call us for larger groups"),
   area: z.enum(["dining-hall", "rooftop", "no-preference"]),
   notes: z.string().trim().max(500).optional().or(z.literal("")),
 });

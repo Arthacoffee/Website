@@ -28,7 +28,10 @@ export function SplitFeature({
   tone?: "light" | "stone";
 }) {
   return (
-    <section id={id} className={cn("py-24 md:py-32", tone === "stone" ? "bg-stone" : "bg-background")}>
+    <section
+      id={id}
+      className={cn("py-24 md:py-32", tone === "stone" ? "bg-stone" : "bg-background")}
+    >
       <Container
         className={cn(
           "grid grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-20",
@@ -45,7 +48,7 @@ export function SplitFeature({
 
         <Reveal delay={0.1}>
           <Eyebrow>{eyebrow}</Eyebrow>
-          <h2 className="mt-4 text-display-h2 font-display text-coffee">{heading}</h2>
+          <h2 className="text-display-h2 font-display text-coffee mt-4">{heading}</h2>
           <div className="mt-6 flex flex-col gap-4">
             {paragraphs.map((p) => (
               <p key={p} className="text-body-lg text-foreground/70">

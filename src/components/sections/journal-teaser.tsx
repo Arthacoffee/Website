@@ -13,7 +13,7 @@ export function JournalTeaser() {
       <Container>
         <Reveal className="mx-auto max-w-xl text-center">
           <Eyebrow>Journal</Eyebrow>
-          <h2 className="mt-4 text-display-h2 font-display text-coffee">
+          <h2 className="text-display-h2 font-display text-coffee mt-4">
             Notes from the brew bar and kitchen
           </h2>
         </Reveal>

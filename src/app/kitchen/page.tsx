@@ -19,7 +19,9 @@ export default function KitchenPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd([{ name: "Kitchen", path: "/kitchen" }])),
+          __html: JSON.stringify(
+            breadcrumbJsonLd([{ name: "Kitchen", path: "/kitchen" }]),
+          ),
         }}
       />
 
@@ -38,7 +40,10 @@ export default function KitchenPage() {
           "Running Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor off a single vegetarian pantry sounds harder than a smaller menu — and it is. It's also exactly the gap we saw on this street.",
           "The kitchen runs on induction, not gas, which gives tighter heat control across every station, and keeps a fully electric cold chain holding produce, dairy and prepared gravies at the right temperature across three floors.",
         ]}
-        cta={{ label: "Read the Full Story", href: "/journal/a-fully-vegetarian-kitchen-done-seriously" }}
+        cta={{
+          label: "Read the Full Story",
+          href: "/journal/a-fully-vegetarian-kitchen-done-seriously",
+        }}
         imageCategory="kitchen"
         reverse
         tone="stone"

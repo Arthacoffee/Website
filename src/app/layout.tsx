@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
-      <body className="flex min-h-dvh flex-col bg-background text-foreground">
+      <body className="bg-background text-foreground flex min-h-dvh flex-col">
         <HeaderVariantProvider>
           <SkipLink />
           <Header />

@@ -15,7 +15,8 @@ export const theIdea = {
 
 export const experience = {
   eyebrow: "The Experience",
-  heading: "Three floors, connected by lift. One kitchen. A rooftop built for the evening.",
+  heading:
+    "Three floors, connected by lift. One kitchen. A rooftop built for the evening.",
   body: "The kitchen and office sit on the second floor, the dining hall occupies the third, and a dedicated rooftop terrace sits above it — 75 seats in all, reachable by lift. Table service only; no delivery. Come for a coffee and stay for the room.",
   stats: [
     { value: "100%", label: "Vegetarian kitchen" },

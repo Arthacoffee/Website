@@ -81,15 +81,19 @@ export default async function JournalPostPage({
           <Reveal>
             <Link
               href="/journal"
-              className="inline-flex items-center gap-2 text-[0.8125rem] font-medium tracking-[0.04em] text-bronze-ink uppercase"
+              className="text-bronze-ink inline-flex items-center gap-2 text-[0.8125rem] font-medium tracking-[0.04em] uppercase"
             >
               <ArrowLeft size={14} aria-hidden="true" />
               Journal
             </Link>
 
             <Eyebrow className="mt-8">{post.category}</Eyebrow>
-            <h1 className="mt-4 text-display-h1 font-display text-coffee">{post.title}</h1>
-            <p className="mt-5 text-caption text-foreground/50">{date} · Artha Journal</p>
+            <h1 className="text-display-h1 font-display text-coffee mt-4">
+              {post.title}
+            </h1>
+            <p className="text-caption text-foreground/50 mt-5">
+              {date} · Artha Journal
+            </p>
           </Reveal>
 
           <Reveal kind="scale" className="mt-10">
@@ -113,10 +117,7 @@ export default async function JournalPostPage({
         </Container>
       </article>
 
-      <CtaBand
-        eyebrow="Taste It Yourself"
-        heading="Come find your part of the day."
-      />
+      <CtaBand eyebrow="Taste It Yourself" heading="Come find your part of the day." />
     </>
   );
 }

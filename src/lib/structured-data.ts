@@ -10,13 +10,7 @@ export function restaurantJsonLd() {
     url: site.url,
     telephone: site.phone,
     email: site.email,
-    servesCuisine: [
-      "Coffee",
-      "Andhra",
-      "Italian",
-      "Indo-Chinese",
-      "Vegetarian",
-    ],
+    servesCuisine: ["Coffee", "Andhra", "Italian", "Indo-Chinese", "Vegetarian"],
     priceRange: "₹₹",
     acceptsReservations: "True",
     address: {

@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 
 type HeaderVariant = "light" | "dark-hero";
 
@@ -20,7 +27,8 @@ export function HeaderVariantProvider({ children }: { children: ReactNode }) {
 
 export function useHeaderVariant() {
   const ctx = useContext(HeaderVariantContext);
-  if (!ctx) throw new Error("useHeaderVariant must be used within HeaderVariantProvider");
+  if (!ctx)
+    throw new Error("useHeaderVariant must be used within HeaderVariantProvider");
   return ctx;
 }
 

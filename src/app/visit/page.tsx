@@ -36,9 +36,15 @@ export default function VisitPage() {
           <Reveal>
             <ul className="flex flex-col gap-6">
               <li className="flex items-start gap-4">
-                <MapPin size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
+                <MapPin
+                  size={20}
+                  className="text-bronze-ink mt-1 shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
-                  <strong className="block text-body font-medium text-coffee">Address</strong>
+                  <strong className="text-body text-coffee block font-medium">
+                    Address
+                  </strong>
                   <a
                     href="https://maps.google.com/?q=Plot+820+Defence+Colony+Road+Sainikpuri+Secunderabad+500094"
                     target="_blank"
@@ -51,18 +57,33 @@ export default function VisitPage() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <Phone size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
+                <Phone
+                  size={20}
+                  className="text-bronze-ink mt-1 shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
-                  <strong className="block text-body font-medium text-coffee">Phone</strong>
-                  <a href={site.phoneHref} className="text-body text-foreground/70 hover:text-bronze-ink">
+                  <strong className="text-body text-coffee block font-medium">
+                    Phone
+                  </strong>
+                  <a
+                    href={site.phoneHref}
+                    className="text-body text-foreground/70 hover:text-bronze-ink"
+                  >
                     {site.phone}
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <Mail size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
+                <Mail
+                  size={20}
+                  className="text-bronze-ink mt-1 shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
-                  <strong className="block text-body font-medium text-coffee">Email</strong>
+                  <strong className="text-body text-coffee block font-medium">
+                    Email
+                  </strong>
                   <a
                     href={`mailto:${site.email}`}
                     className="text-body text-foreground/70 hover:text-bronze-ink"
@@ -72,12 +93,18 @@ export default function VisitPage() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <Building2 size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
+                <Building2
+                  size={20}
+                  className="text-bronze-ink mt-1 shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
-                  <strong className="block text-body font-medium text-coffee">The Layout</strong>
+                  <strong className="text-body text-coffee block font-medium">
+                    The Layout
+                  </strong>
                   <span className="text-body text-foreground/70">
-                    2nd floor kitchen &amp; office · 3rd floor dining hall · rooftop terrace —
-                    connected by lift, 75 seats total
+                    2nd floor kitchen &amp; office · 3rd floor dining hall · rooftop
+                    terrace — connected by lift, 75 seats total
                   </span>
                 </div>
               </li>
@@ -86,10 +113,10 @@ export default function VisitPage() {
             <table className="mt-10 w-full border-collapse">
               <thead>
                 <tr>
-                  <th className="border-b border-stone pb-3 text-left text-caption font-medium tracking-[0.08em] text-bronze-ink uppercase">
+                  <th className="border-stone text-caption text-bronze-ink border-b pb-3 text-left font-medium tracking-[0.08em] uppercase">
                     Service Window
                   </th>
-                  <th className="border-b border-stone pb-3 text-left text-caption font-medium tracking-[0.08em] text-bronze-ink uppercase">
+                  <th className="border-stone text-caption text-bronze-ink border-b pb-3 text-left font-medium tracking-[0.08em] uppercase">
                     Hours
                   </th>
                 </tr>
@@ -97,10 +124,10 @@ export default function VisitPage() {
               <tbody>
                 {serviceWindows.map((row) => (
                   <tr key={row.label}>
-                    <td className="border-b border-stone py-3 text-body text-foreground/75">
+                    <td className="border-stone text-body text-foreground/75 border-b py-3">
                       {row.label}
                     </td>
-                    <td className="border-b border-stone py-3 text-body text-foreground/75">
+                    <td className="border-stone text-body text-foreground/75 border-b py-3">
                       {row.hours}
                     </td>
                   </tr>
@@ -108,7 +135,7 @@ export default function VisitPage() {
               </tbody>
             </table>
 
-            <div className="mt-10 aspect-[16/12] w-full overflow-hidden border border-stone">
+            <div className="border-stone mt-10 aspect-[16/12] w-full overflow-hidden border">
               <iframe
                 src="https://www.google.com/maps?q=Plot+No.+820,+Defence+Colony+Road,+Sainikpuri,+Secunderabad+500094&output=embed"
                 loading="lazy"
@@ -120,14 +147,14 @@ export default function VisitPage() {
           </Reveal>
 
           <Reveal delay={0.1} id="reserve" className="scroll-mt-28">
-            <div className="border border-stone bg-stone/40 p-8 md:p-10">
+            <div className="border-stone bg-stone/40 border p-8 md:p-10">
               <Eyebrow>Reserve A Table</Eyebrow>
-              <h2 className="mt-3 text-display-h3 font-display text-coffee">
+              <h2 className="text-display-h3 font-display text-coffee mt-3">
                 Tell us when you&apos;re coming
               </h2>
-              <p className="mt-3 text-body text-foreground/70">
-                For groups, the rooftop terrace, or a private booking — send us your details
-                and we&apos;ll confirm by phone or email.
+              <p className="text-body text-foreground/70 mt-3">
+                For groups, the rooftop terrace, or a private booking — send us your
+                details and we&apos;ll confirm by phone or email.
               </p>
               <div className="mt-8">
                 <ReservationForm />

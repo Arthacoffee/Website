@@ -24,11 +24,17 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd([{ name: "Our Story", path: "/about" }])),
+          __html: JSON.stringify(
+            breadcrumbJsonLd([{ name: "Our Story", path: "/about" }]),
+          ),
         }}
       />
 
-      <PageIntro eyebrow={whyWeExist.eyebrow} heading={whyWeExist.heading} lead={whyWeExist.body} />
+      <PageIntro
+        eyebrow={whyWeExist.eyebrow}
+        heading={whyWeExist.heading}
+        lead={whyWeExist.body}
+      />
 
       <SplitFeature
         eyebrow={theIdea.eyebrow}
@@ -41,7 +47,7 @@ export default function AboutPage() {
         <Container>
           <Reveal className="mx-auto max-w-xl text-center">
             <Eyebrow>Who&apos;s Behind It</Eyebrow>
-            <h2 className="mt-4 text-display-h2 font-display text-coffee">
+            <h2 className="text-display-h2 font-display text-coffee mt-4">
               Nineteen years of selling F&amp;B. Eight years of fixing it.
             </h2>
           </Reveal>

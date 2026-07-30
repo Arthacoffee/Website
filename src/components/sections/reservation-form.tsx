@@ -26,7 +26,10 @@ export function ReservationForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState<string | null>(null);
 
-  function update<K extends keyof typeof initialValues>(key: K, value: (typeof initialValues)[K]) {
+  function update<K extends keyof typeof initialValues>(
+    key: K,
+    value: (typeof initialValues)[K],
+  ) {
     setValues((prev) => ({ ...prev, [key]: value }));
   }
 
@@ -68,7 +71,9 @@ export function ReservationForm() {
       }
 
       setStatus("success");
-      setMessage(`Thank you, ${values.name.split(" ")[0]}. We'll confirm by phone or email shortly.`);
+      setMessage(
+        `Thank you, ${values.name.split(" ")[0]}. We'll confirm by phone or email shortly.`,
+      );
       setValues(initialValues);
     } catch {
       setStatus("error");
@@ -78,11 +83,15 @@ export function ReservationForm() {
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-start gap-4 border border-stone bg-stone/60 p-10 text-left">
+      <div className="border-stone bg-stone/60 flex flex-col items-start gap-4 border p-10 text-left">
         <CheckCircle2 className="text-forest" size={28} aria-hidden="true" />
-        <h3 className="font-display text-2xl text-coffee">Request Received</h3>
+        <h3 className="font-display text-coffee text-2xl">Request Received</h3>
         <p className="text-body text-foreground/70">{message}</p>
-        <Button variant="outline" className="text-coffee" onClick={() => setStatus("idle")}>
+        <Button
+          variant="outline"
+          className="text-coffee"
+          onClick={() => setStatus("idle")}
+        >
           Make Another Request
         </Button>
       </div>

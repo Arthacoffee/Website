@@ -12,22 +12,30 @@ export function VisitTeaser() {
       <Container className="grid grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-20">
         <Reveal>
           <Eyebrow>Visit</Eyebrow>
-          <h2 className="mt-4 text-display-h2 font-display text-coffee">
+          <h2 className="text-display-h2 font-display text-coffee mt-4">
             Defence Colony Road, Sainikpuri
           </h2>
-          <p className="mt-6 text-body-lg text-foreground/70">
+          <p className="text-body-lg text-foreground/70 mt-6">
             Table service only, three levels, lift access, and a rooftop built for the
             evening. Walk in, or reserve ahead for groups and the terrace.
           </p>
 
           <ul className="mt-8 flex flex-col gap-4">
-            <li className="flex items-start gap-3 text-body text-foreground/75">
-              <MapPin size={18} className="mt-0.5 shrink-0 text-bronze-ink" aria-hidden="true" />
+            <li className="text-body text-foreground/75 flex items-start gap-3">
+              <MapPin
+                size={18}
+                className="text-bronze-ink mt-0.5 shrink-0"
+                aria-hidden="true"
+              />
               {site.address.streetAddress}, {site.address.addressLocality} –{" "}
               {site.address.postalCode}
             </li>
-            <li className="flex items-start gap-3 text-body text-foreground/75">
-              <Clock size={18} className="mt-0.5 shrink-0 text-bronze-ink" aria-hidden="true" />
+            <li className="text-body text-foreground/75 flex items-start gap-3">
+              <Clock
+                size={18}
+                className="text-bronze-ink mt-0.5 shrink-0"
+                aria-hidden="true"
+              />
               {site.hours.display}
             </li>
           </ul>

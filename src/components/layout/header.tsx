@@ -28,53 +28,57 @@ export function Header() {
           "fixed inset-x-0 top-0 z-50 transition-[background-color,backdrop-filter,border-color] duration-500 ease-[var(--ease-editorial)]",
           isTransparent
             ? "border-b border-transparent bg-transparent"
-            : "border-b border-stone bg-background/85 backdrop-blur-md",
+            : "border-stone bg-background/85 border-b backdrop-blur-md",
         )}
       >
-      <Container className="flex h-20 items-center justify-between md:h-24">
-        <Link
-          href="/"
-          className={cn(
-            "font-display text-xl font-medium tracking-[0.14em] uppercase",
-            textTone,
-          )}
-        >
-          {site.name}
-        </Link>
-
-        <nav className={cn("hidden items-center gap-10 md:flex", textTone)}>
-          {primaryNav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-[0.8125rem] font-medium tracking-[0.04em] uppercase opacity-90 transition-opacity hover:opacity-100"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden md:block">
-          <Button
-            href={reserveNav.href}
-            variant={isTransparent ? "outline" : "primary"}
-            size="sm"
-            className={isTransparent ? "text-background" : undefined}
+        <Container className="flex h-20 items-center justify-between md:h-24">
+          <Link
+            href="/"
+            className={cn(
+              "font-display text-xl font-medium tracking-[0.14em] uppercase",
+              textTone,
+            )}
           >
-            {reserveNav.label}
-          </Button>
-        </div>
+            {site.name}
+          </Link>
 
-        <button
-          type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className={cn("p-2 md:hidden", textTone)}
-        >
-          {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
-        </button>
-      </Container>
+          <nav className={cn("hidden items-center gap-10 md:flex", textTone)}>
+            {primaryNav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-[0.8125rem] font-medium tracking-[0.04em] uppercase opacity-90 transition-opacity hover:opacity-100"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="hidden md:block">
+            <Button
+              href={reserveNav.href}
+              variant={isTransparent ? "outline" : "primary"}
+              size="sm"
+              className={isTransparent ? "text-background" : undefined}
+            >
+              {reserveNav.label}
+            </Button>
+          </div>
+
+          <button
+            type="button"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className={cn("p-2 md:hidden", textTone)}
+          >
+            {open ? (
+              <X size={22} aria-hidden="true" />
+            ) : (
+              <Menu size={22} aria-hidden="true" />
+            )}
+          </button>
+        </Container>
       </header>
 
       {/*
@@ -91,7 +95,7 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 top-20 z-40 bg-background md:hidden"
+            className="bg-background fixed inset-0 top-20 z-40 md:hidden"
           >
             <Container as="nav" className="flex flex-col gap-1 pt-6">
               {primaryNav.map((item, i) => (
@@ -99,19 +103,27 @@ export function Header() {
                   key={item.href}
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{
+                    duration: 0.4,
+                    delay: i * 0.05,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
                 >
                   <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="block border-b border-stone py-5 font-display text-3xl text-coffee"
+                    className="border-stone font-display text-coffee block border-b py-5 text-3xl"
                   >
                     {item.label}
                   </Link>
                 </motion.div>
               ))}
               <div className="pt-8">
-                <Button href={reserveNav.href} onClick={() => setOpen(false)} className="w-full">
+                <Button
+                  href={reserveNav.href}
+                  onClick={() => setOpen(false)}
+                  className="w-full"
+                >
                   {reserveNav.label} a Table
                 </Button>
               </div>
