@@ -29,7 +29,7 @@ export default function CoffeePage() {
       <PageIntro
         eyebrow="Coffee"
         heading="A brew bar built for the whole day."
-        lead="Filter, V60, cold brew, tasting flights and espresso classics — anchored by a machine chosen for one reason above all others: consistency."
+        lead="Filter, V60, cold brew, tasting flights and espresso classics — poured all day, every day."
       />
 
       <MenuLanes lanes={coffeeLanes} />

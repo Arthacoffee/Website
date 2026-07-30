@@ -5,7 +5,7 @@ import { PullQuote } from "@/components/sections/pull-quote";
 import { ExperienceSection } from "@/components/sections/experience-section";
 import { VisitTeaser } from "@/components/sections/visit-teaser";
 import { JournalTeaser } from "@/components/sections/journal-teaser";
-import { whyWeExist, brewBarStory } from "@/content/story";
+import { brewBarStory } from "@/content/story";
 import { site } from "@/content/site";
 import { restaurantJsonLd } from "@/lib/structured-data";
 
@@ -26,18 +26,23 @@ export default function HomePage() {
       <Hero />
 
       <SplitFeature
-        id="why-we-exist"
-        eyebrow={whyWeExist.eyebrow}
-        heading={whyWeExist.heading}
-        paragraphs={[whyWeExist.body]}
-        cta={{ label: "Our Story", href: "/about" }}
-        imageCategory="interior"
+        id="kitchen"
+        eyebrow="The Kitchen"
+        heading="Andhra, Italian, Indo-Chinese, tandoor — entirely vegetarian."
+        paragraphs={[
+          "Andhra classics, Italian pasta, Indo-Chinese, and evening tandoor — five menus, entirely vegetarian, including egg dishes prepared with dedicated equipment and clear labelling.",
+          "One kitchen, built to do all of it properly — because a vegetarian table deserves the same range as any other.",
+        ]}
+        cta={{ label: "Explore Kitchen", href: "/kitchen" }}
+        imageCategory="kitchen"
         tone="stone"
       />
 
+      <ExperienceSection />
+
       <SplitFeature
         id="coffee-stories"
-        eyebrow="Coffee Stories"
+        eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={brewBarStory.paragraphs}
         cta={{ label: "Explore Coffee", href: "/coffee" }}
@@ -46,24 +51,10 @@ export default function HomePage() {
       />
 
       <PullQuote attribution="From the Journal">
-        Nobody comes to Artha for a quick stop on the way somewhere else. They come to
-        spend a part of their day here.
+        It&apos;s not about having the fanciest machine on the street. It&apos;s about
+        the cup being right, every single time.
       </PullQuote>
 
-      <SplitFeature
-        id="kitchen"
-        eyebrow="The Kitchen"
-        heading="Andhra, Italian, Indo-Chinese, tandoor — entirely vegetarian."
-        paragraphs={[
-          "Five full food programmes from one fully vegetarian kitchen, including egg dishes prepared on dedicated equipment with clear FSSAI labelling.",
-          "Running this much range off a single vegetarian pantry is harder than a smaller menu — and it's exactly the gap we saw on this street.",
-        ]}
-        cta={{ label: "Explore Kitchen", href: "/kitchen" }}
-        imageCategory="kitchen"
-        tone="stone"
-      />
-
-      <ExperienceSection />
       <VisitTeaser />
       <JournalTeaser />
     </>

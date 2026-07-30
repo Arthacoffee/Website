@@ -37,8 +37,8 @@ export default function KitchenPage() {
         eyebrow="Range Without Compromise"
         heading="Five cuisines. One vegetarian pantry."
         paragraphs={[
-          "Running Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor off a single vegetarian pantry sounds harder than a smaller menu — and it is. It's also exactly the gap we saw on this street.",
-          "The kitchen runs on induction, not gas, which gives tighter heat control across every station, and keeps a fully electric cold chain holding produce, dairy and prepared gravies at the right temperature across three floors.",
+          "Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor — all from one vegetarian pantry. It takes more care than a smaller menu, and it's worth it.",
+          "The kitchen runs on induction, not gas, for tighter heat control and a cleaner, cooler room.",
         ]}
         cta={{
           label: "Read the Full Story",

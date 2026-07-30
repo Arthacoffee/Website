@@ -80,9 +80,8 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
           className="text-body-lg text-background/80 mt-8 max-w-xl"
         >
-          A destination for specialty coffee, thoughtful vegetarian food, and unhurried
-          moments — three levels and a rooftop terrace on Defence Colony Road,
-          Sainikpuri.
+          Specialty coffee, thoughtful vegetarian food, and a rooftop terrace built for
+          slowing down — on Defence Colony Road, Sainikpuri.
         </motion.p>
 
         <motion.div
@@ -95,7 +94,7 @@ export function Hero({
             Reserve a Table
           </Button>
           <a
-            href="#why-we-exist"
+            href="#kitchen"
             className="text-background/85 decoration-background/40 hover:decoration-background text-[0.8125rem] font-medium tracking-[0.04em] uppercase underline decoration-1 underline-offset-4 transition-colors"
           >
             Explore
@@ -104,7 +103,7 @@ export function Hero({
       </Container>
 
       <motion.a
-        href="#why-we-exist"
+        href="#kitchen"
         aria-label="Scroll to explore"
         initial={reduceMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}

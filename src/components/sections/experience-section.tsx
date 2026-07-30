@@ -16,20 +16,7 @@ export function ExperienceSection() {
           <p className="text-body-lg text-background/70 mt-6">{experience.body}</p>
         </Reveal>
 
-        <div className="border-background/15 mt-14 grid grid-cols-1 gap-8 border-y py-10 sm:grid-cols-3">
-          {experience.stats.map((stat, i) => (
-            <Reveal key={stat.label} delay={i * 0.08} className="text-center">
-              <span className="font-display text-display-h3 text-bronze-light">
-                {stat.value}
-              </span>
-              <span className="text-caption text-background/60 mt-2 block tracking-[0.1em] uppercase">
-                {stat.label}
-              </span>
-            </Reveal>
-          ))}
-        </div>
-
-        <div className="mt-16 grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="border-background/15 mt-16 grid grid-cols-1 gap-x-10 gap-y-12 border-t pt-14 sm:grid-cols-2 lg:grid-cols-4">
           {dayParts.map((part, i) => (
             <Reveal key={part.title} delay={i * 0.08}>
               <span className="text-caption text-bronze-light tracking-[0.1em] uppercase">

@@ -28,7 +28,7 @@ export default function VisitPage() {
       <PageIntro
         eyebrow="Visit"
         heading="Find us on Defence Colony Road"
-        lead="Three connected levels — kitchen below, dining hall on the third floor, rooftop terrace above — with lift access throughout. Table service only, walk-ins welcome."
+        lead="An easy lift ride up to a room built for lingering, and a rooftop terrace made for the evening. Table service only, walk-ins welcome."
       />
 
       <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
@@ -100,11 +100,11 @@ export default function VisitPage() {
                 />
                 <div>
                   <strong className="text-body text-coffee block font-medium">
-                    The Layout
+                    The Space
                   </strong>
                   <span className="text-body text-foreground/70">
-                    2nd floor kitchen &amp; office · 3rd floor dining hall · rooftop
-                    terrace — connected by lift, 75 seats total
+                    A dining hall and a rooftop terrace, connected by lift — come up
+                    for the room, stay for the view.
                   </span>
                 </div>
               </li>
