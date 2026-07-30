@@ -28,7 +28,7 @@ Things worth explicitly preserving through the rebuild.
   below; it's a tradeoff, not a pure win.)
 - **Real, non-placeholder business data.** Address, hours by service window,
   phone, email, and menu pricing are the operator's actual data, not `lorem
-  ipsum` — the site was never a mockup.
+ipsum` — the site was never a mockup.
 
 ## 2. Weaknesses
 
@@ -61,7 +61,7 @@ Things worth explicitly preserving through the rebuild.
 - **Photography-first storytelling.** Replacing gradient placeholders with
   real photography (or, in the interim, a disciplined set of custom
   illustrations) is the single highest-leverage change available — more than
-  any code change, it is what will make the site *look* like Aman/Aesop/Blue
+  any code change, it is what will make the site _look_ like Aman/Aesop/Blue
   Bottle rather than a well-built template.
 - **Componentized content = faster iteration.** Moving menu items, journal
   posts, and team bios into typed content modules means adding a seasonal
@@ -80,14 +80,14 @@ Things worth explicitly preserving through the rebuild.
 
 ## 4. Technical Debt
 
-| Item | Detail | Risk |
-|---|---|---|
-| Header/footer duplication | Identical ~90-line blocks copy-pasted into 8 HTML files | High — every nav/contact change requires 8 synchronized edits; already a source of drift (see Architecture Problems) |
-| No build tooling | No bundler, no minification, no image pipeline | Medium — fonts and CSS ship unminified and unbundled; every page pays full CSS weight even for the ~20% it uses |
-| Inline `style=""` attributes | e.g. `style="margin: 16px auto 0;"` in `index.html`, `style="color:var(--color-gold);"` in every CTA band | Low-medium — bypasses the design system, makes a future theme change miss spots |
-| No JS module system | `main.js` is a single global script, `DOMContentLoaded`-scoped, doing three unrelated things (nav, footer year, form) | Low — fine at this scale, would not scale past 3–4 behaviors |
-| Untyped, unvalidated form | Reservation form has HTML5 `required`/`type` validation only; no format checks (phone, party size bounds beyond `min`/`max`), no server contract | Medium — silently accepts malformed data once wired to a real backend |
-| Keyless Maps embed | See Weaknesses | Medium |
+| Item                         | Detail                                                                                                                                           | Risk                                                                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| Header/footer duplication    | Identical ~90-line blocks copy-pasted into 8 HTML files                                                                                          | High — every nav/contact change requires 8 synchronized edits; already a source of drift (see Architecture Problems) |
+| No build tooling             | No bundler, no minification, no image pipeline                                                                                                   | Medium — fonts and CSS ship unminified and unbundled; every page pays full CSS weight even for the ~20% it uses      |
+| Inline `style=""` attributes | e.g. `style="margin: 16px auto 0;"` in `index.html`, `style="color:var(--color-gold);"` in every CTA band                                        | Low-medium — bypasses the design system, makes a future theme change miss spots                                      |
+| No JS module system          | `main.js` is a single global script, `DOMContentLoaded`-scoped, doing three unrelated things (nav, footer year, form)                            | Low — fine at this scale, would not scale past 3–4 behaviors                                                         |
+| Untyped, unvalidated form    | Reservation form has HTML5 `required`/`type` validation only; no format checks (phone, party size bounds beyond `min`/`max`), no server contract | Medium — silently accepts malformed data once wired to a real backend                                                |
+| Keyless Maps embed           | See Weaknesses                                                                                                                                   | Medium                                                                                                               |
 
 ## 5. Architecture Problems
 
@@ -98,7 +98,7 @@ Things worth explicitly preserving through the rebuild.
 - **No route-level code ownership.** `menu.html` conflates two very different
   concerns (coffee program and food kitchen) into one page and one nav item,
   which works today but doesn't map cleanly onto the brand's own stated
-  differentiator (coffee *and* a serious kitchen, as two distinct crafts).
+  differentiator (coffee _and_ a serious kitchen, as two distinct crafts).
 - **No layout composition.** Every page repeats the full `<head>` block
   (fonts, favicon, meta description) by hand; nothing enforces that a new
   page remembers the favicon or the font preconnect tags.
@@ -173,7 +173,7 @@ Things worth explicitly preserving through the rebuild.
 
 - **Visual craft is template-grade, not editorial-grade.** The palette,
   spacing, and component shapes (pill buttons, rounded cards, drop shadows)
-  read as a well-executed *café template*, not a distinctive premium
+  read as a well-executed _café template_, not a distinctive premium
   hospitality brand. Nothing on the page would tell you this is the same
   register as Aman, Aesop, or Blue Bottle — softer shadows and rounder
   corners read as friendly/approachable, not premium/considered.
@@ -181,8 +181,8 @@ Things worth explicitly preserving through the rebuild.
   proposition is sensory (the room, the roast, the plate) and the current
   site has zero photographic evidence of any of it.
 - **Typography lacks a dominant, confident scale.** Nothing on the page
-  is allowed to be *large* — the biggest headline (`clamp(2.4rem, 4.2vw,
-  3.6rem)`) tops out around 58px on a wide viewport. Premium editorial
+  is allowed to be _large_ — the biggest headline (`clamp(2.4rem, 4.2vw,
+3.6rem)`) tops out around 58px on a wide viewport. Premium editorial
   brands routinely run hero type at 120–180px; scale itself communicates
   confidence.
 - **Language is accurate but functional rather than evocative** in places
@@ -191,7 +191,7 @@ Things worth explicitly preserving through the rebuild.
   weight as brand storytelling — needs de-emphasis, not rewriting).
 - **"Reserve a Table" competes with nothing** — there is only one CTA style
   in use (`btn-primary`, terracotta pill) across hero, cards, and CTAs, which
-  is *correct* discipline but currently under-supported by everything else
+  is _correct_ discipline but currently under-supported by everything else
   (type scale, imagery, motion) that should make that single CTA feel
   inevitable rather than just present.
 
@@ -228,7 +228,7 @@ required.
 8. **CMS-readiness.** Structured `/content` modules for menu, journal, team,
    values — decouples content edits from code deploys going forward.
 
-Items 1–6 are addressed directly in this migration. Item 7's *architecture*
+Items 1–6 are addressed directly in this migration. Item 7's _architecture_
 is built now; the photography itself is outside this repo's scope until real
 assets are supplied. Item 8 is scaffolded via `/content` but no CMS vendor is
 selected here.
@@ -245,16 +245,16 @@ victory lap.
 
 ## What Part 1's roadmap actually delivered
 
-| Item | Status |
-|---|---|
-| Component architecture (no more copy-pasted header/footer) | Done — `components/{layout,sections,ui}` |
-| Type scale + spacing overhaul | Done — fluid tokens in `styles/tokens.css` |
-| Motion layer | Done — single `Reveal` primitive, `prefers-reduced-motion`-aware |
-| SEO foundation | Done — Metadata API, sitemap, robots, JSON-LD, OG image |
-| Accessibility pass | Done in two passes — see below, this is the one place the first pass fell short |
-| Reservation flow hardening | Done — validated, stateful, round-trips a real API route |
-| Photography architecture | Done (`ImageFrame`); real photography still doesn't exist |
-| CMS-readiness | Done — `/content` modules; no CMS vendor selected |
+| Item                                                       | Status                                                                          |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Component architecture (no more copy-pasted header/footer) | Done — `components/{layout,sections,ui}`                                        |
+| Type scale + spacing overhaul                              | Done — fluid tokens in `styles/tokens.css`                                      |
+| Motion layer                                               | Done — single `Reveal` primitive, `prefers-reduced-motion`-aware                |
+| SEO foundation                                             | Done — Metadata API, sitemap, robots, JSON-LD, OG image                         |
+| Accessibility pass                                         | Done in two passes — see below, this is the one place the first pass fell short |
+| Reservation flow hardening                                 | Done — validated, stateful, round-trips a real API route                        |
+| Photography architecture                                   | Done (`ImageFrame`); real photography still doesn't exist                       |
+| CMS-readiness                                              | Done — `/content` modules; no CMS vendor selected                               |
 
 ## What the first migration pass got wrong
 

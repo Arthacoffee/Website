@@ -89,7 +89,7 @@ reasons this matters:
    (`content/*.ts` → fetched-from-CMS equivalents) changes. No page or
    section component should need to change, because they already consume a
    typed shape (`MenuLane[]`, `JournalPost[]`, `TeamMember[]`), not raw
-   JSX. Swapping the *source* of that shape is the entire migration.
+   JSX. Swapping the _source_ of that shape is the entire migration.
 
 `Journal` posts illustrate the pattern most concretely: `body` is an array
 of typed blocks (`{ type: "p" | "h2" | "quote"; text: string }`) rendered

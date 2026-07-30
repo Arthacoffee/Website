@@ -23,19 +23,19 @@ Every text/icon color combination in the design system was checked against
 WCAG AA's 4.5:1 (normal text) / 3:1 (large text, 18px+ or 14px+ bold)
 thresholds:
 
-| Combination | Ratio | Passes |
-|---|---|---|
-| `foreground` on `background` | 17.9:1 | ✅ |
-| `foreground/70` on `background` | 6.8:1 | ✅ |
-| `coffee` on `background`/`stone` | 12.3:1 / 10.9:1 | ✅ |
-| `bronze-ink` on `background`/`stone` | 5.2:1 / 4.6:1 | ✅ |
-| `bronze-light` on `coffee` | 4.9:1 | ✅ |
-| `background` on `coffee` (footer body text) | 12.3:1 | ✅ |
-| `bronze` (bare) as text anywhere | 2.5–4.3:1 | ❌ — never used as text, see `docs/DESIGN_SYSTEM.md` |
+| Combination                                 | Ratio           | Passes                                               |
+| ------------------------------------------- | --------------- | ---------------------------------------------------- |
+| `foreground` on `background`                | 17.9:1          | ✅                                                   |
+| `foreground/70` on `background`             | 6.8:1           | ✅                                                   |
+| `coffee` on `background`/`stone`            | 12.3:1 / 10.9:1 | ✅                                                   |
+| `bronze-ink` on `background`/`stone`        | 5.2:1 / 4.6:1   | ✅                                                   |
+| `bronze-light` on `coffee`                  | 4.9:1           | ✅                                                   |
+| `background` on `coffee` (footer body text) | 12.3:1          | ✅                                                   |
+| `bronze` (bare) as text anywhere            | 2.5–4.3:1       | ❌ — never used as text, see `docs/DESIGN_SYSTEM.md` |
 
 The bare `bronze` token failing as text was a real, shipped bug caught and
 fixed during this build — see `docs/AUDIT.md`, Part 2, for the full story.
-It's listed here as a passed check specifically *because* it's now
+It's listed here as a passed check specifically _because_ it's now
 correctly excluded from every text/icon usage, not because the color
 itself is safe in the abstract.
 

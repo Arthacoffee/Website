@@ -39,11 +39,11 @@ involved.
 Three schema types, built by `src/lib/structured-data.ts` and inlined per
 page via `<script type="application/ld+json">`:
 
-| Schema | Where | Purpose |
-|---|---|---|
-| `Restaurant` | Homepage only | Name, address, geo, phone, cuisine, hours, price range — the record most likely to power a Google Business-style knowledge panel or map result |
-| `Article` | Each Journal post | Headline, description, publish date, author/publisher — qualifies Journal essays for article-rich search results |
-| `BreadcrumbList` | Every interior page | Home → Section (→ Post) — powers the breadcrumb trail Google sometimes shows under a search result instead of the raw URL |
+| Schema           | Where               | Purpose                                                                                                                                        |
+| ---------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Restaurant`     | Homepage only       | Name, address, geo, phone, cuisine, hours, price range — the record most likely to power a Google Business-style knowledge panel or map result |
+| `Article`        | Each Journal post   | Headline, description, publish date, author/publisher — qualifies Journal essays for article-rich search results                               |
+| `BreadcrumbList` | Every interior page | Home → Section (→ Post) — powers the breadcrumb trail Google sometimes shows under a search result instead of the raw URL                      |
 
 `breadcrumbJsonLd()` always prepends a `Home` entry automatically — call
 sites pass only the page-specific trail after Home.
@@ -73,7 +73,7 @@ brand, `app/opengraph-image.tsx` generates a branded card at build time
 via `next/og`'s `ImageResponse` — wordmark, tagline, brand gradient, no
 photography dependency. Revisit once real photography exists; a photo of
 the room will out-perform a generated card on click-through, but a
-generated card outperforms *nothing*.
+generated card outperforms _nothing_.
 
 ## Redirects (link equity from the previous site)
 

@@ -1,7 +1,7 @@
 # Design System
 
 Every constant here lives in code (`src/styles/tokens.css`,
-`src/components/ui/*`) — this document explains the *reasoning*, not just
+`src/components/ui/*`) — this document explains the _reasoning_, not just
 the values, so a future change is made with the same judgment rather than
 by copying a nearby number.
 
@@ -50,7 +50,7 @@ bronze-light  #BF9657   4.9:1 on coffee — bronze-colored text/icons on
                         the dark surfaces
 ```
 
-**Rule:** if bronze is text or an icon (anything a human needs to *read*,
+**Rule:** if bronze is text or an icon (anything a human needs to _read_,
 not just glance at as decoration), it's `bronze-ink` on light or
 `bronze-light` on dark — never bare `bronze`. If it's a border, a
 gradient stop, or a focus-adjacent decorative element, bare `bronze` is
@@ -69,15 +69,15 @@ Fluid type scale — every size is a `clamp()` that reaches the following
 ceiling on a wide desktop viewport and scales down smoothly, never
 requiring a separate mobile override:
 
-| Token | Desktop ceiling | Use |
-|---|---|---|
-| `text-hero` | 160px | The homepage hero headline only |
-| `text-display-h1` | 96px | Page-intro `<h1>` on interior pages |
-| `text-display-h2` | 72px | Section headings |
-| `text-display-h3` | 36px | Sub-section headings, large stat numerals |
-| `text-body-lg` | 20px | Lead paragraphs |
-| `text-body` | 17px | Default body copy |
-| `text-caption` | 14px | Eyebrows, labels, metadata |
+| Token             | Desktop ceiling | Use                                       |
+| ----------------- | --------------- | ----------------------------------------- |
+| `text-hero`       | 160px           | The homepage hero headline only           |
+| `text-display-h1` | 96px            | Page-intro `<h1>` on interior pages       |
+| `text-display-h2` | 72px            | Section headings                          |
+| `text-display-h3` | 36px            | Sub-section headings, large stat numerals |
+| `text-body-lg`    | 20px            | Lead paragraphs                           |
+| `text-body`       | 17px            | Default body copy                         |
+| `text-caption`    | 14px            | Eyebrows, labels, metadata                |
 
 **Cormorant Garamond has no glyph for ₹.** Any price display uses the sans
 stack even inside an otherwise-serif context (see
@@ -94,7 +94,7 @@ placements specifically, because a large flat color block reads better
 scaling in than sliding in.
 
 `Reveal` is fully inert under `prefers-reduced-motion`: both the "hidden"
-and "shown" variants explicitly set the *same* value for every property
+and "shown" variants explicitly set the _same_ value for every property
 they touch (opacity, y, scale, filter) rather than only overriding
 opacity. This isn't cosmetic — a reduced-motion variant that omits a
 property doesn't reset it, it just doesn't touch whatever value the
@@ -128,19 +128,19 @@ are a deliberate part of that register, not an default left unstyled.
 
 ## Component inventory (`ui/`)
 
-| Component | Purpose |
-|---|---|
-| `Button` | `primary` (solid coffee), `outline` (bordered, transparent), `text` (underlined link-style). Polymorphic: renders `<Link>` if given `href`, `<button>` otherwise. |
-| `Container` | Max-width + padding wrapper. Generic over `as` — forwards any prop the rendered element accepts (`aria-label`, `id`, `ref`, ...). |
-| `Eyebrow` | The small tracked-out label above a heading. Defaults to `bronze-ink`; pass `className="text-bronze-light"` explicitly on dark sections. |
-| `Reveal` | Scroll-entrance animation, see Motion above. |
-| `ImageFrame` | Photography slot — brand-toned gradient placeholder until a real `src` is supplied, then renders through `next/image` with no layout change. Categories (`interior`/`coffee`/`kitchen`/`terrace`/`people`/`lifestyle`) each map to a distinct gradient so placeholders are visually distinguishable by section even before real photos exist. |
-| `FormField` / `inputClasses` | Label + input + error wrapper, shared by every field in `ReservationForm`. |
-| `SkipLink` | Visually-hidden-until-focused "Skip to content" link, first element in the DOM. |
+| Component                    | Purpose                                                                                                                                                                                                                                                                                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Button`                     | `primary` (solid coffee), `outline` (bordered, transparent), `text` (underlined link-style). Polymorphic: renders `<Link>` if given `href`, `<button>` otherwise.                                                                                                                                                                             |
+| `Container`                  | Max-width + padding wrapper. Generic over `as` — forwards any prop the rendered element accepts (`aria-label`, `id`, `ref`, ...).                                                                                                                                                                                                             |
+| `Eyebrow`                    | The small tracked-out label above a heading. Defaults to `bronze-ink`; pass `className="text-bronze-light"` explicitly on dark sections.                                                                                                                                                                                                      |
+| `Reveal`                     | Scroll-entrance animation, see Motion above.                                                                                                                                                                                                                                                                                                  |
+| `ImageFrame`                 | Photography slot — brand-toned gradient placeholder until a real `src` is supplied, then renders through `next/image` with no layout change. Categories (`interior`/`coffee`/`kitchen`/`terrace`/`people`/`lifestyle`) each map to a distinct gradient so placeholders are visually distinguishable by section even before real photos exist. |
+| `FormField` / `inputClasses` | Label + input + error wrapper, shared by every field in `ReservationForm`.                                                                                                                                                                                                                                                                    |
+| `SkipLink`                   | Visually-hidden-until-focused "Skip to content" link, first element in the DOM.                                                                                                                                                                                                                                                               |
 
 ## When to add a new token vs. reuse an existing one
 
 Reuse first. A new color, size, or easing curve is justified only when an
-existing one is *wrong* for the use case, not merely "close but I'd prefer
+existing one is _wrong_ for the use case, not merely "close but I'd prefer
 something slightly different." The entire point of a design system is
 that "slightly different" accumulates into visual noise if not resisted.

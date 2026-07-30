@@ -34,7 +34,7 @@ Route                        First Load JS
 + shared by every route         102 kB
 ```
 
-`First Load JS` here is the *entire* JS payload for a cold visit to that
+`First Load JS` here is the _entire_ JS payload for a cold visit to that
 route, shared chunks included — there's no separate bundle-analyzer step
 run, but 150–170kB total (pre-compression; gzip/brotli over the wire will
 be meaningfully smaller) for a marketing site with animation and a
@@ -73,7 +73,7 @@ There is no real photography in this repository yet (`docs/AUDIT.md`).
 real photo in is a `src`/`alt` prop away from rendering through
 `next/image` — which handles responsive `srcset` generation, automatic
 AVIF/WebP format negotiation, and lazy-loading below the fold, all with no
-component-level code change required. The photography *placeholders*
+component-level code change required. The photography _placeholders_
 (gradient fills) are pure CSS, so there's no image weight at all until
 real assets exist — the honest performance number today for images is
 zero bytes, which won't survive first contact with real photography and
