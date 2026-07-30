@@ -18,7 +18,7 @@ export function CtaBand({
     <section className="bg-coffee py-24 text-center text-background md:py-28">
       <Container>
         <Reveal className="mx-auto max-w-xl">
-          <Eyebrow className="text-bronze">{eyebrow}</Eyebrow>
+          <Eyebrow className="text-bronze-light">{eyebrow}</Eyebrow>
           <h2 className="mt-4 text-display-h2 font-display text-background">{heading}</h2>
           {body ? <p className="mx-auto mt-5 max-w-md text-body-lg text-background/70">{body}</p> : null}
           <div className="mt-9">

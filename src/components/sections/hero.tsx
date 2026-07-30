@@ -50,7 +50,7 @@ export function Hero({ videoSrc, posterSrc }: { videoSrc?: string; posterSrc?: s
           initial={reduceMotion ? false : { opacity: 0, filter: "blur(8px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="font-display text-xl italic text-bronze md:text-2xl"
+          className="font-display text-xl italic text-bronze-light md:text-2xl"
         >
           {site.tagline}
         </motion.p>

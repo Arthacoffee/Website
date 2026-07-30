@@ -9,7 +9,7 @@ export function ExperienceSection() {
     <section id="experience" className="bg-coffee py-24 text-background md:py-32">
       <Container>
         <Reveal className="mx-auto max-w-2xl text-center">
-          <Eyebrow className="text-bronze">{experience.eyebrow}</Eyebrow>
+          <Eyebrow className="text-bronze-light">{experience.eyebrow}</Eyebrow>
           <h2 className="mt-4 text-display-h2 font-display text-background">
             {experience.heading}
           </h2>
@@ -19,7 +19,7 @@ export function ExperienceSection() {
         <div className="mt-14 grid grid-cols-1 gap-8 border-y border-background/15 py-10 sm:grid-cols-3">
           {experience.stats.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 0.08} className="text-center">
-              <span className="font-display text-display-h3 text-bronze">{stat.value}</span>
+              <span className="font-display text-display-h3 text-bronze-light">{stat.value}</span>
               <span className="mt-2 block text-caption tracking-[0.1em] text-background/60 uppercase">
                 {stat.label}
               </span>
@@ -30,7 +30,7 @@ export function ExperienceSection() {
         <div className="mt-16 grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {dayParts.map((part, i) => (
             <Reveal key={part.title} delay={i * 0.08}>
-              <span className="text-caption tracking-[0.1em] text-bronze uppercase">
+              <span className="text-caption tracking-[0.1em] text-bronze-light uppercase">
                 {part.time}
               </span>
               <h3 className="mt-3 font-display text-xl text-background">{part.title}</h3>

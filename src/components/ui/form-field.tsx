@@ -30,4 +30,4 @@ export function FormField({
 }
 
 export const inputClasses =
-  "w-full border border-stone bg-background px-4 py-3 text-body text-foreground outline-none transition-colors focus:border-bronze rounded-[var(--radius-editorial)]";
+  "w-full border border-stone bg-background px-4 py-3 text-body text-foreground outline-none transition-colors focus:border-bronze-ink rounded-[var(--radius-editorial)]";

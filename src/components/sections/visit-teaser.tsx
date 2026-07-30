@@ -22,12 +22,12 @@ export function VisitTeaser() {
 
           <ul className="mt-8 flex flex-col gap-4">
             <li className="flex items-start gap-3 text-body text-foreground/75">
-              <MapPin size={18} className="mt-0.5 shrink-0 text-bronze" aria-hidden="true" />
+              <MapPin size={18} className="mt-0.5 shrink-0 text-bronze-ink" aria-hidden="true" />
               {site.address.streetAddress}, {site.address.addressLocality} –{" "}
               {site.address.postalCode}
             </li>
             <li className="flex items-start gap-3 text-body text-foreground/75">
-              <Clock size={18} className="mt-0.5 shrink-0 text-bronze" aria-hidden="true" />
+              <Clock size={18} className="mt-0.5 shrink-0 text-bronze-ink" aria-hidden="true" />
               {site.hours.display}
             </li>
           </ul>

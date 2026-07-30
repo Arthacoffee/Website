@@ -15,7 +15,7 @@ export function Footer() {
               {site.name}
             </span>
             <p className="mt-5 max-w-sm text-body text-background/70">{site.description}</p>
-            <p className="mt-6 font-display text-lg italic text-bronze">{site.tagline}</p>
+            <p className="mt-6 font-display text-lg italic text-bronze-light">{site.tagline}</p>
           </div>
 
           <div>
@@ -27,7 +27,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-body text-background/75 transition-colors hover:text-bronze"
+                    className="text-body text-background/75 transition-colors hover:text-bronze-light"
                   >
                     {item.label}
                   </Link>
@@ -42,28 +42,28 @@ export function Footer() {
             </h4>
             <ul className="mt-5 flex flex-col gap-4">
               <li className="flex items-start gap-3">
-                <MapPin size={16} className="mt-1 shrink-0 text-bronze" aria-hidden="true" />
+                <MapPin size={16} className="mt-1 shrink-0 text-bronze-light" aria-hidden="true" />
                 <a
                   href="https://maps.google.com/?q=Plot+820+Defence+Colony+Road+Sainikpuri+Secunderabad+500094"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-body text-background/75 hover:text-bronze"
+                  className="text-body text-background/75 hover:text-bronze-light"
                 >
                   {site.address.streetAddress}, {site.address.addressLocality} –{" "}
                   {site.address.postalCode}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={16} className="shrink-0 text-bronze" aria-hidden="true" />
-                <a href={site.phoneHref} className="text-body text-background/75 hover:text-bronze">
+                <Phone size={16} className="shrink-0 text-bronze-light" aria-hidden="true" />
+                <a href={site.phoneHref} className="text-body text-background/75 hover:text-bronze-light">
                   {site.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={16} className="shrink-0 text-bronze" aria-hidden="true" />
+                <Mail size={16} className="shrink-0 text-bronze-light" aria-hidden="true" />
                 <a
                   href={`mailto:${site.email}`}
-                  className="text-body text-background/75 hover:text-bronze"
+                  className="text-body text-background/75 hover:text-bronze-light"
                 >
                   {site.email}
                 </a>
@@ -82,7 +82,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Artha on Instagram"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-background/20 transition-colors hover:border-bronze hover:text-bronze"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-background/20 transition-colors hover:border-bronze-light hover:text-bronze-light"
           >
             <svg
               viewBox="0 0 24 24"

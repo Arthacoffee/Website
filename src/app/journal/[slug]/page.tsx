@@ -81,7 +81,7 @@ export default async function JournalPostPage({
           <Reveal>
             <Link
               href="/journal"
-              className="inline-flex items-center gap-2 text-[0.8125rem] font-medium tracking-[0.04em] text-bronze uppercase"
+              className="inline-flex items-center gap-2 text-[0.8125rem] font-medium tracking-[0.04em] text-bronze-ink uppercase"
             >
               <ArrowLeft size={14} aria-hidden="true" />
               Journal

@@ -22,7 +22,7 @@ export function ValuesGrid({
         <div className="mt-16 grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((value, i) => (
             <Reveal key={value.title} delay={(i % 3) * 0.08}>
-              <Leaf size={22} className="text-bronze" strokeWidth={1.4} aria-hidden="true" />
+              <Leaf size={22} className="text-bronze-ink" strokeWidth={1.4} aria-hidden="true" />
               <h3 className="mt-4 font-display text-xl text-coffee">{value.title}</h3>
               <p className="mt-2 text-body text-foreground/65">{value.description}</p>
             </Reveal>

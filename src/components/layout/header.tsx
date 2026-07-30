@@ -72,7 +72,7 @@ export function Header() {
           onClick={() => setOpen((v) => !v)}
           className={cn("p-2 md:hidden", textTone)}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
         </button>
       </Container>
       </header>

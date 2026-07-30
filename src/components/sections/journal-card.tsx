@@ -15,7 +15,7 @@ export function JournalCard({ post }: { post: JournalPost }) {
   return (
     <Link href={`/journal/${post.slug}`} className="group block">
       <ImageFrame category={category} className="aspect-[16/11] w-full rounded-[var(--radius-editorial)]" />
-      <span className="mt-5 block text-caption tracking-[0.14em] text-bronze uppercase">
+      <span className="mt-5 block text-caption tracking-[0.14em] text-bronze-ink uppercase">
         {post.category}
       </span>
       <h3 className="mt-2 flex items-start gap-2 font-display text-2xl text-coffee">

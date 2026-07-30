@@ -28,11 +28,11 @@ type ButtonAsButton = CommonProps &
 export type ButtonProps = ButtonAsLink | ButtonAsButton;
 
 const base =
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-sans font-medium tracking-[0.02em] transition-colors duration-300 ease-[var(--ease-editorial)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-sans font-medium tracking-[0.02em] transition-colors duration-300 ease-[var(--ease-editorial)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coffee disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-coffee text-background hover:bg-bronze rounded-[var(--radius-editorial)] px-8 py-3.5 text-[0.8125rem] uppercase",
+    "bg-coffee text-background hover:bg-bronze-ink rounded-[var(--radius-editorial)] px-8 py-3.5 text-[0.8125rem] uppercase",
   outline:
     "border border-current rounded-[var(--radius-editorial)] px-8 py-3.5 text-[0.8125rem] uppercase hover:bg-current/10",
   text: "text-current underline decoration-1 underline-offset-4 decoration-current/40 hover:decoration-current text-[0.875rem]",

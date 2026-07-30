@@ -7,7 +7,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
       <ImageFrame category="people" className="aspect-square w-40 rounded-full sm:w-full" />
       <div>
         <h3 className="font-display text-2xl text-coffee">{member.name}</h3>
-        <span className="mt-1 block text-caption font-medium tracking-[0.1em] text-bronze uppercase">
+        <span className="mt-1 block text-caption font-medium tracking-[0.1em] text-bronze-ink uppercase">
           {member.role}
         </span>
         <p className="mt-4 max-w-2xl text-body text-foreground/70">{member.bio}</p>

@@ -36,14 +36,14 @@ export default function VisitPage() {
           <Reveal>
             <ul className="flex flex-col gap-6">
               <li className="flex items-start gap-4">
-                <MapPin size={20} className="mt-1 shrink-0 text-bronze" aria-hidden="true" />
+                <MapPin size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
                 <div>
                   <strong className="block text-body font-medium text-coffee">Address</strong>
                   <a
                     href="https://maps.google.com/?q=Plot+820+Defence+Colony+Road+Sainikpuri+Secunderabad+500094"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body text-foreground/70 hover:text-bronze"
+                    className="text-body text-foreground/70 hover:text-bronze-ink"
                   >
                     {site.address.streetAddress}, {site.address.addressLocality} –{" "}
                     {site.address.postalCode}, {site.address.addressRegion}
@@ -51,28 +51,28 @@ export default function VisitPage() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <Phone size={20} className="mt-1 shrink-0 text-bronze" aria-hidden="true" />
+                <Phone size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
                 <div>
                   <strong className="block text-body font-medium text-coffee">Phone</strong>
-                  <a href={site.phoneHref} className="text-body text-foreground/70 hover:text-bronze">
+                  <a href={site.phoneHref} className="text-body text-foreground/70 hover:text-bronze-ink">
                     {site.phone}
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <Mail size={20} className="mt-1 shrink-0 text-bronze" aria-hidden="true" />
+                <Mail size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
                 <div>
                   <strong className="block text-body font-medium text-coffee">Email</strong>
                   <a
                     href={`mailto:${site.email}`}
-                    className="text-body text-foreground/70 hover:text-bronze"
+                    className="text-body text-foreground/70 hover:text-bronze-ink"
                   >
                     {site.email}
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <Building2 size={20} className="mt-1 shrink-0 text-bronze" aria-hidden="true" />
+                <Building2 size={20} className="mt-1 shrink-0 text-bronze-ink" aria-hidden="true" />
                 <div>
                   <strong className="block text-body font-medium text-coffee">The Layout</strong>
                   <span className="text-body text-foreground/70">
@@ -86,10 +86,10 @@ export default function VisitPage() {
             <table className="mt-10 w-full border-collapse">
               <thead>
                 <tr>
-                  <th className="border-b border-stone pb-3 text-left text-caption font-medium tracking-[0.08em] text-bronze uppercase">
+                  <th className="border-b border-stone pb-3 text-left text-caption font-medium tracking-[0.08em] text-bronze-ink uppercase">
                     Service Window
                   </th>
-                  <th className="border-b border-stone pb-3 text-left text-caption font-medium tracking-[0.08em] text-bronze uppercase">
+                  <th className="border-b border-stone pb-3 text-left text-caption font-medium tracking-[0.08em] text-bronze-ink uppercase">
                     Hours
                   </th>
                 </tr>
