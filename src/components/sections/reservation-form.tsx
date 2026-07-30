@@ -18,6 +18,7 @@ const initialValues = {
   partySize: "2",
   area: "dining-hall" as const,
   notes: "",
+  company: "",
 };
 
 export function ReservationForm() {
@@ -119,6 +120,21 @@ export function ReservationForm() {
       noValidate
       className="flex flex-col gap-6"
     >
+      {/* Honeypot: invisible to sighted and screen-reader users, never reached by tab. Bots that fill every field they can find will fill this too. */}
+      <div className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden">
+        <label htmlFor="company">Company</label>
+        <input
+          id="company"
+          name="company"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          value={values.company}
+          onChange={(e) => update("company", e.target.value)}
+        />
+      </div>
+
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <FormField id="name" label="Full name" error={errors.name}>
           <input
@@ -215,7 +231,7 @@ export function ReservationForm() {
             value={values.area}
             onChange={(e) => update("area", e.target.value as typeof values.area)}
           >
-            <option value="dining-hall">3rd Floor Dining Hall</option>
+            <option value="dining-hall">Dining Hall</option>
             <option value="rooftop">Rooftop Terrace</option>
             <option value="no-preference">No Preference</option>
           </select>

@@ -16,12 +16,26 @@ export const reservationSchema = z.object({
     .max(75, "Call us for larger groups"),
   area: z.enum(["dining-hall", "rooftop", "no-preference"]),
   notes: z.string().trim().max(500).optional().or(z.literal("")),
+  /**
+   * Honeypot field. Real guests never see or fill this (visually hidden,
+   * removed from tab order in ReservationForm) — a non-empty value here
+   * means a bot filled every field it could find. Excluded from
+   * ReservationFieldErrors so a bot never gets told it was caught.
+   */
+  company: z.string().max(0).optional().or(z.literal("")),
 });
 
 export type ReservationInput = z.infer<typeof reservationSchema>;
 
-export type ReservationFieldErrors = Partial<Record<keyof ReservationInput, string>>;
+export type ReservationFieldErrors = Partial<
+  Record<Exclude<keyof ReservationInput, "company">, string>
+>;
 
 export function parseReservation(data: unknown) {
   return reservationSchema.safeParse(data);
+}
+
+/** True when the honeypot field was filled — the request is very likely automated. */
+export function isSpamSubmission(data: ReservationInput): boolean {
+  return Boolean(data.company);
 }
