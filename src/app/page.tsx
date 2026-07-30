@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/hero";
 import { SplitFeature } from "@/components/sections/split-feature";
+import { PullQuote } from "@/components/sections/pull-quote";
 import { ExperienceSection } from "@/components/sections/experience-section";
 import { VisitTeaser } from "@/components/sections/visit-teaser";
 import { JournalTeaser } from "@/components/sections/journal-teaser";
@@ -43,6 +44,11 @@ export default function HomePage() {
         imageCategory="coffee"
         reverse
       />
+
+      <PullQuote attribution="From the Journal">
+        Nobody comes to Artha for a quick stop on the way somewhere else. They come to
+        spend a part of their day here.
+      </PullQuote>
 
       <SplitFeature
         id="kitchen"
