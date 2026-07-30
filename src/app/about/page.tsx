@@ -7,7 +7,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 import { Container } from "@/components/ui/container";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
-import { whyWeExist, theIdea, brewBarStory } from "@/content/story";
+import { whyWeExist, ourStory, brewBarStory } from "@/content/story";
 import { team } from "@/content/team";
 import { breadcrumbJsonLd } from "@/lib/structured-data";
 
@@ -36,12 +36,23 @@ export default function AboutPage() {
         lead={whyWeExist.body}
       />
 
-      <SplitFeature
-        eyebrow={theIdea.eyebrow}
-        heading={theIdea.heading}
-        paragraphs={theIdea.paragraphs}
-        imageCategory="interior"
-      />
+      <section className="bg-background pt-4 pb-24 md:pt-8 md:pb-32">
+        <Container>
+          <Reveal className="mx-auto max-w-2xl">
+            <Eyebrow>{ourStory.eyebrow}</Eyebrow>
+            <h2 className="text-display-h2 font-display text-coffee mt-4">
+              {ourStory.heading}
+            </h2>
+            <div className="mt-8 flex flex-col gap-6">
+              {ourStory.paragraphs.map((p) => (
+                <p key={p} className="text-body-lg text-foreground/75 leading-relaxed">
+                  {p}
+                </p>
+              ))}
+            </div>
+          </Reveal>
+        </Container>
+      </section>
 
       <section className="bg-background py-24 md:py-32">
         <Container>

@@ -4,11 +4,15 @@ export const whyWeExist = {
   body: "In Sanskrit, artha means purpose — one of the four aims of a life well lived. We built this place to earn that name: somewhere worth spending real time, not just passing through.",
 };
 
-export const theIdea = {
-  eyebrow: "The Idea",
-  heading: "Every café nearby owns one moment. We wanted the whole day.",
+export const ourStory = {
+  eyebrow: "Our Story",
+  heading: "Why Artha exists",
   paragraphs: [
-    "This stretch of Defence Colony Road already loves good coffee and good food — just never both, all day, in one place. Artha runs from the first filter coffee of the morning through an unhurried afternoon pour to a rooftop evening of tandoor and small plates. One address, the whole day.",
+    "Coffee, made slowly and well, is one of the last good excuses to sit still. That's really where this began — not with a business plan, but with the belief that a proper cup, given time and care, is worth building a whole day around.",
+    "The food follows the same instinct. Ours is a fully vegetarian kitchen, and we wanted it taken as seriously as any other — Andhra classics beside Italian pasta, tandoor beside an afternoon pour, so a vegetarian table never has to mean a shorter one.",
+    "None of it means much without the room around it. Hospitality, to us, is attention more than service — a chair pulled out at the right moment, a name remembered, the quiet sense that you're welcome to stay exactly as long as you like.",
+    "That's why the rooftop matters more than any single dish. Open air changes a conversation — people talk longer, sit closer, order one more coffee than they meant to. We built Artha around that instinct: a place where the best part of being here is simply who you're there with.",
+    "We hope it becomes less like a café you visit and more like an address you belong to — somewhere you bring your parents on a Sunday, an old friend after work, someone new on a first date on the terrace. That's the community we're quietly building, one table at a time.",
   ],
 };
 

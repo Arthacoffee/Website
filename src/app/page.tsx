@@ -5,7 +5,7 @@ import { PullQuote } from "@/components/sections/pull-quote";
 import { ExperienceSection } from "@/components/sections/experience-section";
 import { VisitTeaser } from "@/components/sections/visit-teaser";
 import { JournalTeaser } from "@/components/sections/journal-teaser";
-import { brewBarStory } from "@/content/story";
+import { brewBarStory, whyWeExist } from "@/content/story";
 import { site } from "@/content/site";
 import { restaurantJsonLd } from "@/lib/structured-data";
 
@@ -25,20 +25,20 @@ export default function HomePage() {
 
       <Hero />
 
+      <PullQuote id="why-we-exist">{whyWeExist.body}</PullQuote>
+
       <SplitFeature
         id="kitchen"
         eyebrow="The Kitchen"
         heading="Andhra, Italian, Indo-Chinese, tandoor — entirely vegetarian."
         paragraphs={[
-          "Andhra classics, Italian pasta, Indo-Chinese, and evening tandoor — five menus, entirely vegetarian, including egg dishes prepared with dedicated equipment and clear labelling.",
+          "Andhra classics, Italian pasta, Indo-Chinese, tandoor and bistro — five menus, entirely vegetarian, including egg dishes prepared with dedicated equipment and clear labelling.",
           "One kitchen, built to do all of it properly — because a vegetarian table deserves the same range as any other.",
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}
         imageCategory="kitchen"
         tone="stone"
       />
-
-      <ExperienceSection />
 
       <SplitFeature
         id="coffee-stories"
@@ -55,8 +55,9 @@ export default function HomePage() {
         the cup being right, every single time.
       </PullQuote>
 
-      <VisitTeaser />
+      <ExperienceSection />
       <JournalTeaser />
+      <VisitTeaser />
     </>
   );
 }

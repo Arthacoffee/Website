@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { parseReservation, isSpamSubmission } from "@/lib/reservation";
 import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 import { restaurantNotificationEmail, guestConfirmationEmail } from "@/lib/email-templates";
+import { sendReservationAcknowledgement } from "@/lib/whatsapp";
 import { site } from "@/content/site";
 
 const resendApiKey = process.env.RESEND_API_KEY;
@@ -50,40 +51,48 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, message: "Reservation request received." });
   }
 
-  if (!resend) {
+  if (resend) {
+    const notification = restaurantNotificationEmail(result.data);
+    const { error } = await resend.emails.send({
+      from: `Artha Reservations <${fromEmail}>`,
+      to: site.email,
+      replyTo: result.data.email,
+      subject: notification.subject,
+      html: notification.html,
+    });
+
+    if (error) {
+      console.error("[reservation] failed to send restaurant notification", error);
+      return NextResponse.json(
+        { ok: false, message: "We couldn't send your request. Please call us instead." },
+        { status: 502 },
+      );
+    }
+
+    const confirmation = guestConfirmationEmail(result.data);
+    const { error: confirmationError } = await resend.emails.send({
+      from: `Artha Speciality Coffee <${fromEmail}>`,
+      to: result.data.email,
+      subject: confirmation.subject,
+      html: confirmation.html,
+    });
+
+    if (confirmationError) {
+      // The request itself succeeded — the restaurant has it — so this is
+      // logged, not surfaced as a failure to the guest.
+      console.error("[reservation] failed to send guest confirmation", confirmationError);
+    }
+  } else {
     console.info("[reservation] RESEND_API_KEY not set — logging instead of sending", result.data);
-    return NextResponse.json({ ok: true, message: "Reservation request received." });
   }
 
-  const notification = restaurantNotificationEmail(result.data);
-  const { error } = await resend.emails.send({
-    from: `Artha Reservations <${fromEmail}>`,
-    to: site.email,
-    replyTo: result.data.email,
-    subject: notification.subject,
-    html: notification.html,
-  });
-
-  if (error) {
-    console.error("[reservation] failed to send restaurant notification", error);
-    return NextResponse.json(
-      { ok: false, message: "We couldn't send your request. Please call us instead." },
-      { status: 502 },
-    );
-  }
-
-  const confirmation = guestConfirmationEmail(result.data);
-  const { error: confirmationError } = await resend.emails.send({
-    from: `Artha Speciality Coffee <${fromEmail}>`,
-    to: result.data.email,
-    subject: confirmation.subject,
-    html: confirmation.html,
-  });
-
-  if (confirmationError) {
-    // The request itself succeeded — the restaurant has it — so this is
-    // logged, not surfaced as a failure to the guest.
-    console.error("[reservation] failed to send guest confirmation", confirmationError);
+  // Independent of email above — a WhatsApp misconfiguration or outage
+  // should never block the (higher-priority) restaurant notification, and
+  // vice versa. Both are attempted regardless of whether the other one
+  // is configured.
+  const whatsapp = await sendReservationAcknowledgement(result.data);
+  if (!whatsapp.ok) {
+    console.error("[reservation] failed to send WhatsApp acknowledgement", whatsapp.error);
   }
 
   return NextResponse.json({ ok: true, message: "Reservation request received." });

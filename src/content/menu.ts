@@ -24,7 +24,13 @@ export const coffeeLanes: MenuLane[] = [
   },
 ];
 
-/** The full-meal vegetarian kitchen — five programmes, one kitchen. */
+/**
+ * The full-meal vegetarian kitchen: five cuisine programmes (Andhra
+ * traditional, Italian pasta, Indo-Chinese, tandoor, bistro) plus the
+ * all-day brunch lane. Six lanes total, one kitchen — prose elsewhere
+ * ("five programmes") counts the cuisines and lists brunch separately;
+ * update both together if a lane is ever added or removed here.
+ */
 export const kitchenLanes: MenuLane[] = [
   {
     slug: "brunch",

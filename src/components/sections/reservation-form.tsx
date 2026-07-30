@@ -4,7 +4,11 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Loader2, CheckCircle2 } from "lucide-react";
 import { FormField, inputClasses } from "@/components/ui/form-field";
 import { Button } from "@/components/ui/button";
-import { parseReservation, type ReservationFieldErrors } from "@/lib/reservation";
+import {
+  parseReservation,
+  type ReservationFieldErrors,
+  type ReservationInput,
+} from "@/lib/reservation";
 import { cn } from "@/lib/utils";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -21,11 +25,37 @@ const initialValues = {
   company: "",
 };
 
+const AREA_LABEL: Record<ReservationInput["area"], string> = {
+  "dining-hall": "Dining Hall",
+  rooftop: "Rooftop Terrace",
+  "no-preference": "No preference",
+};
+
+function formatSummaryDate(iso: string): string {
+  const date = new Date(`${iso}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return iso;
+  return date.toLocaleDateString("en-IN", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  });
+}
+
+function formatSummaryTime(time: string): string {
+  const [hoursStr, minutes] = time.split(":");
+  const hours = Number(hoursStr);
+  if (Number.isNaN(hours)) return time;
+  const period = hours >= 12 ? "PM" : "AM";
+  const twelveHour = hours % 12 === 0 ? 12 : hours % 12;
+  return `${twelveHour}:${minutes} ${period}`;
+}
+
 export function ReservationForm() {
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState<ReservationFieldErrors>({});
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState<string | null>(null);
+  const [confirmed, setConfirmed] = useState<typeof initialValues | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
 
   // Move focus to the first invalid field once the error state has
@@ -81,9 +111,7 @@ export function ReservationForm() {
       }
 
       setStatus("success");
-      setMessage(
-        `Thank you, ${values.name.split(" ")[0]}. We'll confirm by phone or email shortly.`,
-      );
+      setConfirmed(values);
       setValues(initialValues);
     } catch {
       setStatus("error");
@@ -96,16 +124,66 @@ export function ReservationForm() {
       <div
         role="status"
         aria-live="polite"
-        className="border-stone bg-stone/60 flex flex-col items-start gap-4 border p-10 text-left"
+        className="border-stone bg-stone/60 flex flex-col items-start gap-6 border p-10 text-left"
       >
-        <CheckCircle2 className="text-forest" size={28} aria-hidden="true" />
-        <h3 className="font-display text-coffee text-2xl">Request Received</h3>
-        <p className="text-body text-foreground/70">{message}</p>
+        <CheckCircle2 className="text-forest" size={32} aria-hidden="true" />
+
+        <div>
+          <h3 className="font-display text-coffee text-2xl">
+            Thank you for choosing Artha.
+          </h3>
+          <p className="text-body text-foreground/70 mt-3 leading-relaxed">
+            We&apos;ve received your reservation request. Our team will review
+            availability and confirm your booking shortly. You&apos;ll receive
+            updates via email and WhatsApp.
+          </p>
+        </div>
+
+        {confirmed ? (
+          <dl className="border-stone grid w-full grid-cols-2 gap-x-6 gap-y-3 border-t pt-6 sm:grid-cols-4">
+            <div>
+              <dt className="text-caption text-bronze-ink tracking-[0.08em] uppercase">
+                Date
+              </dt>
+              <dd className="text-body text-coffee mt-1">
+                {formatSummaryDate(confirmed.date)}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-caption text-bronze-ink tracking-[0.08em] uppercase">
+                Time
+              </dt>
+              <dd className="text-body text-coffee mt-1">
+                {formatSummaryTime(confirmed.time)}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-caption text-bronze-ink tracking-[0.08em] uppercase">
+                Party
+              </dt>
+              <dd className="text-body text-coffee mt-1">
+                {confirmed.partySize} guest{confirmed.partySize === "1" ? "" : "s"}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-caption text-bronze-ink tracking-[0.08em] uppercase">
+                Preference
+              </dt>
+              <dd className="text-body text-coffee mt-1">
+                {AREA_LABEL[confirmed.area]}
+              </dd>
+            </div>
+          </dl>
+        ) : null}
+
         <Button
           type="button"
           variant="outline"
           className="text-coffee"
-          onClick={() => setStatus("idle")}
+          onClick={() => {
+            setStatus("idle");
+            setConfirmed(null);
+          }}
         >
           Make Another Request
         </Button>

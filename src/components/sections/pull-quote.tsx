@@ -9,14 +9,16 @@ import { Reveal } from "@/components/ui/reveal";
  * visual pattern of its own.
  */
 export function PullQuote({
+  id,
   children,
   attribution,
 }: {
+  id?: string;
   children: string;
   attribution?: string;
 }) {
   return (
-    <section className="bg-background py-28 md:py-36">
+    <section id={id} className="bg-background py-28 md:py-36">
       <Container>
         <Reveal className="mx-auto max-w-3xl text-center">
           <span
