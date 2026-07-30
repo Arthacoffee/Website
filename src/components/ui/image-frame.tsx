@@ -14,6 +14,9 @@ const categoryGradients: Record<ImageCategory, string> = {
   lifestyle: "linear-gradient(155deg, #ece7e2 0%, #b88a44 120%)",
 };
 
+const HOVER_SCALE =
+  "transition-transform duration-700 ease-[var(--ease-editorial)] group-hover:scale-[1.045]";
+
 type ImageFrameProps = {
   category: ImageCategory;
   icon?: LucideIcon;
@@ -23,6 +26,14 @@ type ImageFrameProps = {
   alt?: string;
   priority?: boolean;
   sizes?: string;
+  /**
+   * Set when this frame sits inside a `group` link/card and should get the
+   * slow, subtle editorial hover-zoom (Kinfolk/Aesop pattern) rather than
+   * sitting static. Omit for non-interactive placements (e.g. a SplitFeature
+   * image next to static text) where a hover state would imply an action
+   * that isn't there.
+   */
+  interactive?: boolean;
 };
 
 /**
@@ -39,6 +50,7 @@ export function ImageFrame({
   alt = "",
   priority,
   sizes = "100vw",
+  interactive = false,
 }: ImageFrameProps) {
   if (src) {
     return (
@@ -49,7 +61,7 @@ export function ImageFrame({
           fill
           priority={priority}
           sizes={sizes}
-          className="object-cover"
+          className={cn("object-cover", interactive && HOVER_SCALE)}
         />
       </div>
     );
@@ -60,22 +72,26 @@ export function ImageFrame({
       role="img"
       aria-label={alt || undefined}
       aria-hidden={alt ? undefined : true}
-      className={cn(
-        "relative flex items-center justify-center overflow-hidden",
-        className,
-      )}
-      style={{ backgroundImage: categoryGradients[category] }}
+      className={cn("relative overflow-hidden", className)}
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-        }}
-      />
-      {Icon ? (
-        <Icon className="text-background/50 relative h-10 w-10" strokeWidth={1.1} />
-      ) : null}
+        className={cn(
+          "absolute inset-0 flex items-center justify-center",
+          interactive && HOVER_SCALE,
+        )}
+        style={{ backgroundImage: categoryGradients[category] }}
+      >
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+          }}
+        />
+        {Icon ? (
+          <Icon className="text-background/50 relative h-10 w-10" strokeWidth={1.1} />
+        ) : null}
+      </div>
     </div>
   );
 }
