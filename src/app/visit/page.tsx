@@ -31,7 +31,7 @@ export default function VisitPage() {
         lead="Three connected levels — kitchen below, dining hall on the third floor, rooftop terrace above — with lift access throughout. Table service only, walk-ins welcome."
       />
 
-      <section className="bg-background py-20 md:py-28">
+      <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
         <Container className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           <Reveal>
             <ul className="flex flex-col gap-6">

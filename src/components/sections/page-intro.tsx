@@ -16,7 +16,7 @@ export function PageIntro({
   children?: ReactNode;
 }) {
   return (
-    <section className="bg-stone pt-40 pb-20 md:pt-48 md:pb-28">
+    <section className="bg-stone pt-40 pb-14 md:pt-48 md:pb-20">
       <Container>
         <Reveal className="mx-auto max-w-3xl text-center">
           <Eyebrow>{eyebrow}</Eyebrow>

@@ -4,7 +4,7 @@ import type { MenuLane } from "@/content/menu";
 
 export function MenuLanes({ lanes, note }: { lanes: MenuLane[]; note?: string }) {
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
       <Container>
         <div>
           {lanes.map((lane, i) => (

@@ -31,7 +31,7 @@ export default function JournalIndexPage() {
         lead="Short reads on the coffee, the food, and the idea behind Artha."
       />
 
-      <section className="bg-background py-20 md:py-28">
+      <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
         <Container>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-10">
             {journalPosts.map((post, i) => (
