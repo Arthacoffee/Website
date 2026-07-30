@@ -232,3 +232,114 @@ Items 1–6 are addressed directly in this migration. Item 7's *architecture*
 is built now; the photography itself is outside this repo's scope until real
 assets are supplied. Item 8 is scaffolded via `/content` but no CMS vendor is
 selected here.
+
+---
+
+# Part 2 — Post-Migration Audit
+
+**Scope:** the Next.js codebase as of `bf1243b`, after the migration described
+above plus one additional hardening pass.
+**Purpose:** an honest accounting of what the migration actually fixed, what
+a second pass caught that the first one missed, and what's left — not a
+victory lap.
+
+## What Part 1's roadmap actually delivered
+
+| Item | Status |
+|---|---|
+| Component architecture (no more copy-pasted header/footer) | Done — `components/{layout,sections,ui}` |
+| Type scale + spacing overhaul | Done — fluid tokens in `styles/tokens.css` |
+| Motion layer | Done — single `Reveal` primitive, `prefers-reduced-motion`-aware |
+| SEO foundation | Done — Metadata API, sitemap, robots, JSON-LD, OG image |
+| Accessibility pass | Done in two passes — see below, this is the one place the first pass fell short |
+| Reservation flow hardening | Done — validated, stateful, round-trips a real API route |
+| Photography architecture | Done (`ImageFrame`); real photography still doesn't exist |
+| CMS-readiness | Done — `/content` modules; no CMS vendor selected |
+
+## What the first migration pass got wrong
+
+Three genuine bugs shipped in the first pass and were only caught by
+deliberately verifying computed styles rather than trusting screenshots:
+
+1. **`Reveal`'s reduced-motion variant didn't reset `filter`/`transform`.**
+   A visitor with `prefers-reduced-motion` enabled would see every section
+   permanently stuck mid-transition (blurred, offset, semi-transparent) —
+   the exact opposite of what reduced motion is supposed to guarantee.
+2. **The header's `backdrop-blur` silently broke the mobile nav.**
+   `backdrop-filter` establishes a new CSS containing block for
+   `position: fixed` descendants; the mobile menu panel was a JSX child of
+   the blurred `<header>`, so it collapsed to the header's own ~80px box
+   instead of the viewport. Fixed by rendering it as a sibling instead.
+3. **The brand's bronze accent (#B88A44) failed WCAG AA as text**, 2.5–2.9:1
+   against the light surfaces it was used on for every eyebrow label, price,
+   and icon sitewide. This wasn't a marginal miss — it was the single most
+   visible color in the type system, failing on the majority of the site.
+
+None of these were visible in a casual look at a rendered screenshot; all
+three required checking `getComputedStyle()` or a contrast-ratio calculator
+directly. That's the practical lesson: **a design that looks right in a
+screenshot and a design that is right are not the same claim**, and this
+codebase now leans on the second, harder standard.
+
+## What a second, more adversarial pass caught
+
+Running the "would Apple's HIG team or Stripe's design org reject this"
+standard surfaced things that were correct but incomplete:
+
+- **The favicon was still Next.js's default boilerplate icon.** Every
+  browser tab showed the generic Next logo, not Artha's mark — for a
+  "digital flagship" brand, an unbranded browser tab is a real failure, not
+  a nitpick. Fixed with a designed monogram (`icon.svg`, `apple-icon.tsx`).
+- **The old static site's URLs had no redirect story.** `/menu.html`,
+  `/about.html`, `/journal/brew-bar-eagle-one.html`, etc. would all 404 the
+  moment this shipped, silently discarding any link equity, bookmarks, or
+  Google Business Profile links pointing at them. Fixed with permanent
+  redirects in `next.config.ts`.
+- **The mobile nav was a modal in behavior but not in keyboard contract.**
+  No focus trap, no Escape-to-close, no focus return to the trigger button —
+  a keyboard user could tab straight through it into the page behind.
+  Fixed with a `useFocusTrap` hook implementing the ARIA APG dialog pattern.
+- **The reservation form's outcome was silent for screen-reader users.**
+  Submitting successfully replaced the form with a confirmation panel with
+  no `aria-live` announcement; a failed validation left focus wherever it
+  already was instead of moving to the first invalid field. Both fixed.
+- **No security headers, no `viewport`/`theme-color`, no web manifest, a
+  stale code comment referencing a hook that was never built.** Individually
+  minor; collectively the difference between "works" and "considered."
+
+## What's still not done, and why
+
+These are deliberately not fixed here, with the reason stated rather than
+silently deferred:
+
+- **There is no real photography.** `ImageFrame` accepts a `src`/`alt` prop
+  that switches it to `next/image` with zero layout change, and `Hero`
+  accepts `videoSrc`/`posterSrc` — the architecture is done. The photography
+  itself requires an actual shoot; inventing stock imagery would be worse
+  than the current honest placeholder.
+- **The reservation endpoint validates and logs but sends nothing.**
+  `/api/reservations` needs a real notification channel (email, webhook, or
+  CRM) before a guest's "confirmed" request is actually confirmed by anyone.
+- **No Lighthouse/PageSpeed run has been independently verified.** This
+  repo was built and tested in a sandboxed environment without a public URL
+  or a real Chrome DevTools performance trace against production
+  infrastructure (CDN, real network conditions). `docs/PERFORMANCE.md` lists
+  every structural decision that supports a 100 score and exactly what to
+  verify once the site is deployed somewhere reachable.
+- **No privacy policy exists**, despite the reservation form collecting
+  name, phone, email, and visit preferences. See `docs/LAUNCH.md` — this is
+  called out as a launch blocker, not something to paper over with
+  boilerplate legal text authored without counsel.
+- **`site.geo` coordinates are approximate**, not surveyed. Fine for the
+  `Restaurant` JSON-LD's general presence; not accurate enough to be the
+  literal map pin without checking against the real building.
+
+## Verdict
+
+The site is materially better than "production ready" in the sense of
+"builds and deploys without errors" — it's been through two rounds of
+adversarial review that each found and fixed real, user-facing defects. It
+is not yet finished in the sense that matters most for a hospitality brand:
+nobody has photographed the room, and a submitted reservation doesn't yet
+reach a human. Code quality and design-system discipline are no longer the
+limiting factor; real-world assets and operational wiring are.
