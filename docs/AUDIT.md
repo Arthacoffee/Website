@@ -349,3 +349,86 @@ actually in place (the code path is done — see
 `docs/LAUNCH_CHECKLIST.md`). Code quality and design-system discipline are
 no longer the limiting factor; real-world assets and operational wiring
 are.
+
+# Part 3 — Final Production Pass
+
+A third pass, positioned explicitly as launch-readiness review rather
+than another redesign: no framework changes, no component rebuilds, no
+folder restructuring. The instruction driving this pass was to question
+every remaining decision like a review panel — Apple HI, Aman, Aesop,
+Blue Bottle, Pentagram, Kinfolk, Stripe Design — and fix only what
+materially raises quality.
+
+## What this pass actually changed
+
+- **Rewrote "Our Story."** The About page previously led with the
+  tagline ("Made With Intention") followed by a market-positioning
+  paragraph naming competing cafés — closer to a pitch deck slide than a
+  hospitality brand's story. Replaced with an actual narrative: why
+  specialty coffee, why a fully vegetarian kitchen, why hospitality and
+  conversation matter, why the rooftop specifically. Full before/after
+  reasoning in a new doc, `docs/CONTENT_REFINEMENT.md`'s companion for
+  this pass is folded into this section rather than a separate file,
+  since it's one page's content, not a site-wide pass.
+- **Reordered the homepage** to lead with the experience (Why We Exist,
+  as a full-bleed pull-quote) ahead of the Kitchen and Coffee sections,
+  and moved the espresso machine's technical detail further down the
+  page than its brand-meaning framing — consistent with the
+  content-hierarchy direction set in the previous pass
+  (`docs/CONTENT_REFINEMENT.md`), extended here to the newly-requested
+  section order.
+- **Found and fixed a real content-consistency bug**: the Kitchen page's
+  own copy claimed "five" food programmes in three places while its menu
+  table rendered six rows (five cuisines plus an unmentioned Brunch
+  lane). Full detail in the new `docs/CONTENT_QA.md`.
+- **Built the WhatsApp Business Cloud API integration** the brief asked
+  for — acknowledgement-only, template-based (required for
+  business-initiated contact), gated behind env vars with the same
+  graceful fallback pattern as the existing Resend integration, and
+  fixed a real bug where it would never even attempt to fire if Resend
+  wasn't configured (the two channels are independent now). Full detail
+  in the new `docs/RESERVATION_SYSTEM.md`.
+- **Implemented the exact requested reservation success copy**, plus a
+  summary card of what was actually submitted — verified by filling out
+  and submitting the real form in a headless browser, not just reading
+  the component's source.
+- **Found and fixed two real WCAG 2.2 AA issues** during a full
+  320-1440px sweep: the footer's stacked nav/contact links rendered
+  under the 24px minimum target size with insufficient spacing between
+  them, and the shared `Button` component's focus-visible ring used a
+  Tailwind utility class (`outline-coffee`) that silently failed to
+  resolve to the intended color token, falling back to `currentColor` —
+  which happened to look correct everywhere it was checked, by
+  coincidence rather than by design. Both fixed; the second one made
+  explicit (`outline-current`) rather than left as an accidentally-working
+  class name.
+- **Caught a stale-server false positive during testing**: an automated
+  mobile sweep first reported every interactive element on the page as
+  under the 24px target-size threshold, which turned out to be two
+  zombie `next-server` processes serving stale build output with broken
+  chunk references, not a real regression. Confirmed by killing every
+  stale process, rebuilding clean, and re-testing — worth recording
+  because it's exactly the kind of finding that would have been wrongly
+  reported as a real bug without that verification step.
+
+## What this pass could not do, and why
+
+Stated plainly rather than silently skipped — full reasoning for each in
+`docs/DESIGN_DECISIONS.md`:
+
+- **No real photography.** Image CDNs remain network-blocked in this
+  sandboxed environment (re-confirmed, not assumed from a prior pass).
+- **No live Lighthouse/PageSpeed verification.** No public URL exists to
+  run one against.
+- **No staff-facing reservation confirmation tool.** The brief describes
+  a full workflow (staff reviews → staff confirms → confirmation
+  WhatsApp sent). Only the acknowledgement half of that exists as
+  software; the confirmation half is, today, a human replying manually.
+  Building a real confirm-and-notify system is a materially larger
+  project than this pass's scope, and a rushed version of it would be
+  worse than the honest manual process that exists now.
+- **WhatsApp sending itself is unverified** — it requires a Meta
+  Business Manager account, a verified phone number, and an
+  approved Message Template this sandbox has no way to provision.
+  The integration code is real and was exercised via its no-op fallback
+  path; the actual Cloud API call was not.

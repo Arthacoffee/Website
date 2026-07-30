@@ -23,30 +23,42 @@ see `docs/ARCHITECTURE.md` for why that's a zero-layout-change swap.
 
 ## Homepage (`/`, `src/app/page.tsx`)
 
+Two placements that existed in an earlier draft — a "Why We Exist" split
+and an "Experience" section image — no longer exist in the code. Both
+sections are now text-only (a full-bleed `PullQuote` and a dark
+statement-plus-daypart-grid section respectively), a deliberate choice
+from the content-hierarchy pass to let those two moments read as
+atmosphere rather than another image-plus-copy block — see
+`docs/CONTENT_REFINEMENT.md`. What's actually left with an `ImageFrame`:
+
 | #   | Where                                            | Shows today                | Should show                                                                                                                                                                                                                                                             | Priority |
 | --- | ------------------------------------------------ | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | 1   | `Hero` component background                      | Brand gradient (no image)  | The room itself — ideally a short, muted, autoplay video of the rooftop or brew bar at golden hour, via `Hero`'s existing `videoSrc`/`posterSrc` props. If video isn't feasible at launch, a single still of the rooftop terrace at dusk, guests present but not posed. | 🔴       |
-| 2   | "Why We Exist" split, `imageCategory="interior"` | Coffee-toned gradient      | A wide shot of the dining hall (3rd floor) — architecture and material, not staged food. Empty or near-empty is fine; this section is about _why the space exists_, not about food.                                                                                     | 🔴       |
-| 3   | "Coffee Stories" split, `imageCategory="coffee"` | Coffee-toned gradient      | The Victoria Arduino Eagle One itself, or the Head Barista mid-pour on it. This is the single most name-checked piece of equipment in the site's copy (Journal, About, Coffee page) — it deserves to actually be seen.                                                  | 🔴       |
-| 4   | "Kitchen" split, `imageCategory="kitchen"`       | Forest-toned gradient      | The induction line or a plated dish from one of the five kitchen programmes — ideally one dish, well-lit, not a spread (the copy is about range, the photo doesn't need to prove it by cramming five plates in frame).                                                  | 🔴       |
-| 5   | Visit teaser, `imageCategory="terrace"`          | Bronze-toned gradient      | The rooftop terrace, daytime or early evening, seating visible. This is the image most likely to make someone decide to come specifically for the rooftop.                                                                                                              | 🔴       |
-| 6–8 | Journal teaser cards (`JournalCard` × 3)         | Category-matched gradients | See **Journal**, below — same three images reused.                                                                                                                                                                                                                      | 🟡       |
+| 2   | "The Kitchen" split, `imageCategory="kitchen"` (now comes right after the Hero) | Forest-toned gradient      | The induction line or a plated dish from one of the kitchen's five cuisine programmes — ideally one dish, well-lit, not a spread (the copy is about range, the photo doesn't need to prove it by cramming five plates in frame).                                                  | 🔴       |
+| 3   | "At The Brew Bar" split, `imageCategory="coffee"`, `id="coffee-stories"` | Coffee-toned gradient      | The Victoria Arduino Eagle One itself, or the Head Barista mid-pour on it. This is the single most name-checked piece of equipment in the site's copy (Journal, About, Coffee page) — it deserves to actually be seen, even though the surrounding copy now mentions it only briefly (see `docs/CONTENT_REFINEMENT.md`).                                                  | 🔴       |
+| 4   | Visit teaser, `imageCategory="terrace"`          | Bronze-toned gradient      | The rooftop terrace, daytime or early evening, seating visible. This is the image most likely to make someone decide to come specifically for the rooftop.                                                                                                              | 🔴       |
+| 5–7 | Journal teaser cards (`JournalCard` × 3)         | Category-matched gradients | See **Journal**, below — same three images reused.                                                                                                                                                                                                                      | 🟡       |
 
 ## About (`/about`, `src/app/about/page.tsx`)
 
+The old "The Idea" split (an `ImageFrame` next to a market-positioning
+paragraph) was removed when "Our Story" was rewritten into a full prose
+narrative — that section is now text-only by design, the same reasoning
+as the homepage's "Why We Exist" pull-quote above. What's left with an
+`ImageFrame`:
+
 | #   | Where                                                        | Shows today            | Should show                                                                                                                                                                                                  | Priority |
 | --- | ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| 9   | "The Idea" split, `imageCategory="interior"`                 | Coffee-toned gradient  | Could reuse image #2, or a different interior angle — the lift, the stairwell connecting the three levels, something that visually supports "three connected levels" without repeating #2 exactly.           | 🟡       |
-| 10  | Team card — Smt. Sri Lakshmi Tatavarthi, `category="people"` | Coffee/forest gradient | A real portrait. Natural light, no forced smile, ideally in the space rather than a studio headshot — see Photography Direction below for what "no fake smiling people" means in practice.                   | 🟡       |
-| 11  | Team card — Sri Teja Behara, `category="people"`             | Coffee/forest gradient | Same brief as #10. Consider photographing him at the brew bar specifically, since the copy ties him directly to it.                                                                                          | 🟡       |
-| 12  | "At The Brew Bar" split, `imageCategory="coffee"`            | Coffee-toned gradient  | Could reuse #3, or a detail shot — hands on the portafilter, the grinder's dosing readout. A close, textural image works well here since the surrounding copy is already about the _equipment specifically_. | 🟡       |
+| 8   | Team card — Smt. Sri Lakshmi Tatavarthi, `category="people"` | Coffee/forest gradient | A real portrait. Natural light, no forced smile, ideally in the space rather than a studio headshot — see Photography Direction below for what "no fake smiling people" means in practice.                   | 🟡       |
+| 9   | Team card — Sri Teja Behara, `category="people"`             | Coffee/forest gradient | Same brief as #8. Consider photographing him at the brew bar specifically, since the copy ties him directly to it.                                                                                          | 🟡       |
+| 10  | "At The Brew Bar" split, `imageCategory="coffee"`            | Coffee-toned gradient  | Could reuse #3, or a detail shot — hands on the portafilter, the grinder's dosing readout. A close, textural image works well here since the surrounding copy is already about the _equipment specifically_. | 🟡       |
 
 ## Coffee (`/coffee`) & Kitchen (`/kitchen`)
 
 | #   | Where                                         | Shows today           | Should show                                                                                                                                                                                                                                                                         | Priority |
 | --- | --------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| 13  | Coffee page split, `imageCategory="coffee"`   | Coffee-toned gradient | Reuse #3 or #12 — these three coffee-category placements (homepage, About, Coffee page) don't all need distinct photos; one strong brew-bar image used consistently reinforces the machine as the coffee program's signature, rather than diluting it across three different shots. | 🟡       |
-| 14  | Kitchen page split, `imageCategory="kitchen"` | Forest-toned gradient | Reuse #4, or a second dish from a different one of the five programmes (if #4 is Italian, this could be Andhra, for range).                                                                                                                                                         | 🟡       |
+| 11  | Coffee page split, `imageCategory="coffee"`   | Coffee-toned gradient | Reuse #3 or #10 — these three coffee-category placements (homepage, About, Coffee page) don't all need distinct photos; one strong brew-bar image used consistently reinforces the machine as the coffee program's signature, rather than diluting it across three different shots. | 🟡       |
+| 12  | Kitchen page split, `imageCategory="kitchen"` | Forest-toned gradient | Reuse #2, or a second dish from a different one of the five cuisine programmes (if #2 is Italian, this could be Andhra, for range).                                                                                                                                                         | 🟡       |
 
 ## Journal (`/journal` index + `/journal/[slug]`)
 
@@ -56,8 +68,8 @@ image — six total placements, but only **three photos needed**, reused:
 
 | Post                                           | Category   | Should show                                                                                                                                                                                                   | Priority |
 | ---------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| "One Address, Four Parts Of The Day"           | `interior` | A single frame that reads as "a full day" — could be the dining hall shot in warm afternoon light (ties to #2/#9), or a still-life of a filter coffee next to a plate, implying the day's range in one image. | 🟡       |
-| "Why We Built Our Brew Bar Around One Machine" | `coffee`   | The Eagle One again (#3/#12) — consistency here is a feature: the same machine photographed the same way each time it's referenced reinforces it as a specific, real object, not a stock "espresso machine."  | 🟡       |
+| "One Address, Four Parts Of The Day"           | `interior` | A single frame that reads as "a full day" — a dining hall shot in warm afternoon light, or a still-life of a filter coffee next to a plate, implying the day's range in one image. This is now the site's only `interior`-category placement, since the homepage and About pages both moved to text-only sections — so it's worth getting right rather than treating as a leftover. | 🟡       |
+| "Why We Built Our Brew Bar Around One Machine" | `coffee`   | The Eagle One again (#3/#10/#11) — consistency here is a feature: the same machine photographed the same way each time it's referenced reinforces it as a specific, real object, not a stock "espresso machine."  | 🟡       |
 | "A Fully Vegetarian Kitchen, Done Seriously"   | `kitchen`  | A wider kitchen shot — the induction line active, a cook mid-plate — distinct from the homepage Kitchen split's single-dish focus, since this essay is about _range and process_, not one dish.               | 🟡       |
 
 ## Visit (`/visit`)

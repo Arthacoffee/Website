@@ -8,6 +8,18 @@
 > here — the repetition problem this pass fixed, the `PullQuote`
 > component it introduced, the scores below — are still accurate as a
 > record of that pass; only the specific section order has since moved.
+>
+> **Second update**, from a later final-production pass: the homepage
+> order moved again (now Hero → Why We Exist → Kitchen → Coffee →
+> Craftsmanship → Experience → Journal → Visit), "Our Story" on the About
+> page was rewritten from a market-positioning paragraph into an actual
+> narrative, and two real issues this review's self-critique didn't catch
+> were found and fixed — a footer target-size violation and a
+> non-functional focus-ring utility class (both below WCAG 2.2 AA
+> requirements; see `docs/AUDIT.md`'s "Part 3" section and
+> `docs/CONTENT_QA.md` for full detail). The photography gap named in
+> this review's score table is unchanged and remains the site's largest
+> open item.
 
 A design critique of this pass's own work, written the way an outside
 studio would write it about someone else's project — not a list of

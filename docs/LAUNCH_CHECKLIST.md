@@ -32,6 +32,28 @@ this is not a coding task.
       state across serverless instances. Fine for a low-traffic reservation
       form; replace with Upstash Redis (or similar) if the site ever runs
       on more than one instance behind a load balancer.
+- [ ] **WhatsApp acknowledgement needs a Meta Business setup, or it stays
+      silent.** `src/lib/whatsapp.ts` sends a guest acknowledgement (never
+      a confirmed booking) via the WhatsApp Business Cloud API. Without
+      `WHATSAPP_ACCESS_TOKEN` and `WHATSAPP_PHONE_NUMBER_ID` set, it logs
+      and skips — email remains the record either way, so this is not a
+      hard blocker, but the reservation success screen promises "updates
+      via email and WhatsApp," so treat it as one if that promise matters.
+      Requires: a Meta Business Manager account, a verified WhatsApp
+      Business phone number, and a Message Template approved for
+      business-initiated conversations (see `docs/RESERVATION_SYSTEM.md`
+      for the exact template text to submit for approval — Meta review
+      typically takes 24-48 hours, so start this well before launch).
+- [ ] **No staff interface exists to send the confirmation WhatsApp.** The
+      code only sends the *acknowledgement* message ("we've received your
+      request") — by design, since automatically confirming a booking
+      before a human checks availability would be dishonest. There is
+      currently no dashboard or tool for staff to mark a reservation
+      confirmed and trigger a second WhatsApp message; that half of the
+      workflow described in the brief is a manual phone/WhatsApp reply
+      from staff today, not a system. Building a real staff-facing
+      confirm-and-notify tool is out of scope for this pass — see
+      `docs/DESIGN_DECISIONS.md`.
 - [ ] **Real photography**, or at minimum a plan for it. The site is fully
       functional and intentionally honest with brand-toned gradient
       placeholders instead of stock photography, but a hospitality brand's
