@@ -15,7 +15,7 @@ export default function NotFound() {
       <PageIntro
         eyebrow="Lost?"
         heading="This page isn't on the menu."
-        lead="The page you're looking for doesn't exist, or has moved. Here's where you can go instead."
+        lead="This page doesn't exist, or has moved. Here's where to go instead."
       />
       <section className="bg-background py-16 md:py-20">
         <Container className="flex justify-center">

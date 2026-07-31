@@ -9,7 +9,7 @@ export const site = {
   fullName: "Artha Speciality Coffee",
   tagline: "Made With Intention.",
   description:
-    "A destination for specialty coffee, thoughtful vegetarian food, and unhurried moments — three levels and a rooftop terrace on Defence Colony Road, Sainikpuri, Secunderabad.",
+    "Specialty coffee, thoughtful vegetarian food, and a rooftop built for slowing down — Sainikpuri, Secunderabad.",
   url: "https://arthacoffee.com",
   locale: "en_IN",
   address: {

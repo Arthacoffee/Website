@@ -7,7 +7,7 @@ export const values: Value[] = [
   {
     title: "Fully electric kitchen",
     description:
-      "No LPG connection — induction cooking throughout, more energy-efficient than the gas kitchen this address ran under its previous operator.",
+      "No LPG connection — induction cooking throughout, more energy-efficient than the gas kitchen this address ran before.",
   },
   {
     title: "Vegetarian, seriously",
@@ -17,12 +17,12 @@ export const values: Value[] = [
   {
     title: "Waste segregated at source",
     description:
-      "Wet and dry waste sorted across every floor, with used coffee grounds set aside for composting partnerships.",
+      "Wet and dry waste sorted at every station, with used coffee grounds set aside for composting partnerships.",
   },
   {
     title: "Water conscious",
     description:
-      "The RO system feeding our brew bar reuses reject water for cleaning, alongside low-flow fixtures across the kitchen.",
+      "The RO system feeding our brew bar reuses reject water for cleaning, alongside low-flow fixtures throughout.",
   },
   {
     title: "Sourced close to home",
@@ -32,7 +32,7 @@ export const values: Value[] = [
   {
     title: "Packaging that breaks down",
     description:
-      "Any takeaway coffee service uses compostable or recyclable cups, even though dining here is table-service first.",
+      "Any takeaway coffee service uses compostable or recyclable cups, even though we're table-service first.",
   },
 ];
 

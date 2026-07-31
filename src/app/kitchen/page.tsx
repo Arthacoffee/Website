@@ -28,7 +28,7 @@ export default function KitchenPage() {
       <PageIntro
         eyebrow="Kitchen"
         heading="A full vegetarian table, taken seriously."
-        lead="Andhra traditional, Italian pasta, Indo-Chinese, tandoor and bistro — five food programmes and an all-day brunch, from one fully vegetarian kitchen."
+        lead="Andhra traditional, Italian pasta, Indo-Chinese, tandoor and bistro — five food programmes, plus an all-day brunch, from one vegetarian kitchen."
       />
 
       <MenuLanes lanes={kitchenLanes} note={vegetarianNote} />
@@ -37,8 +37,8 @@ export default function KitchenPage() {
         eyebrow="Range Without Compromise"
         heading="Five cuisines. One vegetarian pantry, brunch to bistro."
         paragraphs={[
-          "Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor — all from one vegetarian pantry. It takes more care than a smaller menu, and it's worth it.",
-          "The kitchen runs on induction, not gas, for tighter heat control and a cleaner, cooler room.",
+          "Andhra gravies, Italian pasta, Indo-Chinese wok dishes, tandoor — all from one vegetarian pantry. More care than a smaller menu. Worth it.",
+          "The kitchen runs on induction, not gas — tighter heat control, a cleaner, cooler room.",
         ]}
         cta={{
           label: "Read the Full Story",

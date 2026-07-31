@@ -16,8 +16,8 @@ export function VisitTeaser() {
             Defence Colony Road, Sainikpuri
           </h2>
           <p className="text-body-lg text-foreground/70 mt-6">
-            An easy lift ride up to a rooftop built for the evening. Walk in, or
-            reserve ahead for groups and the terrace.
+            An easy lift up to a rooftop built for the evening. Walk in, or
+            reserve ahead for groups.
           </p>
 
           <ul className="mt-8 flex flex-col gap-4">

@@ -32,8 +32,8 @@ export default function HomePage() {
         eyebrow="The Kitchen"
         heading="Andhra, Italian, Indo-Chinese, tandoor — entirely vegetarian."
         paragraphs={[
-          "Andhra classics, Italian pasta, Indo-Chinese, tandoor and bistro — five menus, entirely vegetarian, including egg dishes prepared with dedicated equipment and clear labelling.",
-          "One kitchen, built to do all of it properly — because a vegetarian table deserves the same range as any other.",
+          "Andhra classics, Italian pasta, Indo-Chinese, tandoor and bistro — five menus, entirely vegetarian, eggs included, prepared with care.",
+          "One kitchen, built to do it all properly — a vegetarian table deserves the same range as any other.",
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}
         imageCategory="kitchen"

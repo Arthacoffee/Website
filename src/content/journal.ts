@@ -26,7 +26,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Walk down Defence Colony Road in Sainikpuri and you'll find a genuinely good specialty coffee and dining cluster — a European bakery-café next door, a rooftop coffee bar a hundred metres on, a beloved evening-only vegetarian restaurant a little further, a French patisserie, a fully vegan café. It's a strong street. But look closely and every single one of them owns exactly one moment in the day.",
+        text: "Walk down Defence Colony Road in Sainikpuri and you'll find a genuinely good specialty coffee and dining cluster — a European bakery-café next door, a rooftop coffee bar a hundred metres on, a beloved evening-only vegetarian restaurant a little further, a French patisserie, a fully vegan café. But each one owns exactly one moment in the day.",
       },
       {
         type: "p",
@@ -35,15 +35,15 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "So we built the whole day" },
       {
         type: "p",
-        text: "Artha is organised around four distinct windows, each with its own character, menu emphasis, and pace — brunch and the brew bar in the morning, an Andhra traditional lunch, a quiet afternoon pour, and tandoor, bistro and rooftop through the evening.",
+        text: "Artha is organised around four windows, each with its own character and pace — brunch and the brew bar in the morning, an Andhra lunch, a quiet afternoon pour, tandoor and rooftop through the evening.",
       },
       {
         type: "quote",
-        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here — and we built the menu, the floors, and the rooftop around that.",
+        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here — and we built the menu and the rooftop around that.",
       },
       {
         type: "p",
-        text: "That's the whole idea behind the name, and behind three connected floors instead of one counter. If you haven't been in yet, come find the part of the day that's yours.",
+        text: "That's the whole idea behind the name. If you haven't been in yet, come find the part of the day that's yours.",
       },
     ],
   },
@@ -59,30 +59,30 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The single largest equipment decision at Artha wasn't the tandoor, the induction line, or the cold chain — it was a two-group espresso machine: the Victoria Arduino Eagle One. It sits at the centre of the brew bar, and choosing it was deliberate rather than aspirational.",
+        text: "The single largest equipment decision at Artha wasn't the tandoor or the cold chain — it was a two-group espresso machine, the Victoria Arduino Eagle One, at the centre of the brew bar. Choosing it was deliberate, not aspirational.",
       },
       { type: "h2", text: "Consistency, first and always" },
       {
         type: "p",
-        text: "The Eagle One's multiboiler architecture gives independent temperature control to each group — which means shot-to-shot consistency at a level single-boiler machines simply can't match. That matters because the brew bar is priced at a genuine premium. Tasting flights, estate coffees, and house pours only earn repeat visits if the cup tastes exactly the same on your fifth visit as it did on your first.",
+        text: "The Eagle One's multiboiler architecture gives independent temperature control to each group — shot-to-shot consistency single-boiler machines can't match. That matters because the brew bar is priced at a genuine premium: tasting flights and estate coffees only earn repeat visits if the cup tastes the same on your fifth visit as your first.",
       },
       { type: "h2", text: "Built for the evening, not just the morning" },
       {
         type: "p",
-        text: "Most cafés size their espresso setup for the morning rush. We sized ours for the evening — the window when coffee orders run alongside the bistro and tandoor menus, and a single-group machine would have bottlenecked exactly the part of the day that matters most.",
+        text: "Most cafés size their espresso setup for the morning rush. We sized ours for the evening, when coffee orders run alongside the bistro and tandoor menus — exactly where a single-group machine would have bottlenecked.",
       },
       { type: "h2", text: "A machine our Head Barista owns" },
       {
         type: "p",
-        text: "Specialty coffee talent is scarce, and it moves fast. Rather than treat the brew bar as a fixed station anyone can staff, we built the Head Barista role around full ownership of this machine and the entire brew bar programme — from calibration to service. Giving someone real ownership of serious equipment is, in our experience, a far better retention strategy than a pay bump alone.",
+        text: "Specialty coffee talent is scarce, and it moves fast. Rather than treat the brew bar as a station anyone can staff, we built the Head Barista role around full ownership of this machine, calibration to service. Real ownership of serious equipment is, in our experience, a far better retention strategy than a pay bump alone.",
       },
       {
         type: "quote",
-        text: "Our Operational Director is an active specialty coffee practitioner himself — V60, Clever Dripper, cold brew — and designed the brew bar's standard operating procedure by hand, not from a manual.",
+        text: "Our Operational Director is an active specialty coffee practitioner himself — V60, Clever Dripper, cold brew — and designed the brew bar's procedure by hand, not from a manual.",
       },
       {
         type: "p",
-        text: "None of this is about having the fanciest machine on the street. It's about the cup being right, every single time, whether you're here for the first pour of the morning or the last flight of the night.",
+        text: "None of this is about having the fanciest machine on the street. It's about the cup being right, every time — first pour of the morning, or last flight of the night.",
       },
     ],
   },
@@ -98,22 +98,22 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: '"Vegetarian café" often means a shorter menu with the meat quietly removed. That\'s not what we set out to build. Artha runs five full food programmes — Andhra traditional, Italian pasta, Indo-Chinese, evening tandoor, and a bistro small-plates menu — entirely vegetarian, from one kitchen.',
+        text: '"Vegetarian café" often means a shorter menu with the meat quietly removed. Not here. Artha runs five full food programmes — Andhra traditional, Italian pasta, Indo-Chinese, tandoor, bistro — entirely vegetarian, from one kitchen.',
       },
       { type: "h2", text: "Egg dishes, handled properly" },
       {
         type: "p",
-        text: "Our kitchen is vegetarian including egg-based preparations, which we treat as their own category rather than an afterthought: egg dishes are prepared on dedicated equipment, with clear FSSAI green-dot and brown-dot labelling so there's never any ambiguity about what's on your plate.",
+        text: "Our kitchen is vegetarian including egg-based preparations, treated as their own category, not an afterthought — prepared on dedicated equipment, with clear FSSAI green-dot and brown-dot labelling, so there's never any ambiguity about what's on your plate.",
       },
       { type: "h2", text: "Range without compromise" },
       {
         type: "p",
-        text: "Running Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor off a single vegetarian pantry sounds harder than running a smaller, singular menu — and it is. It's also exactly the gap we saw on this street: plenty of specialty coffee, plenty of single-cuisine dining, and nowhere that took a full vegetarian table seriously enough to do all of it well.",
+        text: "Running Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor off a single vegetarian pantry is harder than a smaller, singular menu. It's also worth it — nowhere on this street took a full vegetarian table seriously enough to do all of it well.",
       },
       { type: "h2", text: "An electric kitchen, built for control" },
       {
         type: "p",
-        text: "The kitchen runs on induction, not gas — which gives our cooks tighter, more even heat control across every station, and lets a fully electric cold chain keep produce, dairy, and prepared gravies at the right temperature across three floors.",
+        text: "The kitchen runs on induction, not gas — tighter, more even heat control at every station, and a fully electric cold chain keeping produce, dairy, and prepared gravies at the right temperature.",
       },
       {
         type: "quote",
