@@ -19,10 +19,17 @@ export const reservationSchema = z.object({
   /**
    * Honeypot field. Real guests never see or fill this (visually hidden,
    * removed from tab order in ReservationForm) — a non-empty value here
-   * means a bot filled every field it could find. Excluded from
-   * ReservationFieldErrors so a bot never gets told it was caught.
+   * means a bot filled every field it could find. Deliberately *not*
+   * constrained to empty here (no `.max(0)`) — that would make this whole
+   * schema reject a filled honeypot as a generic validation failure
+   * before `isSpamSubmission` ever runs, which both defeats the point of
+   * a honeypot (the bot gets an honest "invalid" instead of a convincing
+   * fake success) and risks a real user's autofilled browser tripping a
+   * scary "check the highlighted fields" error that highlights nothing.
+   * `isSpamSubmission` below is the single, sole place this field is
+   * ever acted on.
    */
-  company: z.string().max(0).optional().or(z.literal("")),
+  company: z.string().optional().or(z.literal("")),
 });
 
 export type ReservationInput = z.infer<typeof reservationSchema>;

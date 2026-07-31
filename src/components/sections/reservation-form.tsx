@@ -76,7 +76,17 @@ export function ReservationForm() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const parsed = parseReservation(values);
+    // The honeypot field is unreachable by tab and hidden from screen
+    // readers, so no sighted, keyboard, or assistive-tech user can ever
+    // legitimately type into it — a non-empty value here is browser
+    // autofill, not a real answer, and must never block a genuine
+    // submission with a confusing "check the highlighted fields" error
+    // that highlights nothing a person can see. Real bots that skip this
+    // client entirely and POST straight to the API are still caught by
+    // the server's own honeypot check, independent of this.
+    const payload = { ...values, company: "" };
+
+    const parsed = parseReservation(payload);
     if (!parsed.success) {
       const fieldErrors: ReservationFieldErrors = {};
       for (const issue of parsed.error.issues) {
@@ -198,12 +208,21 @@ export function ReservationForm() {
       noValidate
       className="flex flex-col gap-6"
     >
-      {/* Honeypot: invisible to sighted and screen-reader users, never reached by tab. Bots that fill every field they can find will fill this too. */}
+      {/*
+        Honeypot: invisible to sighted and screen-reader users, never
+        reached by tab. Bots that fill every field they can find will fill
+        this too. Named and labelled to avoid matching any browser
+        autofill category ("company"/"organization" is a common one that
+        address-autofill heuristics target even off-screen) — real users'
+        browsers should never populate this, but handleSubmit clears it
+        before validating regardless, since a false positive here should
+        never be able to block a genuine reservation.
+      */}
       <div className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden">
-        <label htmlFor="company">Company</label>
+        <label htmlFor="artha-hp">Leave this field blank</label>
         <input
-          id="company"
-          name="company"
+          id="artha-hp"
+          name="artha_hp"
           type="text"
           tabIndex={-1}
           autoComplete="off"
