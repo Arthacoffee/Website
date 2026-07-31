@@ -10,7 +10,7 @@ export const site = {
   tagline: "Made With Intention.",
   description:
     "Specialty coffee, thoughtful vegetarian food, and a rooftop built for slowing down — Sainikpuri, Secunderabad.",
-  url: "https://arthacoffee.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://arthacoffee.com",
   locale: "en_IN",
   address: {
     streetAddress: "Plot No. 820, Defence Colony Road, Sainikpuri",

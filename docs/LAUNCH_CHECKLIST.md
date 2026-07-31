@@ -23,10 +23,20 @@ this is not a coding task.
       Received" message a guest sees would not be true yet. Before launch:
       create a Resend account, verify the sending domain (SPF/DKIM records
       on `arthacoffee.com` — unverified domains get flagged as spam or
-      rejected outright), set `RESEND_API_KEY` and
-      `RESERVATIONS_FROM_EMAIL` in the hosting provider's environment
-      variables (see `.env.example`), and send a real test reservation
-      through the deployed form to confirm both emails arrive.
+      rejected outright), set `RESEND_API_KEY`, `RESEND_FROM`, and
+      `RESERVATION_EMAIL` in the hosting provider's environment variables
+      (see `.env.example`), and send a real test reservation through the
+      deployed form to confirm both emails arrive.
+- [ ] **Reservation persistence isn't durable on serverless hosting.**
+      `src/lib/reservation-store.ts` writes every reservation to a local
+      file before any notification is attempted — genuinely durable on a
+      single-instance Node deployment, but Vercel functions (and most
+      serverless hosts) have ephemeral, non-shared filesystems, so a
+      write there can vanish on the next cold start. If deploying to
+      Vercel or similar, replace `saveReservation()`'s body with a call
+      to a real managed store (Vercel Postgres, Supabase, even an append
+      to a Google Sheet) before launch — see `docs/RESERVATION_SYSTEM.md`
+      for exactly what needs to change (just that one function).
 - [ ] **Rate limiting is single-instance.** `src/lib/rate-limit.ts` is an
       in-memory per-IP limiter — it resets on cold start and doesn't share
       state across serverless instances. Fine for a low-traffic reservation
@@ -64,9 +74,11 @@ this is not a coding task.
 
 ## Domain & hosting
 
-- [ ] Point `arthacoffee.com` (currently hardcoded in `content/site.ts`'s
-      `url` field — update this first if the real domain differs) at the
-      hosting provider.
+- [ ] Set `NEXT_PUBLIC_SITE_URL` if the real domain differs from
+      `arthacoffee.com` — `content/site.ts`'s `url` field reads from this
+      env var (falling back to `https://arthacoffee.com`), and feeds
+      `metadataBase`, Open Graph, JSON-LD, and the sitemap from that one
+      place.
 - [ ] Deploy — this is a standard Next.js 15 App Router app; any host with
       first-class Next support (Vercel, or a Node server running
       `next start`) works with no code changes. If deploying somewhere
@@ -121,11 +133,17 @@ this is not a coding task.
 
 ## Operational
 
-- [ ] Decide on analytics (none is installed currently — that's a
-      deliberate absence, not an oversight, since adding tracking is a
-      decision with privacy implications that should be made explicitly,
-      not defaulted into). If added, it needs to be disclosed in whatever
-      privacy notice gets written (see Blockers above).
+- [ ] **Analytics are wired up but opt-in — decide whether to turn them
+      on.** GA4, Microsoft Clarity, and Google Search Console
+      verification (`src/components/layout/analytics.tsx`) all load
+      nothing until their env var is set (`NEXT_PUBLIC_GA_MEASUREMENT_ID`,
+      `NEXT_PUBLIC_CLARITY_ID`, `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` —
+      see `docs/API_INTEGRATIONS.md`); Vercel Web Analytics and Speed
+      Insights need no ID and activate automatically on Vercel. Whether
+      to actually set the GA4/Clarity IDs is still a decision with
+      privacy implications, same reasoning as before — just no longer a
+      coding gap. If turned on, disclose it in whatever privacy notice
+      gets written (see Blockers above).
 - [ ] Decide on error monitoring (Sentry or equivalent) for the
       `/api/reservations` route specifically — it's the only route that
       can fail in a way a guest actually notices in real time.

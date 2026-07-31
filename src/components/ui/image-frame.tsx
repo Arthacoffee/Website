@@ -5,14 +5,31 @@ import { cn } from "@/lib/utils";
 export type ImageCategory =
   "interior" | "coffee" | "kitchen" | "terrace" | "people" | "lifestyle";
 
-const categoryGradients: Record<ImageCategory, string> = {
-  interior: "linear-gradient(155deg, #3a2c25 0%, #1c140f 100%)",
-  coffee: "linear-gradient(155deg, #4a3527 0%, #241a14 100%)",
-  kitchen: "linear-gradient(155deg, #56624f 0%, #2c332a 100%)",
-  terrace: "linear-gradient(155deg, #b88a44 0%, #6e4f22 100%)",
-  people: "linear-gradient(155deg, #3a2c25 0%, #56624f 100%)",
-  lifestyle: "linear-gradient(155deg, #ece7e2 0%, #b88a44 120%)",
+/** Single source of truth for each category's two-stop brand gradient — both
+ *  the placeholder frame's CSS gradient and (once a real `src` exists) the
+ *  next/image blur-up placeholder are derived from the same pair, so the
+ *  blur-in color always matches the placeholder it's replacing. */
+const categoryColors: Record<ImageCategory, [from: string, to: string]> = {
+  interior: ["#3a2c25", "#1c140f"],
+  coffee: ["#4a3527", "#241a14"],
+  kitchen: ["#56624f", "#2c332a"],
+  terrace: ["#b88a44", "#6e4f22"],
+  people: ["#3a2c25", "#56624f"],
+  lifestyle: ["#ece7e2", "#b88a44"],
 };
+
+function categoryGradient(category: ImageCategory): string {
+  const [from, to] = categoryColors[category];
+  return `linear-gradient(155deg, ${from} 0%, ${to} 100%)`;
+}
+
+/** A tiny inline SVG gradient, base64-encoded, used as next/image's blur-up
+ *  placeholder — on-brand instead of the library default generic grey. */
+function categoryBlurDataURL(category: ImageCategory): string {
+  const [from, to] = categoryColors[category];
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="8" height="6"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${from}"/><stop offset="100%" stop-color="${to}"/></linearGradient></defs><rect width="8" height="6" fill="url(#g)"/></svg>`;
+  return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
+}
 
 const HOVER_SCALE =
   "transition-transform duration-700 ease-[var(--ease-editorial)] group-hover:scale-[1.045]";
@@ -61,6 +78,8 @@ export function ImageFrame({
           fill
           priority={priority}
           sizes={sizes}
+          placeholder="blur"
+          blurDataURL={categoryBlurDataURL(category)}
           className={cn("object-cover", interactive && HOVER_SCALE)}
         />
       </div>
@@ -79,7 +98,7 @@ export function ImageFrame({
           "absolute inset-0 flex items-center justify-center",
           interactive && HOVER_SCALE,
         )}
-        style={{ backgroundImage: categoryGradients[category] }}
+        style={{ backgroundImage: categoryGradient(category) }}
       >
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"

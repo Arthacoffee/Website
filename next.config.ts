@@ -14,6 +14,19 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    // AVIF first, WebP fallback — next/image picks whichever the
+    // requesting browser supports, smallest first.
+    formats: ["image/avif", "image/webp"],
+    // Empty until real photography exists (see docs/IMAGE_GUIDE.md). Add
+    // Cloudinary's host here if/when src/lib/cloudinary.ts is actually
+    // wired into ImageFrame's `src` prop — next/image refuses to
+    // optimize a remote host that isn't explicitly allow-listed.
+    remotePatterns: process.env.CLOUDINARY_CLOUD_NAME
+      ? [{ protocol: "https", hostname: "res.cloudinary.com" }]
+      : [],
+  },
+
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

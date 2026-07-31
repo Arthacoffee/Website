@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { PageIntro } from "@/components/sections/page-intro";
 import { SplitFeature } from "@/components/sections/split-feature";
+import { PullQuote } from "@/components/sections/pull-quote";
 import { TeamCard } from "@/components/sections/team-card";
 import { ValuesGrid } from "@/components/sections/values-grid";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Container } from "@/components/ui/container";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
-import { whyWeExist, ourStory, brewBarStory } from "@/content/story";
+import { ourStory, philosophy, brewBarStory } from "@/content/story";
 import { team } from "@/content/team";
 import { breadcrumbJsonLd } from "@/lib/structured-data";
 
@@ -30,20 +31,12 @@ export default function AboutPage() {
         }}
       />
 
-      <PageIntro
-        eyebrow={whyWeExist.eyebrow}
-        heading={whyWeExist.heading}
-        lead={whyWeExist.body}
-      />
+      <PageIntro eyebrow={ourStory.eyebrow} heading={ourStory.heading} />
 
       <section className="bg-background pt-4 pb-24 md:pt-8 md:pb-32">
         <Container>
           <Reveal className="mx-auto max-w-2xl">
-            <Eyebrow>{ourStory.eyebrow}</Eyebrow>
-            <h2 className="text-display-h2 font-display text-coffee mt-4">
-              {ourStory.heading}
-            </h2>
-            <div className="mt-8 flex flex-col gap-6">
+            <div className="flex flex-col gap-6">
               {ourStory.paragraphs.map((p) => (
                 <p key={p} className="text-body-lg text-foreground/75 leading-relaxed">
                   {p}
@@ -81,6 +74,8 @@ export default function AboutPage() {
       />
 
       <ValuesGrid />
+
+      <PullQuote>{philosophy.body}</PullQuote>
 
       <CtaBand
         eyebrow="Come See It For Yourself"

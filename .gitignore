@@ -37,6 +37,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local reservation-store fallback (src/lib/reservation-store.ts) — real
+# guest data, never commit; also not durable on serverless, see that
+# file's doc comment before relying on it in production
+/.data
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

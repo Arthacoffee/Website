@@ -4,6 +4,18 @@ export const whyWeExist = {
   body: "In Sanskrit, artha means purpose — one of the four aims of a life well lived. We built this place to earn that name.",
 };
 
+/**
+ * The closing statement on the About page, deliberately placed after
+ * "Our Story" rather than before it — the philosophy should land as the
+ * thesis a reader arrives at, not the frame they're handed first. Not
+ * reused on the homepage: the Hero already shows the tagline moments
+ * earlier there, so repeating it verbatim right below would read as a
+ * duplicate rather than a reveal.
+ */
+export const philosophy = {
+  body: "In Sanskrit, artha means purpose — one of the four aims of a life well lived. We built this place to earn that name. Made With Intention.",
+};
+
 export const ourStory = {
   eyebrow: "Our Story",
   heading: "Why Artha exists",

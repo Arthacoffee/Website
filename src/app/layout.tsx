@@ -5,6 +5,7 @@ import { HeaderVariantProvider } from "@/components/layout/header-variant-contex
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SkipLink } from "@/components/ui/skip-link";
+import { SiteAnalytics } from "@/components/layout/analytics";
 import "./globals.css";
 
 const fullTitle = `${site.fullName} — ${site.tagline}`;
@@ -35,6 +36,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
 };
 
 export const viewport: Viewport = {
@@ -54,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
         </HeaderVariantProvider>
+        <SiteAnalytics />
       </body>
     </html>
   );

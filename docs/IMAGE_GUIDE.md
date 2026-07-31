@@ -19,6 +19,32 @@ see `docs/ARCHITECTURE.md` for why that's a zero-layout-change swap.
 🟡 Medium — interior pages, still load-bearing for the page's argument.
 🟢 Low — supporting/decorative; fine to leave placeholder longest.
 
+## The pipeline this now plugs into
+
+Two things were prepared this pass so the swap described above is a
+pure content change with no engineering left to do when photography
+exists:
+
+- **`ImageFrame` now generates a real, on-brand blur-up placeholder.**
+  Once a `src` is passed, `next/image` renders with
+  `placeholder="blur"` using a tiny inline-SVG gradient matching that
+  placement's own category colors (the same two-stop gradient the
+  abstract placeholder already used) — so the loading state is a blur of
+  the right color, not a generic grey box, and there's no extra asset or
+  network request for it.
+- **Two ways to host the real files, both already wired up**: locally
+  under `public/images/{hero,coffee,kitchen,journal,interior,textures}/`
+  (see that folder's own `README.md`), optimized automatically by
+  Next's built-in Image Optimization API — already configured for
+  AVIF/WebP in `next.config.ts` — or via Cloudinary, using
+  `cloudinaryUrl()` from `src/lib/cloudinary.ts` once
+  `CLOUDINARY_CLOUD_NAME` is set (full setup in
+  `docs/API_INTEGRATIONS.md`). Neither is active today — there are no
+  images in `public/images/` yet, and Cloudinary needs an account this
+  sandbox can't create — but both paths go through the same
+  `ImageFrame` `src` prop either way, so choosing one later is a content
+  decision, not an engineering one.
+
 ---
 
 ## Homepage (`/`, `src/app/page.tsx`)

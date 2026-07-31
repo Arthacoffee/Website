@@ -4,11 +4,13 @@ import { parseReservation, isSpamSubmission } from "@/lib/reservation";
 import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 import { restaurantNotificationEmail, guestConfirmationEmail } from "@/lib/email-templates";
 import { sendReservationAcknowledgement } from "@/lib/whatsapp";
+import { saveReservation } from "@/lib/reservation-store";
 import { site } from "@/content/site";
 
 const resendApiKey = process.env.RESEND_API_KEY;
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
-const fromEmail = process.env.RESERVATIONS_FROM_EMAIL ?? "reservations@arthacoffee.com";
+const fromEmail = process.env.RESEND_FROM ?? "reservations@arthacoffee.com";
+const reservationEmail = process.env.RESERVATION_EMAIL ?? site.email;
 
 export async function POST(request: Request) {
   const ip = getClientIp(request);
@@ -46,16 +48,22 @@ export async function POST(request: Request) {
   }
 
   // Bots that fill the honeypot get a convincing success response, but no
-  // email is ever sent and the request is dropped here.
+  // email is ever sent and the request is dropped here — never stored,
+  // since there's nothing genuine to preserve.
   if (isSpamSubmission(result.data)) {
     return NextResponse.json({ ok: true, message: "Reservation request received." });
   }
+
+  // Store before notifying anyone: a guest's request is safe on disk even
+  // if Resend or the WhatsApp API are having a bad day. This never blocks
+  // the request — see src/lib/reservation-store.ts for why.
+  await saveReservation(result.data);
 
   if (resend) {
     const notification = restaurantNotificationEmail(result.data);
     const { error } = await resend.emails.send({
       from: `Artha Reservations <${fromEmail}>`,
-      to: site.email,
+      to: reservationEmail,
       replyTo: result.data.email,
       subject: notification.subject,
       html: notification.html,

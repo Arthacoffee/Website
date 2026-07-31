@@ -93,6 +93,37 @@ it: "...Indo-Chinese, tandoor and bistro — five menus...".
   section is a separate, full narrative (see
   `docs/DESIGN_DECISIONS.md` for the rewrite).
 
+## Re-verified in a later pass
+
+Two rounds of copy tightening happened after the findings above (a
+~20% copy-cut pass, then this final production pass) — re-ran the same
+checks afterward rather than assuming nothing drifted:
+
+- **Programme/cuisine counts**: still consistent everywhere — "five"
+  appears with the same five cuisines named (Andhra, Italian,
+  Indo-Chinese, Tandoor, Bistro) on the homepage, Kitchen page, and in
+  the Journal essay, all correctly separate from Brunch. No new drift.
+- **Floor references**: the earlier finding above said floor language
+  was deliberately *kept* in the Journal essays, `content/team.ts`'s
+  operational-background bio, and `content/values.ts`'s waste-sorting
+  item, as opt-in deep-dive content. That's no longer accurate — the
+  ~20% copy-tightening pass cut those specific phrases too ("three
+  connected floors instead of one counter," "across three floors,"
+  "floor relay system," "across every floor") while tightening sentences
+  for length, arriving at zero floor references anywhere in the codebase
+  — a stronger, simpler outcome than originally planned, confirmed by a
+  fresh `grep -rn "floor"` across `src/` returning no matches.
+- **Tagline usage**: "Made With Intention" now appears in a second,
+  deliberate place beyond the original list (hero eyebrow, footer
+  signature line, page-title suffix, OG image) — the About page's
+  closing philosophy statement, added this pass so the tagline lands
+  as the thesis of "Our Story" rather than its opening frame (see
+  `docs/FINAL_LAUNCH_REPORT.md`). Not a duplication concern: it's the
+  only other page that shows it, and About's Hero-equivalent (PageIntro)
+  never shows the tagline nearby the way the homepage's Hero does, so
+  there's no repeat-within-one-scroll the way there would be if it were
+  added to, say, the homepage's own "Why We Exist" moment.
+
 ## What this audit can't guarantee
 
 This is a manual, point-in-time audit, not an automated invariant. The
