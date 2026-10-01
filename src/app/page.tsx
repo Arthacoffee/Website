@@ -37,6 +37,8 @@ export default function HomePage() {
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}
         imageCategory="kitchen"
+        imageSrc="/images/kitchen/banana-leaf-thali.jpg"
+        imageAlt="A traditional Andhra meal served on a banana leaf"
         tone="stone"
       />
 

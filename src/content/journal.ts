@@ -106,6 +106,14 @@ export const journalPosts: JournalPost[] = [
     metaDescription:
       "How Artha runs Andhra, Italian, brunch and bistro programmes from one fully vegetarian kitchen.",
     publishedAt: "2026-07-01",
+    cardImage: {
+      src: "/images/kitchen/andhra-thali.jpg",
+      alt: "An Andhra thali at Artha",
+    },
+    heroImage: {
+      src: "/images/kitchen/pasta-overhead.jpg",
+      alt: "A plated pasta dish from Artha's Italian programme",
+    },
     body: [
       {
         type: "p",

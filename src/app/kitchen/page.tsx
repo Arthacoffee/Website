@@ -45,6 +45,8 @@ export default function KitchenPage() {
           href: "/journal/a-fully-vegetarian-kitchen-done-seriously",
         }}
         imageCategory="kitchen"
+        imageSrc="/images/kitchen/pasta-plating.jpg"
+        imageAlt="Finishing a pasta dish at the Artha kitchen"
         reverse
         tone="stone"
       />
