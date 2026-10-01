@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { footerNav, site } from "@/content/site";
 import { Container } from "@/components/ui/container";
@@ -11,9 +12,13 @@ export function Footer() {
       <Container className="py-20">
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
-            <span className="font-display text-background text-2xl tracking-[0.14em] uppercase">
-              {site.name}
-            </span>
+            <Image
+              src="/images/logo/lockup-light.png"
+              alt={site.fullName}
+              width={640}
+              height={592}
+              className="h-auto w-40"
+            />
             <p className="text-body text-background/70 mt-5 max-w-sm">
               {site.description}
             </p>

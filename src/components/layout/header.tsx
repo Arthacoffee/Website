@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -38,10 +39,22 @@ export function Header() {
           <Link
             href="/"
             className={cn(
-              "font-display text-xl font-medium tracking-[0.14em] uppercase",
+              "flex items-center gap-2.5 font-display text-xl font-medium tracking-[0.14em] uppercase",
               textTone,
             )}
           >
+            <Image
+              src={
+                isTransparent
+                  ? "/images/logo/mark-light.png"
+                  : "/images/logo/mark-dark.png"
+              }
+              alt=""
+              width={32}
+              height={32}
+              className="h-7 w-7 md:h-8 md:w-8"
+              priority
+            />
             {site.name}
           </Link>
 
