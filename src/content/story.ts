@@ -21,7 +21,7 @@ export const ourStory = {
   heading: "Why Artha exists",
   paragraphs: [
     "Coffee, made slowly and well, is one of the last good excuses to sit still. That's where this began — the belief that a proper cup, given time, is worth building a whole day around.",
-    "The food follows the same instinct: a fully vegetarian kitchen, taken as seriously as any other. Andhra classics beside Italian pasta, tandoor beside an afternoon pour — a vegetarian table that never feels shorter.",
+    "The food follows the same instinct: a fully vegetarian kitchen, taken as seriously as any other. Andhra classics beside Italian pasta, brunch beside an afternoon pour — a vegetarian table that never feels shorter.",
     "None of it means much without the room around it. Hospitality, to us, is attention more than service — a chair pulled out at the right moment, a name remembered, the sense that you're welcome to stay as long as you like.",
     "That's why the rooftop matters more than any single dish. Open air changes a conversation — people talk longer, sit closer, order one more coffee than they meant to. The best part of being here is simply who you're there with.",
     "We hope it becomes less like a café you visit and more like an address you belong to — parents on a Sunday, an old friend after work, someone new on a first date on the terrace. The community we're quietly building, one table at a time.",

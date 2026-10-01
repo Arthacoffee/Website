@@ -65,6 +65,5 @@ export const serviceWindows = [
   { label: "Andhra Traditional Lunch", hours: "12:00pm – 3:00pm" },
   { label: "Afternoon Pour", hours: "3:00pm – 6:30pm" },
   { label: "Bistro", hours: "6:30pm – 11:00pm" },
-  { label: "Tandoor", hours: "7:00pm – 11:00pm" },
   { label: "Coffee & Desserts", hours: "10:00am – 11:00pm" },
 ] as const;

@@ -57,8 +57,8 @@ export const dayParts = [
   },
   {
     time: "6:30pm – 11pm",
-    title: "Tandoor, Bistro & Rooftop",
+    title: "Bistro & Rooftop",
     description:
-      "Italian pasta, Indo-Chinese, evening tandoor and small plates — best had on the terrace.",
+      "Italian pasta, bistro mains and small plates — best had on the terrace.",
   },
 ] as const;

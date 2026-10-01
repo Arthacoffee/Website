@@ -38,7 +38,7 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "So we built the whole day" },
       {
         type: "p",
-        text: "Artha is organised around four windows, each with its own character and pace — brunch and the brew bar in the morning, an Andhra lunch, a quiet afternoon pour, tandoor and rooftop through the evening.",
+        text: "Artha is organised around four windows, each with its own character and pace — brunch and the brew bar in the morning, an Andhra lunch, a quiet afternoon pour, bistro and rooftop through the evening.",
       },
       {
         type: "quote",
@@ -70,7 +70,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The single largest equipment decision at Artha wasn't the tandoor or the cold chain — it was a two-group espresso machine at the centre of the brew bar. Choosing it was deliberate, not aspirational.",
+        text: "The single largest equipment decision at Artha wasn't the kitchen equipment or the cold chain — it was a two-group espresso machine at the centre of the brew bar. Choosing it was deliberate, not aspirational.",
       },
       { type: "h2", text: "Consistency, first and always" },
       {
@@ -80,7 +80,7 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "Built for the evening, not just the morning" },
       {
         type: "p",
-        text: "Most cafés size their espresso setup for the morning rush. We sized ours for the evening, when coffee orders run alongside the bistro and tandoor menus — exactly where a single-group machine would have bottlenecked.",
+        text: "Most cafés size their espresso setup for the morning rush. We sized ours for the evening, when coffee orders run alongside the full bistro menu — exactly where a single-group machine would have bottlenecked.",
       },
       { type: "h2", text: "A machine our Head Barista owns" },
       {
@@ -102,14 +102,14 @@ export const journalPosts: JournalPost[] = [
     category: "The Kitchen",
     title: "A Fully Vegetarian Kitchen, Done Seriously",
     excerpt:
-      "Andhra, Italian, Indo-Chinese and tandoor, all vegetarian, all from one kitchen — how that actually works.",
+      "Andhra, Italian, brunch and bistro, all vegetarian, all from one kitchen — how that actually works.",
     metaDescription:
-      "How Artha runs Andhra, Italian, Indo-Chinese and tandoor programmes from one fully vegetarian kitchen.",
+      "How Artha runs Andhra, Italian, brunch and bistro programmes from one fully vegetarian kitchen.",
     publishedAt: "2026-07-01",
     body: [
       {
         type: "p",
-        text: '"Vegetarian café" often means a shorter menu with the meat quietly removed. Not here. Artha runs five full food programmes — Andhra traditional, Italian pasta, Indo-Chinese, tandoor, bistro — entirely vegetarian, from one kitchen.',
+        text: '"Vegetarian café" often means a shorter menu with the meat quietly removed. Not here. Artha runs four full food programmes — brunch, Andhra traditional, Italian pasta, bistro — entirely vegetarian, from one kitchen.',
       },
       { type: "h2", text: "Egg dishes, handled properly" },
       {
@@ -119,7 +119,7 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "Range without compromise" },
       {
         type: "p",
-        text: "Running Andhra gravies, Italian pasta, Indo-Chinese wok dishes, and tandoor off a single vegetarian pantry is harder than a smaller, singular menu. It's also worth it — nowhere on this street took a full vegetarian table seriously enough to do all of it well.",
+        text: "Running Andhra gravies and Italian pasta off a single vegetarian pantry, brunch to bistro, is harder than a smaller, singular menu. It's also worth it — nowhere on this street took a full vegetarian table seriously enough to do all of it well.",
       },
       { type: "h2", text: "An electric kitchen, built for control" },
       {
@@ -128,7 +128,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "quote",
-        text: 'Andhra lunch, Italian dinner, an Indo-Chinese craving, or a tandoor evening — the answer to "is there anything vegetarian?" here is simply: everything.',
+        text: 'Andhra lunch, Italian dinner, or a bistro evening — the answer to "is there anything vegetarian?" here is simply: everything.',
       },
       {
         type: "p",

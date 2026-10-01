@@ -30,9 +30,9 @@ export default function HomePage() {
       <SplitFeature
         id="kitchen"
         eyebrow="The Kitchen"
-        heading="Andhra, Italian, Indo-Chinese, tandoor — entirely vegetarian."
+        heading="Andhra, Italian, brunch to bistro — entirely vegetarian."
         paragraphs={[
-          "Andhra classics, Italian pasta, Indo-Chinese, tandoor and bistro — five menus, entirely vegetarian, eggs included, prepared with care.",
+          "Andhra classics, Italian pasta, brunch and bistro — four menus, entirely vegetarian, eggs included, prepared with care.",
           "One kitchen, built to do it all properly — a vegetarian table deserves the same range as any other.",
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}

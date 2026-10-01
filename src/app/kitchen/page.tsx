@@ -9,7 +9,7 @@ import { breadcrumbJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Kitchen",
   description:
-    "The kitchen at Artha runs five vegetarian food programmes — Andhra traditional, Italian pasta, Indo-Chinese, tandoor and bistro — plus an all-day brunch menu, served 10am to 11pm.",
+    "The kitchen at Artha runs four vegetarian food programmes — brunch, Andhra traditional, Italian pasta and bistro — served 10am to 11pm.",
   alternates: { canonical: "/kitchen" },
 };
 
@@ -28,16 +28,16 @@ export default function KitchenPage() {
       <PageIntro
         eyebrow="Kitchen"
         heading="A full vegetarian table, taken seriously."
-        lead="Andhra traditional, Italian pasta, Indo-Chinese, tandoor and bistro — five food programmes, plus an all-day brunch, from one vegetarian kitchen."
+        lead="Andhra traditional, Italian pasta, brunch and bistro — four food programmes, from one vegetarian kitchen."
       />
 
       <MenuLanes lanes={kitchenLanes} note={vegetarianNote} />
 
       <SplitFeature
         eyebrow="Range Without Compromise"
-        heading="Five cuisines. One vegetarian pantry, brunch to bistro."
+        heading="Four programmes. One vegetarian pantry, brunch to bistro."
         paragraphs={[
-          "Andhra gravies, Italian pasta, Indo-Chinese wok dishes, tandoor — all from one vegetarian pantry. More care than a smaller menu. Worth it.",
+          "Andhra gravies and Italian pasta — all from one vegetarian pantry, brunch to bistro. More care than a smaller menu. Worth it.",
           "The kitchen runs on induction, not gas — tighter heat control, a cleaner, cooler room.",
         ]}
         cta={{
