@@ -55,9 +55,9 @@ export const journalPosts: JournalPost[] = [
     category: "The Coffee",
     title: "Why We Built Our Brew Bar Around One Machine",
     excerpt:
-      "Consistency, throughput, and the reasoning behind the Victoria Arduino Eagle One at the centre of the brew bar.",
+      "Consistency, throughput, and the reasoning behind the espresso machine at the centre of the brew bar.",
     metaDescription:
-      "The reasoning behind the Victoria Arduino Eagle One at the centre of Artha's brew bar — consistency, throughput, and craft.",
+      "The reasoning behind the espresso machine at the centre of Artha's brew bar — consistency, throughput, and craft.",
     publishedAt: "2026-06-15",
     cardImage: {
       src: "/images/coffee/brew-server.jpg",
@@ -70,12 +70,12 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The single largest equipment decision at Artha wasn't the tandoor or the cold chain — it was a two-group espresso machine, the Victoria Arduino Eagle One, at the centre of the brew bar. Choosing it was deliberate, not aspirational.",
+        text: "The single largest equipment decision at Artha wasn't the tandoor or the cold chain — it was a two-group espresso machine at the centre of the brew bar. Choosing it was deliberate, not aspirational.",
       },
       { type: "h2", text: "Consistency, first and always" },
       {
         type: "p",
-        text: "The Eagle One's multiboiler architecture gives independent temperature control to each group — shot-to-shot consistency single-boiler machines can't match. That matters because the brew bar is priced at a genuine premium: tasting flights and estate coffees only earn repeat visits if the cup tastes the same on your fifth visit as your first.",
+        text: "Its multiboiler architecture gives independent temperature control to each group — shot-to-shot consistency single-boiler machines can't match. That matters because the brew bar is priced at a genuine premium: tasting flights and estate coffees only earn repeat visits if the cup tastes the same on your fifth visit as your first.",
       },
       { type: "h2", text: "Built for the evening, not just the morning" },
       {

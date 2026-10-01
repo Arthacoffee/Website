@@ -44,7 +44,7 @@ export default function CoffeePage() {
         }}
         imageCategory="coffee"
         imageSrc="/images/coffee/espresso-pull.jpg"
-        imageAlt="An espresso shot pulling on the Victoria Arduino Eagle One"
+        imageAlt="An espresso shot pulling at Artha's brew bar"
         tone="stone"
       />
 
