@@ -43,6 +43,8 @@ export default function CoffeePage() {
           href: "/journal/why-we-built-our-brew-bar-around-one-machine",
         }}
         imageCategory="coffee"
+        imageSrc="/images/coffee/espresso-pull.jpg"
+        imageAlt="An espresso shot pulling on the Victoria Arduino Eagle One"
         tone="stone"
       />
 

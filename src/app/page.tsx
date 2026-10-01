@@ -47,6 +47,8 @@ export default function HomePage() {
         paragraphs={brewBarStory.paragraphs}
         cta={{ label: "Explore Coffee", href: "/coffee" }}
         imageCategory="coffee"
+        imageSrc="/images/coffee/pour-over-pour.jpg"
+        imageAlt="Pouring water over a V60 filter at the Artha brew bar"
         reverse
       />
 

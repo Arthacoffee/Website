@@ -11,6 +11,9 @@ export type JournalPost = {
   metaDescription: string;
   publishedAt: string; // ISO date
   body: JournalBlock[];
+  /** Real photography, once available. Each falls back to a brand-toned frame when omitted. */
+  cardImage?: { src: string; alt: string };
+  heroImage?: { src: string; alt: string };
 };
 
 export const journalPosts: JournalPost[] = [
@@ -56,6 +59,14 @@ export const journalPosts: JournalPost[] = [
     metaDescription:
       "The reasoning behind the Victoria Arduino Eagle One at the centre of Artha's brew bar — consistency, throughput, and craft.",
     publishedAt: "2026-06-15",
+    cardImage: {
+      src: "/images/coffee/brew-server.jpg",
+      alt: "A Hario coffee server catching filter coffee at the Artha brew bar",
+    },
+    heroImage: {
+      src: "/images/coffee/v60-pour.jpg",
+      alt: "Pouring water over a V60 filter at the Artha brew bar",
+    },
     body: [
       {
         type: "p",

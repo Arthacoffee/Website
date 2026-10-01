@@ -14,6 +14,8 @@ export function SplitFeature({
   cta,
   imageCategory,
   imageIcon,
+  imageSrc,
+  imageAlt,
   reverse = false,
   tone = "light",
 }: {
@@ -24,6 +26,8 @@ export function SplitFeature({
   cta?: { label: string; href: string };
   imageCategory: ImageCategory;
   imageIcon?: LucideIcon;
+  imageSrc?: string;
+  imageAlt?: string;
   reverse?: boolean;
   tone?: "light" | "stone";
 }) {
@@ -42,6 +46,9 @@ export function SplitFeature({
           <ImageFrame
             category={imageCategory}
             icon={imageIcon}
+            src={imageSrc}
+            alt={imageAlt}
+            sizes="(min-width: 768px) 50vw, 100vw"
             className="aspect-[4/3.2] w-full rounded-[var(--radius-editorial)]"
           />
         </Reveal>

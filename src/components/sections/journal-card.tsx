@@ -16,6 +16,9 @@ export function JournalCard({ post }: { post: JournalPost }) {
     <Link href={`/journal/${post.slug}`} className="group block">
       <ImageFrame
         category={category}
+        src={post.cardImage?.src}
+        alt={post.cardImage?.alt}
+        sizes="(min-width: 768px) 33vw, 100vw"
         interactive
         className="aspect-[16/11] w-full rounded-[var(--radius-editorial)]"
       />

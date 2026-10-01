@@ -99,6 +99,10 @@ export default async function JournalPostPage({
           <Reveal kind="scale" className="mt-10">
             <ImageFrame
               category={category}
+              src={post.heroImage?.src}
+              alt={post.heroImage?.alt}
+              sizes="(min-width: 768px) 768px, 100vw"
+              priority
               className="aspect-[16/9] w-full rounded-[var(--radius-editorial)]"
             />
           </Reveal>

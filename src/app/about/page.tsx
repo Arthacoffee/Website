@@ -69,6 +69,8 @@ export default function AboutPage() {
         heading={brewBarStory.heading}
         paragraphs={brewBarStory.paragraphs}
         imageCategory="coffee"
+        imageSrc="/images/coffee/latte-art-close.jpg"
+        imageAlt="A cup of latte art at Artha's brew bar"
         reverse
         tone="stone"
       />
