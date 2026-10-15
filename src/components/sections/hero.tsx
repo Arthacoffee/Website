@@ -94,7 +94,7 @@ export function Hero({
             Reserve a Table
           </Button>
           <a
-            href="#why-we-exist"
+            href="#kitchen"
             className="text-background/85 decoration-background/40 hover:decoration-background text-[0.8125rem] font-medium tracking-[0.04em] uppercase underline decoration-1 underline-offset-4 transition-colors"
           >
             Explore
@@ -103,7 +103,7 @@ export function Hero({
       </Container>
 
       <motion.a
-        href="#why-we-exist"
+        href="#kitchen"
         aria-label="Scroll to explore"
         initial={reduceMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}

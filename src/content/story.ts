@@ -1,16 +1,9 @@
-export const whyWeExist = {
-  eyebrow: "Why We Exist",
-  heading: "Artha means purpose. That's the point.",
-  body: "Artha comes from the Sanskrit root arth, meaning to strive for, desire, or aim at. In Indian philosophy it is one of the four Purusharthas — the traditional goals of life, alongside dharma, kama and moksha — and it covers the material side of things: wealth, career, financial security. The café is named after it.",
-};
-
 /**
  * The closing statement on the About page, deliberately placed after
  * "Our Story" rather than before it — the philosophy should land as the
  * thesis a reader arrives at, not the frame they're handed first. Not
- * reused on the homepage: the Hero already shows the tagline moments
- * earlier there, so repeating it verbatim right below would read as a
- * duplicate rather than a reveal.
+ * shown on the homepage — that etymology/philosophy content only belongs
+ * on the page a reader reaches after already choosing to learn more.
  */
 export const philosophy = {
   body: "Artha is a Sanskrit word — the second of the four Purusharthas, the traditional goals of a life well lived, alongside dharma, kama and moksha. It covers wealth, career, and the material security a life needs, on the condition that it is governed by dharma: artha pursued through deceit is not considered true artha. The café is named after it. Made With Intention.",
