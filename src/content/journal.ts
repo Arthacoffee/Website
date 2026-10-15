@@ -26,6 +26,14 @@ export const journalPosts: JournalPost[] = [
     metaDescription:
       "Why Artha Speciality Coffee is built to run from morning brew bar to evening rooftop, instead of owning a single occasion.",
     publishedAt: "2026-06-01",
+    cardImage: {
+      src: "/images/interior/dining-hall.jpg",
+      alt: "A quiet dining room with large windows",
+    },
+    heroImage: {
+      src: "/images/interior/sunlit-table.jpg",
+      alt: "A sunlit table in the dining room",
+    },
     body: [
       {
         type: "p",
