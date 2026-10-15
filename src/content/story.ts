@@ -20,11 +20,11 @@ export const ourStory = {
   eyebrow: "Our Story",
   heading: "Why Artha exists",
   paragraphs: [
-    "Artha started with coffee. Good coffee takes time to make properly, and the café is built around that instead of around speed.",
-    "The kitchen is fully vegetarian — Andhra traditional food, Italian pasta, an all-day brunch menu, and bistro plates in the evening. The menu is not any smaller for it than a non-vegetarian one.",
-    "Hospitality matters as much to us as the food does. That means remembering a regular's order, or pulling out a chair at the right moment.",
-    "The rooftop became a bigger part of the plan than expected. People tend to talk more and stay longer outdoors, so a fair amount of the layout follows from that.",
-    "The goal is for this to be somewhere people come back to regularly, rather than visit once. Parents on a Sunday, an old friend after work, a first date on the terrace.",
+    "Artha started with coffee. Good coffee takes time to make properly, and the café runs on that pace rather than on speed.",
+    "The kitchen is fully vegetarian: Andhra traditional food, Italian pasta, an all-day brunch menu, and bistro plates in the evening.",
+    "Hospitality is treated with the same weight as the food — remembering a regular's order, or pulling out a chair at the right moment.",
+    "The rooftop became a bigger part of the plan than expected, since people tend to talk more and stay longer outdoors.",
+    "Parents in on a Sunday, an old friend after work, a first date on the terrace — the intention is for people to come back regularly, not just visit once.",
   ],
 };
 

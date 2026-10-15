@@ -29,24 +29,20 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Defence Colony Road in Sainikpuri has a genuinely good specialty coffee and dining cluster. There is a European bakery-café next door, a rooftop coffee bar about a hundred metres on, a beloved evening-only vegetarian restaurant a little further up, a French patisserie, and a fully vegan café. Each of these owns exactly one moment in the day.",
+        text: "Artha runs across four service windows in a day. Brunch and the brew bar run from 10am to 12:30pm. Andhra traditional lunch runs from 12pm to 3pm. A quieter afternoon window for pour-overs runs from 3pm to 6:30pm. Bistro and the rooftop run from 6:30pm to 11pm.",
       },
+      { type: "h2", text: "Most places on this street cover one window" },
       {
         type: "p",
-        text: "The bakery-café serves coffee and pastry, and stops there. The evening restaurant does not open until 7pm and serves no coffee. The rooftop bar has no real food programme. No one on this street covers the whole day.",
-      },
-      { type: "h2", text: "So we built the whole day" },
-      {
-        type: "p",
-        text: "Artha is organised around four windows, each with its own pace: brunch and the brew bar in the morning, an Andhra lunch, a quiet afternoon for pour-overs, and bistro with the rooftop through the evening.",
+        text: "A European bakery-café next door serves coffee and pastry in the morning. A rooftop coffee bar about a hundred metres on has limited food. A well-known vegetarian restaurant further up the road opens at 7pm and does not serve coffee at all. There is also a French patisserie and a fully vegan café nearby, each built around a single occasion.",
       },
       {
         type: "quote",
-        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here, and we built the menu and the rooftop around that.",
+        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here, and the menu and the rooftop were planned around that.",
       },
       {
         type: "p",
-        text: "That is the idea behind the name. If you have not been in yet, come find whichever part of the day ends up being yours.",
+        text: "Artha is a Sanskrit word for purpose. The name was chosen with the idea that the café should have a purpose across the whole day, not just one part of it.",
       },
     ],
   },
@@ -70,22 +66,22 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The single largest equipment decision at Artha was not the kitchen line or the cold chain. It was the espresso machine — a two-group setup at the centre of the brew bar, chosen deliberately after a long evaluation.",
+        text: "The largest equipment decision at Artha was the espresso machine, a two-group setup at the centre of the brew bar. It took longer to select than most of the kitchen equipment did.",
       },
-      { type: "h2", text: "Consistency, first and always" },
+      { type: "h2", text: "Temperature control per group" },
       {
         type: "p",
-        text: "The machine gives independent temperature control to each group, producing a shot-to-shot consistency that single-boiler machines cannot match. This matters because the brew bar is priced at a premium: tasting flights and estate coffees only bring people back if the cup tastes the same on the fifth visit as it did on the first.",
+        text: "The machine gives independent temperature control to each group, which produces more shot-to-shot consistency than a single-boiler machine. The brew bar is priced at a premium, and tasting flights and estate coffees depend on the cup tasting the same on a fifth visit as it did on the first.",
       },
-      { type: "h2", text: "Built for the evening, not just the morning" },
+      { type: "h2", text: "Sized for evening volume" },
       {
         type: "p",
-        text: "Most cafés size their espresso setup around the morning rush. Artha sized its setup for the evening, when coffee orders run alongside the full bistro menu — the load where a smaller single-group machine would have bottlenecked.",
+        text: "Most cafés size their espresso setup around the morning rush. Artha sized its setup for the evening, when coffee orders run alongside the full bistro menu — a load a smaller single-group machine would have struggled with.",
       },
-      { type: "h2", text: "A machine the Head Barista owns" },
+      { type: "h2", text: "One Head Barista, full ownership" },
       {
         type: "p",
-        text: "Specialty coffee talent is hard to find and moves fast once trained. Rather than treat the brew bar as a station anyone can rotate through, the Head Barista role was built around full ownership of this machine, from calibration in the morning through service at night. Real ownership of serious equipment tends to retain staff better than a pay increase alone.",
+        text: "Specialty coffee staff are hard to find and move on quickly once trained. The Head Barista role at Artha covers full ownership of this machine, from calibration in the morning through service at night, rather than rotating staff through it as a station.",
       },
       {
         type: "quote",
@@ -93,7 +89,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "None of this is about having the fanciest machine on the street. It is about the cup being right every time, whether that is the first pour of the morning or the last flight of the night.",
+        text: "The reasoning comes down to the cup tasting the same at the first pour of the morning as it does at the last flight of the night.",
       },
     ],
   },
@@ -117,22 +113,17 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "A \"vegetarian café\" often means a shorter menu with the meat removed. That is not the case at Artha. The kitchen runs four full food programmes — brunch, Andhra traditional, Italian pasta, and bistro — and all of it is vegetarian.",
+        text: "The kitchen at Artha runs four full food programmes — brunch, Andhra traditional, Italian pasta, and bistro — from a single vegetarian pantry. Egg dishes are included and are prepared on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling.",
       },
-      { type: "h2", text: "Egg dishes, handled properly" },
+      { type: "h2", text: "One pantry, four programmes" },
       {
         type: "p",
-        text: "The kitchen is vegetarian, including egg dishes, which are treated as their own category rather than an afterthought. They are prepared on dedicated equipment, with FSSAI green-dot and brown-dot labelling, so there is no ambiguity about what is on the plate.",
+        text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes more coordination than a smaller, single-cuisine menu would.",
       },
-      { type: "h2", text: "Range without compromise" },
+      { type: "h2", text: "Induction instead of gas" },
       {
         type: "p",
-        text: "Running Andhra gravies and Italian pasta off a single vegetarian pantry, from brunch through to bistro, is harder than keeping a smaller, single-cuisine menu. It is also the standard the kitchen was built to.",
-      },
-      { type: "h2", text: "An electric kitchen, for better control" },
-      {
-        type: "p",
-        text: "The kitchen runs entirely on induction instead of gas, which gives tighter, more even heat control at every station. The cold chain is fully electric as well, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
+        text: "The kitchen runs entirely on induction, which gives tighter, more even heat control at each station. The cold chain is fully electric, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
       },
       {
         type: "quote",
@@ -140,7 +131,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "That is what a vegetarian kitchen looks like when it is not treated as an afterthought.",
+        text: "The menu covers Andhra, Italian, brunch, and bistro, all from the same kitchen, with nothing shortened for being vegetarian.",
       },
     ],
   },
