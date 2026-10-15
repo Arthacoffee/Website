@@ -37,20 +37,20 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "We run Artha across four service windows in a day. Brunch and the brew bar run from 10am to 12:30pm. Andhra traditional lunch runs from 12pm to 3pm. A quieter afternoon window for pour-overs runs from 3pm to 6:30pm. Bistro and the rooftop run from 6:30pm to 11pm.",
+        text: "Artha has four service windows across the day. Brunch and the brew bar go from 10am to 12:30pm, then Andhra traditional lunch from 12pm to 3pm. Things quiet down from 3pm to 6:30pm, mostly pour-overs. Bistro and the rooftop take over from 6:30pm to 11pm.",
       },
       { type: "h2", text: "Most places on this street cover one window" },
       {
         type: "p",
-        text: "A European bakery-café next door serves coffee and pastry in the morning. A rooftop coffee bar about a hundred metres on has limited food. A well-known vegetarian restaurant further up the road opens at 7pm and does not serve coffee at all. There is also a French patisserie and a fully vegan café nearby, each built around a single occasion. We wanted to be the one place on this road that isn't.",
+        text: "A European bakery-café next door serves coffee and pastry in the morning. A rooftop coffee bar about a hundred metres on has limited food. A well-known vegetarian restaurant further up the road opens at 7pm and doesn't serve coffee at all. There's also a French patisserie and a fully vegan café nearby. Artha runs all four windows.",
       },
       {
         type: "quote",
-        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here, and we planned the menu and the rooftop around that.",
+        text: "People come to spend a part of their day here — we planned the menu and the rooftop around that.",
       },
       {
         type: "p",
-        text: "Artha is a Sanskrit word for purpose, and that's really where the name came from — we wanted the café to have a purpose across the whole day, not just one part of it.",
+        text: "Artha is a Sanskrit word for purpose. That's where the name came from — we wanted the café to have a purpose across the whole day.",
       },
     ],
   },
@@ -126,7 +126,7 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "One pantry, four programmes" },
       {
         type: "p",
-        text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes more coordination than a smaller, single-cuisine menu would, but it's what we signed up for.",
+        text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes real coordination day to day.",
       },
       { type: "h2", text: "Induction instead of gas" },
       {
