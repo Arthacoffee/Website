@@ -7,32 +7,32 @@ export const values: Value[] = [
   {
     title: "Fully electric kitchen",
     description:
-      "There is no LPG connection. The kitchen runs entirely on induction, which is also more energy-efficient than the gas setup this address used before.",
+      "We don't have an LPG connection. The kitchen runs entirely on induction, which is also more energy-efficient than the gas setup this address used before.",
   },
   {
     title: "Vegetarian, seriously",
     description:
-      "A fully vegetarian kitchen, including egg dishes. These are prepared on dedicated equipment, with FSSAI green/brown-dot labelling.",
+      "We run a fully vegetarian kitchen, egg dishes included, and prepare those on their own dedicated equipment with FSSAI green/brown-dot labelling.",
   },
   {
     title: "Waste segregated at source",
     description:
-      "Wet and dry waste get sorted at every station. Used coffee grounds are set aside separately for composting partnerships.",
+      "We sort wet and dry waste at every station, and set used coffee grounds aside separately for composting partnerships.",
   },
   {
     title: "Water conscious",
     description:
-      "The RO system feeding our brew bar reuses its reject water for cleaning. We've also got low-flow fixtures throughout the space.",
+      "The RO system feeding our brew bar reuses its reject water for cleaning, and we've got low-flow fixtures throughout the space.",
   },
   {
     title: "Sourced close to home",
     description:
-      "The coffee comes from a Hyderabad-based roaster, and most kitchen supplies come from Hyderabad vendors where feasible.",
+      "We get our coffee from a Hyderabad-based roaster, and most kitchen supplies from Hyderabad vendors where feasible.",
   },
   {
     title: "Packaging that breaks down",
     description:
-      "The café is table-service first. Any takeaway coffee goes out in compostable or recyclable cups.",
+      "We're table-service first, but any takeaway coffee still goes out in compostable or recyclable cups.",
   },
 ];
 

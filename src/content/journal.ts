@@ -29,20 +29,20 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Artha runs across four service windows in a day. Brunch and the brew bar run from 10am to 12:30pm. Andhra traditional lunch runs from 12pm to 3pm. A quieter afternoon window for pour-overs runs from 3pm to 6:30pm. Bistro and the rooftop run from 6:30pm to 11pm.",
+        text: "We run Artha across four service windows in a day. Brunch and the brew bar run from 10am to 12:30pm. Andhra traditional lunch runs from 12pm to 3pm. A quieter afternoon window for pour-overs runs from 3pm to 6:30pm. Bistro and the rooftop run from 6:30pm to 11pm.",
       },
       { type: "h2", text: "Most places on this street cover one window" },
       {
         type: "p",
-        text: "A European bakery-café next door serves coffee and pastry in the morning. A rooftop coffee bar about a hundred metres on has limited food. A well-known vegetarian restaurant further up the road opens at 7pm and does not serve coffee at all. There is also a French patisserie and a fully vegan café nearby, each built around a single occasion.",
+        text: "A European bakery-café next door serves coffee and pastry in the morning. A rooftop coffee bar about a hundred metres on has limited food. A well-known vegetarian restaurant further up the road opens at 7pm and does not serve coffee at all. There is also a French patisserie and a fully vegan café nearby, each built around a single occasion. We wanted to be the one place on this road that isn't.",
       },
       {
         type: "quote",
-        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here, and the menu and the rooftop were planned around that.",
+        text: "Nobody comes to Artha for a quick stop on the way somewhere else. They come to spend a part of their day here, and we planned the menu and the rooftop around that.",
       },
       {
         type: "p",
-        text: "Artha is a Sanskrit word for purpose. The name was chosen with the idea that the café should have a purpose across the whole day, not just one part of it.",
+        text: "Artha is a Sanskrit word for purpose, and that's really where the name came from — we wanted the café to have a purpose across the whole day, not just one part of it.",
       },
     ],
   },
@@ -66,22 +66,22 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The largest equipment decision at Artha was the espresso machine, a two-group setup at the centre of the brew bar. It took longer to select than most of the kitchen equipment did.",
+        text: "The biggest equipment decision we made at Artha was the espresso machine, a two-group setup at the centre of the brew bar. It took us longer to pick than most of the kitchen equipment did.",
       },
       { type: "h2", text: "Temperature control per group" },
       {
         type: "p",
-        text: "The machine gives independent temperature control to each group, which produces more shot-to-shot consistency than a single-boiler machine. The brew bar is priced at a premium, and tasting flights and estate coffees depend on the cup tasting the same on a fifth visit as it did on the first.",
+        text: "The machine gives independent temperature control to each group, which gets us more shot-to-shot consistency than a single-boiler machine. We price the brew bar at a premium, and tasting flights and estate coffees only work if the cup tastes the same on a fifth visit as it did on the first.",
       },
       { type: "h2", text: "Sized for evening volume" },
       {
         type: "p",
-        text: "Most cafés size their espresso setup around the morning rush. Artha sized its setup for the evening, when coffee orders run alongside the full bistro menu — a load a smaller single-group machine would have struggled with.",
+        text: "Most cafés size their espresso setup around the morning rush. We sized ours for the evening instead, since our coffee orders run alongside the full bistro menu — a load a smaller single-group machine would have struggled with.",
       },
       { type: "h2", text: "One Head Barista, full ownership" },
       {
         type: "p",
-        text: "Specialty coffee staff are hard to find and move on quickly once trained. The Head Barista role at Artha covers full ownership of this machine, from calibration in the morning through service at night, rather than rotating staff through it as a station.",
+        text: "Specialty coffee staff are hard to find and move on quickly once trained, so we built the Head Barista role around full ownership of this machine, from calibration in the morning through service at night, rather than rotating staff through it as a station.",
       },
       {
         type: "quote",
@@ -89,7 +89,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "The reasoning comes down to the cup tasting the same at 10am as it does at 11pm.",
+        text: "It comes down to the cup tasting the same at 10am as it does at 11pm.",
       },
     ],
   },
@@ -113,17 +113,17 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The kitchen at Artha runs four full food programmes — brunch, Andhra traditional, Italian pasta, and bistro — from a single vegetarian pantry. Egg dishes are included and are prepared on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling.",
+        text: "We run four full food programmes out of our kitchen — brunch, Andhra traditional, Italian pasta, and bistro — from a single vegetarian pantry. Egg dishes are included, and we prepare them on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling.",
       },
       { type: "h2", text: "One pantry, four programmes" },
       {
         type: "p",
-        text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes more coordination than a smaller, single-cuisine menu would.",
+        text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes more coordination than a smaller, single-cuisine menu would, but it's what we signed up for.",
       },
       { type: "h2", text: "Induction instead of gas" },
       {
         type: "p",
-        text: "The kitchen runs entirely on induction, which gives tighter, more even heat control at each station. The cold chain is fully electric, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
+        text: "Our kitchen runs entirely on induction, which gives us tighter, more even heat control at each station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
       },
       {
         type: "quote",
@@ -131,7 +131,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "The menu covers Andhra, Italian, brunch, and bistro, all from the same kitchen, with nothing shortened for being vegetarian.",
+        text: "Our menu covers Andhra, Italian, brunch, and bistro, all from the same kitchen, and none of it is shortened for being vegetarian.",
       },
     ],
   },

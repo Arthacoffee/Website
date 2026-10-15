@@ -38,7 +38,7 @@ export default function CoffeePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "Every cup made on the same machine, by the same Head Barista, calibration to pour.",
+          "We make every cup on the same machine, by the same Head Barista, calibration to pour.",
         ]}
         cta={{
           label: "Read the Full Story",

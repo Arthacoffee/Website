@@ -29,7 +29,7 @@ export default function HomePage() {
         eyebrow="The Kitchen"
         heading="Andhra, Italian, brunch to bistro — entirely vegetarian."
         paragraphs={[
-          "Andhra classics, Italian pasta, brunch, and bistro — four menus, all vegetarian, eggs included.",
+          "Our Andhra classics, Italian pasta, brunch, and bistro — four menus, all vegetarian, eggs included.",
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}
         imageCategory="kitchen"
@@ -43,7 +43,7 @@ export default function HomePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "Every cup made on the same machine, by the same Head Barista, calibration to pour.",
+          "We make every cup on the same machine, by the same Head Barista, calibration to pour.",
         ]}
         cta={{ label: "Explore Coffee", href: "/coffee" }}
         imageCategory="coffee"
