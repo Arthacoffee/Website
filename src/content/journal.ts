@@ -129,7 +129,7 @@ export const journalPosts: JournalPost[] = [
         type: "p",
         text: "Running Andhra gravies and Italian pasta off a single vegetarian pantry, brunch all the way through to bistro, is genuinely harder than keeping a smaller, single-cuisine menu. We think it's worth the extra work. Nowhere else on this street has taken a full vegetarian table seriously enough to actually do all of it well.",
       },
-      { type: "h2", text: "An electric kitchen, built for control" },
+      { type: "h2", text: "An electric kitchen, for better control" },
       {
         type: "p",
         text: "The kitchen runs entirely on induction instead of gas, which gives tighter, more even heat control at every station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the right temperature throughout service.",

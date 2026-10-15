@@ -28,7 +28,7 @@ export default function VisitPage() {
       <PageIntro
         eyebrow="Visit"
         heading="Find us on Defence Colony Road"
-        lead="An easy lift up to a room built for lingering, and a rooftop made for the evening. Table service, walk-ins welcome."
+        lead="There's a lift up to the dining room, and a rooftop that's open through the evening. Table service, walk-ins welcome."
       />
 
       <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
@@ -103,8 +103,8 @@ export default function VisitPage() {
                     The Space
                   </strong>
                   <span className="text-body text-foreground/70">
-                    A dining hall and a rooftop, connected by lift — come up for
-                    the room, stay for the view.
+                    A dining hall downstairs, a rooftop above it, and a lift connecting
+                    the two.
                   </span>
                 </div>
               </li>

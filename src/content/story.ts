@@ -1,7 +1,7 @@
 export const whyWeExist = {
   eyebrow: "Why We Exist",
   heading: "Artha means purpose. That's the point.",
-  body: "In Sanskrit, artha means purpose, one of the four aims of a life well lived. We named the place hoping we'd actually live up to it.",
+  body: "Artha is a Sanskrit word for purpose — one of the four traditional aims of a well-lived life, alongside dharma, kama and moksha. We named the café after it, so we've set ourselves a fairly high bar.",
 };
 
 /**
@@ -13,32 +13,32 @@ export const whyWeExist = {
  * duplicate rather than a reveal.
  */
 export const philosophy = {
-  body: "Artha means purpose. We won't pretend we get it right every day, but that's what we're aiming at, cup by cup, table by table. Made With Intention.",
+  body: "Artha means purpose, but not in the tidy inspirational-poster sense. In Indian philosophy it's specifically the material, practical side of life — work, stability, livelihood — and it's only considered worthwhile when it's earned honestly. We liked that it's a fairly grounded idea, not just a nice-sounding one. Made With Intention.",
 };
 
 export const ourStory = {
   eyebrow: "Our Story",
   heading: "Why Artha exists",
   paragraphs: [
-    "Coffee, made slowly and well, is one of the last good excuses left to just sit still for a while. That's really where this started — the idea that a proper cup, given enough time, is worth building a whole day around.",
-    "The food follows the same thinking, though it took us longer to get there. It's a fully vegetarian kitchen, and we didn't want that to mean a shorter menu — Andhra classics next to Italian pasta, a brisk lunch service giving way to a slow afternoon pour.",
-    "None of it means much without the room around it, honestly. We think of hospitality as attention more than service. A chair pulled out at the right moment. Someone remembering your order from last time. Small things, mostly.",
-    "That's also why the rooftop ended up mattering more than any one dish on the menu. Open air just changes how people talk to each other — they stay longer, sit a little closer, order one more coffee than they'd planned on.",
-    "What we're hoping for, slowly, is that this stops feeling like a café people visit and starts feeling like an address they belong to. Parents in on a Sunday. An old friend after work. Somebody on a first date, up on the terrace.",
+    "Artha started with coffee, really. Good coffee takes time to make properly, and we wanted a place built around that instead of around speed.",
+    "The food works the same way. It's a fully vegetarian kitchen — Andhra traditional food, Italian pasta, an all-day brunch menu, and bistro plates in the evening — and we didn't see a reason that menu should be any smaller than a non-vegetarian one just because of what's left off it.",
+    "Hospitality matters just as much to us as the food does. In practice that mostly means paying attention: remembering a regular's order, pulling out a chair at the right moment, that kind of thing.",
+    "The rooftop turned out to be a bigger part of this than we expected going in. People talk more and stay longer when they're sitting outside, so we planned a fair amount of the layout around that.",
+    "What we'd like, eventually, is for this to be somewhere people come back to regularly rather than visit once. Parents in on a Sunday, an old friend after work, a first date up on the terrace — whoever walks in.",
   ],
 };
 
 export const experience = {
   eyebrow: "The Experience",
   heading: "Morning coffee. Slow afternoons. Evenings on the roof.",
-  body: "Come for the first pour of the day, or stay for the last table on the terrace at night. There's a rooftop for open air and long conversations, and a room downstairs that's just as easy to settle into. Stay as long as you like — nobody's rushing you out.",
+  body: "We're open from the first pour of the morning to the last table on the terrace at night. There's a rooftop upstairs and a regular dining room downstairs — sit wherever suits you, for as long as you like.",
 };
 
 export const brewBarStory = {
   eyebrow: "At The Brew Bar",
   heading: "Every cup, the same, every time.",
   paragraphs: [
-    "Every cup is made with care, on equipment we chose for consistency over spectacle. Our Head Barista owns the whole process — calibration in the morning, all the way through to the pour that ends up in your hand.",
-    "Curious about the longer version? The machine, the reasoning, how the bar actually runs day to day — it's all in the Journal.",
+    "Every cup goes through the same machine and the same process, run start to finish by our Head Barista — calibration in the morning, through to the actual pour.",
+    "We wrote up the longer version of why, including which machine and how the bar actually runs day to day, in the Journal.",
   ],
 };

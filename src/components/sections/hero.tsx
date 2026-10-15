@@ -80,8 +80,8 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
           className="text-body-lg text-background/80 mt-8 max-w-xl"
         >
-          Specialty coffee, thoughtful vegetarian food, and a rooftop terrace built for
-          slowing down — on Defence Colony Road, Sainikpuri.
+          Specialty coffee, vegetarian food, and a rooftop terrace — open daily on
+          Defence Colony Road, Sainikpuri.
         </motion.p>
 
         <motion.div

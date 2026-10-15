@@ -28,7 +28,7 @@ export default function CoffeePage() {
 
       <PageIntro
         eyebrow="Coffee"
-        heading="A brew bar built for the whole day."
+        heading="A brew bar that runs the whole day."
         lead="Filter, V60, cold brew, tasting flights and espresso classics — poured all day, every day."
       />
 

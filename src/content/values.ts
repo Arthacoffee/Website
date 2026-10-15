@@ -53,7 +53,7 @@ export const dayParts = [
     time: "3pm – 6:30pm",
     title: "The Afternoon Pour",
     description:
-      "Things get quieter here, which is really the point — mostly filter and espresso, tasting flights, estate coffees if you want to linger over one.",
+      "Quieter hours at the brew bar — mostly filter and espresso, tasting flights, and estate coffees for anyone with time to sit with one.",
   },
   {
     time: "6:30pm – 11pm",
