@@ -29,16 +29,16 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Walk down Defence Colony Road in Sainikpuri and you'll actually find a pretty good specialty coffee and dining cluster. There's a European bakery-café next door, a rooftop coffee bar about a hundred metres on, a beloved evening-only vegetarian restaurant a little further up, a French patisserie, a fully vegan café. Good company, honestly. But every single one of them owns exactly one moment in the day and nothing else.",
+        text: "Defence Colony Road in Sainikpuri has a genuinely good specialty coffee and dining cluster. There is a European bakery-café next door, a rooftop coffee bar about a hundred metres on, a beloved evening-only vegetarian restaurant a little further up, a French patisserie, and a fully vegan café. Each of these owns exactly one moment in the day.",
       },
       {
         type: "p",
-        text: "The bakery-café does coffee and pastry, full stop. The evening restaurant doesn't even open until 7pm and serves no coffee at all. The rooftop bar has no real food programme to speak of. Nobody on this street is trying to run the whole day.",
+        text: "The bakery-café serves coffee and pastry, and stops there. The evening restaurant does not open until 7pm and serves no coffee. The rooftop bar has no real food programme. No one on this street covers the whole day.",
       },
       { type: "h2", text: "So we built the whole day" },
       {
         type: "p",
-        text: "Artha is organised around four windows, and each one has its own pace. Brunch and the brew bar in the morning. An Andhra lunch. A quiet afternoon for pour-overs. Then bistro and the rooftop take over through the evening.",
+        text: "Artha is organised around four windows, each with its own pace: brunch and the brew bar in the morning, an Andhra lunch, a quiet afternoon for pour-overs, and bistro with the rooftop through the evening.",
       },
       {
         type: "quote",
@@ -46,7 +46,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "That's really the whole idea behind the name, if you're wondering. If you haven't been in yet, come find whichever part of the day ends up being yours.",
+        text: "That is the idea behind the name. If you have not been in yet, come find whichever part of the day ends up being yours.",
       },
     ],
   },
@@ -70,22 +70,22 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "If you asked us what the single largest equipment decision at Artha was, most people would probably guess something in the kitchen, or maybe the cold chain. It was actually the espresso machine — a two-group setup at the centre of the brew bar. We spent a long time on this one, on purpose.",
+        text: "The single largest equipment decision at Artha was not the kitchen line or the cold chain. It was the espresso machine — a two-group setup at the centre of the brew bar, chosen deliberately after a long evaluation.",
       },
       { type: "h2", text: "Consistency, first and always" },
       {
         type: "p",
-        text: "What matters most is that it gives independent temperature control to each group, so you get a shot-to-shot consistency that single-boiler machines just can't manage. That's not a small thing when the brew bar is priced at a genuine premium. Tasting flights and estate coffees only bring people back if the cup tastes the same on their fifth visit as it did on their first.",
+        text: "The machine gives independent temperature control to each group, producing a shot-to-shot consistency that single-boiler machines cannot match. This matters because the brew bar is priced at a premium: tasting flights and estate coffees only bring people back if the cup tastes the same on the fifth visit as it did on the first.",
       },
       { type: "h2", text: "Built for the evening, not just the morning" },
       {
         type: "p",
-        text: "Most cafés size their espresso setup around the morning rush. We sized ours for the evening instead, when coffee orders run alongside the full bistro menu. That's exactly the kind of load where a smaller single-group machine would have bottlenecked badly.",
+        text: "Most cafés size their espresso setup around the morning rush. Artha sized its setup for the evening, when coffee orders run alongside the full bistro menu — the load where a smaller single-group machine would have bottlenecked.",
       },
-      { type: "h2", text: "A machine our Head Barista owns" },
+      { type: "h2", text: "A machine the Head Barista owns" },
       {
         type: "p",
-        text: "Good specialty coffee talent is hard to find and it moves fast once it's trained. So rather than treat the brew bar like a station anyone can be rotated through, we built the Head Barista role around owning this machine completely — calibration in the morning, all the way to service at night. In our experience, giving someone real ownership of serious equipment keeps them around longer than a pay bump ever does.",
+        text: "Specialty coffee talent is hard to find and moves fast once trained. Rather than treat the brew bar as a station anyone can rotate through, the Head Barista role was built around full ownership of this machine, from calibration in the morning through service at night. Real ownership of serious equipment tends to retain staff better than a pay increase alone.",
       },
       {
         type: "quote",
@@ -93,7 +93,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "None of this was ever really about having the fanciest machine on the street. It was about the cup being right every time, whether that's the first pour of the morning or the last flight of the night.",
+        text: "None of this is about having the fanciest machine on the street. It is about the cup being right every time, whether that is the first pour of the morning or the last flight of the night.",
       },
     ],
   },
@@ -117,22 +117,22 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Usually when a place calls itself a \"vegetarian café,\" what that really means is a shorter menu with the meat quietly taken off it. That's not what's happening here. Artha runs four full food programmes out of one kitchen — brunch, Andhra traditional, Italian pasta, and bistro — and all of it is vegetarian.",
+        text: "A \"vegetarian café\" often means a shorter menu with the meat removed. That is not the case at Artha. The kitchen runs four full food programmes — brunch, Andhra traditional, Italian pasta, and bistro — and all of it is vegetarian.",
       },
       { type: "h2", text: "Egg dishes, handled properly" },
       {
         type: "p",
-        text: "Our kitchen is vegetarian, egg dishes included, and we treat those as their own category rather than something tacked on. They're prepared on their own dedicated equipment, with clear FSSAI green-dot and brown-dot labelling, so you're never left guessing what's actually on your plate.",
+        text: "The kitchen is vegetarian, including egg dishes, which are treated as their own category rather than an afterthought. They are prepared on dedicated equipment, with FSSAI green-dot and brown-dot labelling, so there is no ambiguity about what is on the plate.",
       },
       { type: "h2", text: "Range without compromise" },
       {
         type: "p",
-        text: "Running Andhra gravies and Italian pasta off a single vegetarian pantry, brunch all the way through to bistro, is genuinely harder than keeping a smaller, single-cuisine menu. We think it's worth the extra work. Nowhere else on this street has taken a full vegetarian table seriously enough to actually do all of it well.",
+        text: "Running Andhra gravies and Italian pasta off a single vegetarian pantry, from brunch through to bistro, is harder than keeping a smaller, single-cuisine menu. It is also the standard the kitchen was built to.",
       },
       { type: "h2", text: "An electric kitchen, for better control" },
       {
         type: "p",
-        text: "The kitchen runs entirely on induction instead of gas, which gives tighter, more even heat control at every station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the right temperature throughout service.",
+        text: "The kitchen runs entirely on induction instead of gas, which gives tighter, more even heat control at every station. The cold chain is fully electric as well, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
       },
       {
         type: "quote",
@@ -140,7 +140,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "That's roughly what a vegetarian kitchen looks like when nobody treats it as an afterthought. Come try it and see for yourself.",
+        text: "That is what a vegetarian kitchen looks like when it is not treated as an afterthought.",
       },
     ],
   },

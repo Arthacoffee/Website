@@ -28,7 +28,7 @@ export default function VisitPage() {
       <PageIntro
         eyebrow="Visit"
         heading="Find us on Defence Colony Road"
-        lead="There's a lift up to the dining room, and a rooftop that's open through the evening. Table service, walk-ins welcome."
+        lead="There is a lift up to the dining room, and a rooftop open through the evening. Table service, walk-ins welcome."
       />
 
       <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
