@@ -7,7 +7,7 @@ export const values: Value[] = [
   {
     title: "Fully electric kitchen",
     description:
-      "We don't have an LPG connection. The kitchen runs entirely on induction, which is also more energy-efficient than the gas setup this address used before.",
+      "We don't have an LPG connection. The kitchen runs entirely on induction.",
   },
   {
     title: "Vegetarian, seriously",
@@ -32,7 +32,7 @@ export const values: Value[] = [
   {
     title: "Packaging that breaks down",
     description:
-      "We're table-service first, but any takeaway coffee still goes out in compostable or recyclable cups.",
+      "We're table-service first. Any takeaway coffee goes out in compostable or recyclable cups.",
   },
 ];
 

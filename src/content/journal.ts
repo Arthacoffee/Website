@@ -37,15 +37,15 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Artha has four service windows across the day. Brunch and the brew bar go from 10am to 12:30pm, then Andhra traditional lunch from 12pm to 3pm. Things quiet down from 3pm to 6:30pm, mostly pour-overs. Bistro and the rooftop take over from 6:30pm to 11pm.",
+        text: "Artha runs four service windows across the day. Brunch and the brew bar go from 10am to 12:30pm. Andhra traditional lunch runs from 12pm to 3pm. The brew bar continues quietly from 3pm to 6:30pm, mostly pour-overs. Bistro and the rooftop run from 6:30pm to 11pm.",
       },
       {
         type: "quote",
-        text: "People come to spend a part of their day here — we planned the menu and the rooftop around that.",
+        text: "People come to spend a part of their day here. We planned the menu and the rooftop around that.",
       },
       {
         type: "p",
-        text: "Artha is a Sanskrit word for purpose. That's where the name came from — we wanted the café to have a purpose across the whole day.",
+        text: "Artha is a Sanskrit word for purpose. That's where the name comes from. We wanted the café to have a purpose across the whole day.",
       },
     ],
   },
@@ -69,30 +69,30 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The biggest equipment decision we made at Artha was the espresso machine, a two-group setup at the centre of the brew bar. It took us longer to pick than most of the kitchen equipment did.",
+        text: "The espresso machine was the largest equipment decision at Artha — a two-group setup at the centre of the brew bar. We spent a long time choosing it.",
       },
-      { type: "h2", text: "Temperature control per group" },
+      { type: "h2", text: "Temperature control" },
       {
         type: "p",
-        text: "The machine gives independent temperature control to each group, which gets us more shot-to-shot consistency than a single-boiler machine. We price the brew bar at a premium, and tasting flights and estate coffees only work if the cup tastes the same on a fifth visit as it did on the first.",
+        text: "The machine gives independent temperature control to each group. That gives us shot-to-shot consistency. We price the brew bar at a premium, so the cup needs to taste the same on a fifth visit as it did on the first.",
       },
-      { type: "h2", text: "Sized for evening volume" },
+      { type: "h2", text: "Evening volume" },
       {
         type: "p",
-        text: "We sized our espresso setup for the evening rush, since coffee orders run alongside the full bistro menu — a load a smaller single-group machine would have struggled with.",
+        text: "Coffee orders run alongside the full bistro menu in the evening, so we sized the espresso setup for that load.",
       },
-      { type: "h2", text: "One Head Barista, full ownership" },
+      { type: "h2", text: "One Head Barista" },
       {
         type: "p",
-        text: "Specialty coffee staff are hard to find and move on quickly once trained, so we built the Head Barista role around full ownership of this machine, from calibration in the morning through service at night.",
+        text: "Specialty coffee staff are hard to find and don't stay long once trained. We built the Head Barista role around full ownership of this machine, from calibration in the morning through service at night.",
       },
       {
         type: "quote",
-        text: "Our Operational Director is an active specialty coffee practitioner himself — V60, Clever Dripper, cold brew — and designed the brew bar's procedure by hand, not from a manual.",
+        text: "Our Operational Director is an active specialty coffee practitioner himself — V60, Clever Dripper, cold brew — and designed the brew bar's procedure by hand.",
       },
       {
         type: "p",
-        text: "It comes down to the cup tasting the same at 10am as it does at 11pm.",
+        text: "The cup needs to taste the same at 10am as it does at 11pm.",
       },
     ],
   },
@@ -116,7 +116,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "We run four full food programmes out of our kitchen — brunch, Andhra traditional, Italian pasta, and bistro — from a single vegetarian pantry. Egg dishes are included, and we prepare them on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling.",
+        text: "Artha's kitchen runs four full food programmes — brunch, Andhra traditional, Italian pasta, and bistro — from a single vegetarian pantry. Egg dishes are included. They're prepared on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling.",
       },
       { type: "h2", text: "One pantry, four programmes" },
       {
@@ -126,7 +126,7 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "An induction kitchen" },
       {
         type: "p",
-        text: "Our kitchen runs entirely on induction, which gives us tighter, more even heat control at each station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
+        text: "The kitchen runs entirely on induction. That gives tighter, more even heat control at each station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
       },
       {
         type: "quote",
@@ -134,7 +134,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "Our menu covers Andhra, Italian, brunch, and bistro, all from the same kitchen, and none of it is shortened for being vegetarian.",
+        text: "The menu covers Andhra, Italian, brunch, and bistro, all from the same kitchen.",
       },
     ],
   },

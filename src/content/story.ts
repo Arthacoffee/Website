@@ -6,18 +6,18 @@
  * on the page a reader reaches after already choosing to learn more.
  */
 export const philosophy = {
-  body: "Artha is a Sanskrit word — the second of the four Purusharthas, the traditional goals of a life well lived, alongside dharma, kama and moksha. It covers wealth, career, and the material security a life needs, but only when it's earned honestly. We liked that condition enough to name the café after it. Made With Intention.",
+  body: "Artha is a Sanskrit word. It means purpose, and it's one of four traditional goals in Indian philosophy, alongside dharma, kama and moksha. It covers the practical side of life — wealth, career, financial stability — earned honestly. We named the café after it. Made With Intention.",
 };
 
 export const ourStory = {
   eyebrow: "Our Story",
   heading: "Why Artha exists",
   paragraphs: [
-    "Artha started with coffee. Good coffee takes time to make properly, and we built the café around that pace.",
+    "Coffee takes time to make properly. The café is built around that pace.",
     "We run a fully vegetarian kitchen — Andhra traditional food, Italian pasta, an all-day brunch menu, and bistro plates in the evening.",
-    "We care about hospitality as much as the food: remembering a regular's order, pulling out a chair at the right moment.",
-    "The rooftop ended up mattering more than we expected when we were planning this. People talk more and stay longer outdoors.",
-    "Parents in on a Sunday, an old friend after work, a first date on the terrace — we'd rather people kept coming back than just visited once.",
+    "We care about hospitality as much as the food. That means remembering a regular's order, or pulling out a chair at the right moment.",
+    "The rooftop matters a lot to us. People talk more and stay longer when they're sitting outside.",
+    "We want people to come back often — parents in on a Sunday, an old friend after work, a first date on the terrace.",
   ],
 };
 
@@ -31,7 +31,7 @@ export const brewBarStory = {
   eyebrow: "At The Brew Bar",
   heading: "Every cup, the same, every time.",
   paragraphs: [
-    "We make every cup on the same machine, following the same process, run start to finish by our Head Barista — calibration in the morning, through to the pour.",
-    "We wrote up the full reasoning, including which machine and how the bar runs day to day, in the Journal.",
+    "Every cup goes through the same machine and the same process, run by our Head Barista from calibration in the morning through to the pour.",
+    "We wrote up more detail on the machine and how the bar runs day to day in the Journal.",
   ],
 };
