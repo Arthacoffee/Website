@@ -24,7 +24,7 @@ export const ourStory = {
 export const experience = {
   eyebrow: "The Experience",
   heading: "Morning coffee. Slow afternoons. Evenings on the roof.",
-  body: "The café is open from the first pour of the morning to the last table on the terrace at night. There is a rooftop upstairs and a dining room downstairs. Stay as long as you like.",
+  body: "The café is open 10am to 11pm daily. There is a rooftop upstairs and a dining room downstairs, and no time limit on either table.",
 };
 
 export const brewBarStory = {

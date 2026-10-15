@@ -89,7 +89,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "The reasoning comes down to the cup tasting the same at the first pour of the morning as it does at the last flight of the night.",
+        text: "The reasoning comes down to the cup tasting the same at 10am as it does at 11pm.",
       },
     ],
   },
