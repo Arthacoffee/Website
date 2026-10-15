@@ -39,10 +39,6 @@ export default function KitchenPage() {
         paragraphs={[
           "Andhra gravies and Italian pasta, out of one vegetarian pantry, brunch through to bistro.",
         ]}
-        cta={{
-          label: "Read the Full Story",
-          href: "/journal/a-fully-vegetarian-kitchen-done-seriously",
-        }}
         imageCategory="kitchen"
         imageSrc="/images/kitchen/pasta-plating.jpg"
         imageAlt="Finishing a pasta dish at the Artha kitchen"

@@ -89,42 +89,6 @@ export const journalPosts: JournalPost[] = [
       },
     ],
   },
-  {
-    slug: "a-fully-vegetarian-kitchen-done-seriously",
-    category: "The Kitchen",
-    title: "A Fully Vegetarian Kitchen, Done Seriously",
-    excerpt:
-      "San Marzano tomatoes, De Cecco pasta, gongura and nati ghee — the ingredients behind a fully vegetarian kitchen.",
-    metaDescription:
-      "The ingredients behind Artha's fully vegetarian kitchen — Andhra traditional, Italian pasta, brunch, and bistro.",
-    publishedAt: "2026-07-01",
-    cardImage: {
-      src: "/images/kitchen/andhra-thali.jpg",
-      alt: "An Andhra thali at Artha",
-    },
-    heroImage: {
-      src: "/images/kitchen/pasta-overhead.jpg",
-      alt: "A plated pasta dish from Artha's Italian programme",
-    },
-    body: [
-      {
-        type: "p",
-        text: "The kitchen runs four food programmes — brunch, Andhra traditional, Italian pasta, and bistro — all from a single vegetarian pantry, egg dishes included.",
-      },
-      {
-        type: "p",
-        text: "Italian means San Marzano tomatoes and De Cecco pasta. Andhra means gongura, nati ghee, and curry leaf, cooked the way it's actually made at home.",
-      },
-      {
-        type: "quote",
-        text: 'Andhra lunch, Italian dinner, or a bistro evening — the answer to "is there anything vegetarian?" here is simply: everything.',
-      },
-      {
-        type: "p",
-        text: "Egg dishes are prepared on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling, so there's no ambiguity about what's on the plate.",
-      },
-    ],
-  },
 ];
 
 export function getJournalPost(slug: string) {

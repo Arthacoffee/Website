@@ -54,7 +54,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/journal/vegetarian-kitchen.html",
-        destination: "/journal/a-fully-vegetarian-kitchen-done-seriously",
+        destination: "/journal",
         permanent: true,
       },
     ];
