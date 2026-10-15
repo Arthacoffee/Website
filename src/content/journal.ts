@@ -50,13 +50,13 @@ export const journalPosts: JournalPost[] = [
     ],
   },
   {
-    slug: "why-we-built-our-brew-bar-around-one-machine",
+    slug: "why-every-cup-tastes-the-same",
     category: "The Coffee",
-    title: "Why We Built Our Brew Bar Around One Machine",
+    title: "Why Every Cup Tastes The Same",
     excerpt:
-      "Consistency, throughput, and the reasoning behind the espresso machine at the centre of the brew bar.",
+      "The cup at Artha is meant to taste the same at 10am as it does at 11pm, on your first visit or your fifth.",
     metaDescription:
-      "The reasoning behind the espresso machine at the centre of Artha's brew bar — consistency, throughput, and craft.",
+      "Why every cup at Artha's brew bar tastes the same, morning to night, visit after visit.",
     publishedAt: "2026-06-15",
     cardImage: {
       src: "/images/coffee/brew-server.jpg",
@@ -69,22 +69,11 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The espresso machine was the largest equipment decision at Artha — a two-group setup at the centre of the brew bar. We spent a long time choosing it.",
+        text: "The cup at Artha is meant to taste the same every time — the first pour of the morning, or the last order at night.",
       },
-      { type: "h2", text: "Temperature control" },
       {
         type: "p",
-        text: "The machine gives independent temperature control to each group. That gives us shot-to-shot consistency. We price the brew bar at a premium, so the cup needs to taste the same on a fifth visit as it did on the first.",
-      },
-      { type: "h2", text: "Evening volume" },
-      {
-        type: "p",
-        text: "Coffee orders run alongside the full bistro menu in the evening, so we sized the espresso setup for that load.",
-      },
-      { type: "h2", text: "One Head Barista" },
-      {
-        type: "p",
-        text: "Specialty coffee staff are hard to find and don't stay long once trained. We built the Head Barista role around full ownership of this machine, from calibration in the morning through service at night.",
+        text: "Our Head Barista owns the process end to end, from calibrating the espresso machine each morning through to the pour that reaches your hand. One person, one process, every cup.",
       },
       {
         type: "quote",
@@ -92,7 +81,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "The cup needs to taste the same at 10am as it does at 11pm.",
+        text: "Tasting flights and estate coffees are priced at a premium, so the cup needs to taste the same on a fifth visit as it did on the first.",
       },
     ],
   },
@@ -122,11 +111,6 @@ export const journalPosts: JournalPost[] = [
       {
         type: "p",
         text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes real coordination day to day.",
-      },
-      { type: "h2", text: "An induction kitchen" },
-      {
-        type: "p",
-        text: "The kitchen runs entirely on induction. That gives tighter, more even heat control at each station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the correct temperature through service.",
       },
       {
         type: "quote",
