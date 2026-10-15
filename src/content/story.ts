@@ -13,7 +13,7 @@ export const ourStory = {
   eyebrow: "Our Story",
   heading: "Why Artha exists",
   paragraphs: [
-    "Artha started with coffee. Good coffee takes time to make properly, and we built the café around that pace instead of speed.",
+    "Artha started with coffee. Good coffee takes time to make properly, and we built the café around that pace.",
     "We run a fully vegetarian kitchen — Andhra traditional food, Italian pasta, an all-day brunch menu, and bistro plates in the evening.",
     "We care about hospitality as much as the food: remembering a regular's order, pulling out a chair at the right moment.",
     "The rooftop ended up mattering more than we expected when we were planning this. People talk more and stay longer outdoors.",
@@ -24,7 +24,7 @@ export const ourStory = {
 export const experience = {
   eyebrow: "The Experience",
   heading: "Morning coffee. Slow afternoons. Evenings on the roof.",
-  body: "We're open 10am to 11pm daily. There's a rooftop upstairs and a dining room downstairs, and no time limit on either table.",
+  body: "We're open 10am to 11pm daily. There's a rooftop upstairs and a dining room downstairs. Stay as long as you like.",
 };
 
 export const brewBarStory = {

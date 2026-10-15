@@ -22,9 +22,9 @@ export const journalPosts: JournalPost[] = [
     category: "The Concept",
     title: "One Address, Four Parts Of The Day",
     excerpt:
-      "Why we built Artha to run from the first filter coffee to the last rooftop plate, instead of owning just one occasion.",
+      "Why Artha runs four separate service windows across the day, from the morning brew bar to the evening rooftop.",
     metaDescription:
-      "Why Artha Speciality Coffee is built to run from morning brew bar to evening rooftop, instead of owning a single occasion.",
+      "Why Artha Speciality Coffee runs four service windows across the day, from morning brew bar to evening rooftop.",
     publishedAt: "2026-06-01",
     cardImage: {
       src: "/images/interior/dining-hall.jpg",
@@ -38,11 +38,6 @@ export const journalPosts: JournalPost[] = [
       {
         type: "p",
         text: "Artha has four service windows across the day. Brunch and the brew bar go from 10am to 12:30pm, then Andhra traditional lunch from 12pm to 3pm. Things quiet down from 3pm to 6:30pm, mostly pour-overs. Bistro and the rooftop take over from 6:30pm to 11pm.",
-      },
-      { type: "h2", text: "Most places on this street cover one window" },
-      {
-        type: "p",
-        text: "A European bakery-café next door serves coffee and pastry in the morning. A rooftop coffee bar about a hundred metres on has limited food. A well-known vegetarian restaurant further up the road opens at 7pm and doesn't serve coffee at all. There's also a French patisserie and a fully vegan café nearby. Artha runs all four windows.",
       },
       {
         type: "quote",
@@ -84,12 +79,12 @@ export const journalPosts: JournalPost[] = [
       { type: "h2", text: "Sized for evening volume" },
       {
         type: "p",
-        text: "Most cafés size their espresso setup around the morning rush. We sized ours for the evening instead, since our coffee orders run alongside the full bistro menu — a load a smaller single-group machine would have struggled with.",
+        text: "We sized our espresso setup for the evening rush, since coffee orders run alongside the full bistro menu — a load a smaller single-group machine would have struggled with.",
       },
       { type: "h2", text: "One Head Barista, full ownership" },
       {
         type: "p",
-        text: "Specialty coffee staff are hard to find and move on quickly once trained, so we built the Head Barista role around full ownership of this machine, from calibration in the morning through service at night, rather than rotating staff through it as a station.",
+        text: "Specialty coffee staff are hard to find and move on quickly once trained, so we built the Head Barista role around full ownership of this machine, from calibration in the morning through service at night.",
       },
       {
         type: "quote",
@@ -128,7 +123,7 @@ export const journalPosts: JournalPost[] = [
         type: "p",
         text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes real coordination day to day.",
       },
-      { type: "h2", text: "Induction instead of gas" },
+      { type: "h2", text: "An induction kitchen" },
       {
         type: "p",
         text: "Our kitchen runs entirely on induction, which gives us tighter, more even heat control at each station. The cold chain is fully electric too, keeping produce, dairy, and prepared gravies at the correct temperature through service.",

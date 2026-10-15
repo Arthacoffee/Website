@@ -21,6 +21,21 @@ paragraphs. Examples actually caught and removed from this codebase:
 - "We wanted to be the one place on this road that isn't [built around a
   single occasion]."
 - "...a purpose across the whole day, not just one part of it."
+- "Most cafés size their espresso setup around the morning rush. We sized
+  ours for the evening instead." / "induction, not gas." / "...instead of
+  speed."
+
+**This is a structural problem, not just a wording problem.** A whole
+paragraph built as "here's what other places do (list), here's what we do
+differently (summary)" is the same antithesis move stretched across
+several sentences — rewording the ending doesn't fix it even if no single
+sentence literally says "not X." A journal post about why Artha runs four
+service windows does not need a systematic survey of five named nearby
+businesses and what each one lacks; that is competitive-positioning copy,
+not something an owner casually mentions. When explaining a choice, state
+what Artha does and why, and cut the "most cafés do X" setup rather than
+trying to reword it — the comparison itself is the tell, not just "not"
+or "instead."
 
 If a sentence pits two things against each other to land a point, rewrite
 it as a plain positive statement instead.

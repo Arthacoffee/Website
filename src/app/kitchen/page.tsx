@@ -37,7 +37,7 @@ export default function KitchenPage() {
         eyebrow="Range Without Compromise"
         heading="Four programmes. One vegetarian pantry, brunch to bistro."
         paragraphs={[
-          "Andhra gravies and Italian pasta, out of one vegetarian pantry, brunch through to bistro — on induction, not gas.",
+          "Andhra gravies and Italian pasta, out of one vegetarian pantry, brunch through to bistro, on an induction kitchen.",
         ]}
         cta={{
           label: "Read the Full Story",
