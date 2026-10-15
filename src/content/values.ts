@@ -7,32 +7,32 @@ export const values: Value[] = [
   {
     title: "Fully electric kitchen",
     description:
-      "No LPG connection — induction cooking throughout, more energy-efficient than the gas kitchen this address ran before.",
+      "There's no LPG connection here. Everything runs on induction, which also happens to be more energy-efficient than the gas kitchen this address used to run.",
   },
   {
     title: "Vegetarian, seriously",
     description:
-      "A fully vegetarian kitchen, including egg-based dishes prepared on dedicated equipment with clear FSSAI green/brown-dot labelling.",
+      "A fully vegetarian kitchen, egg dishes included. Those are prepared on their own dedicated equipment, with clear FSSAI green/brown-dot labelling so nobody has to guess.",
   },
   {
     title: "Waste segregated at source",
     description:
-      "Wet and dry waste sorted at every station, with used coffee grounds set aside for composting partnerships.",
+      "Wet and dry waste get sorted at every station. Used coffee grounds are set aside separately for composting partnerships.",
   },
   {
     title: "Water conscious",
     description:
-      "The RO system feeding our brew bar reuses reject water for cleaning, alongside low-flow fixtures throughout.",
+      "The RO system feeding our brew bar reuses its reject water for cleaning. We've also got low-flow fixtures throughout the space.",
   },
   {
     title: "Sourced close to home",
     description:
-      "Coffee comes from a Hyderabad-based roaster, and kitchen supplies from Hyderabad vendors wherever feasible.",
+      "Our coffee comes from a Hyderabad-based roaster, and most kitchen supplies come from Hyderabad vendors too, wherever that's feasible.",
   },
   {
     title: "Packaging that breaks down",
     description:
-      "Any takeaway coffee service uses compostable or recyclable cups, even though we're table-service first.",
+      "We're table-service first, but any takeaway coffee still goes out in compostable or recyclable cups.",
   },
 ];
 
@@ -41,24 +41,24 @@ export const dayParts = [
     time: "10am – 12:30pm",
     title: "Brunch & Brew Bar",
     description:
-      "Filter, V60, cold brew and espresso alongside punugulu, avocado toast, shakshuka and pesarattu.",
+      "Filter, V60, cold brew and espresso, plus punugulu, avocado toast, shakshuka and pesarattu.",
   },
   {
     time: "12pm – 3pm",
     title: "Andhra Traditional",
     description:
-      "Full Andhra meals, rice plates and gravies — the everyday vegetarian lunch, done properly.",
+      "Full Andhra meals, rice plates, gravies. The everyday vegetarian lunch, just done properly for once.",
   },
   {
     time: "3pm – 6:30pm",
     title: "The Afternoon Pour",
     description:
-      "Mostly filter and espresso — the quiet window for the brew bar's tasting flights and estate coffees.",
+      "Things get quieter here, which is really the point — mostly filter and espresso, tasting flights, estate coffees if you want to linger over one.",
   },
   {
     time: "6:30pm – 11pm",
     title: "Bistro & Rooftop",
     description:
-      "Italian pasta, bistro mains and small plates — best had on the terrace.",
+      "Italian pasta, bistro mains, small plates. Best had up on the terrace if the weather's playing along.",
   },
 ] as const;

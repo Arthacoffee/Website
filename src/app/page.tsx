@@ -32,8 +32,8 @@ export default function HomePage() {
         eyebrow="The Kitchen"
         heading="Andhra, Italian, brunch to bistro — entirely vegetarian."
         paragraphs={[
-          "Andhra classics, Italian pasta, brunch and bistro — four menus, entirely vegetarian, eggs included, prepared with care.",
-          "One kitchen, built to do it all properly — a vegetarian table deserves the same range as any other.",
+          "Andhra classics, Italian pasta, brunch, bistro. Four menus, all vegetarian, eggs included, all made with the same care.",
+          "It's one kitchen trying to do all of it properly, because we figured a vegetarian table deserves the same range as any other.",
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}
         imageCategory="kitchen"
@@ -55,8 +55,8 @@ export default function HomePage() {
       />
 
       <PullQuote attribution="From the Journal">
-        It&apos;s not about having the fanciest machine on the street. It&apos;s about
-        the cup being right, every single time.
+        It was never about having the fanciest machine on the street — just about the
+        cup being right, every single time.
       </PullQuote>
 
       <ExperienceSection />

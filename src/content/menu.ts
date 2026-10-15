@@ -63,4 +63,4 @@ export const kitchenLanes: MenuLane[] = [
 ];
 
 export const vegetarianNote =
-  "100% vegetarian kitchen. All dishes, including egg-based preparations, are made on dedicated equipment with clear FSSAI green/brown-dot labelling. Prices and availability are indicative and may vary seasonally — please confirm with the team when you visit.";
+  "100% vegetarian kitchen. Egg-based preparations are made on their own dedicated equipment, with clear FSSAI green/brown-dot labelling. Prices and availability are indicative and do shift with the season, so please double-check with the team when you visit.";
