@@ -13,6 +13,6 @@ export const team: TeamMember[] = [
   {
     name: "Sri Teja Behara",
     role: "Operational Director",
-    bio: "Teja has 8+ years of food-tech operations experience at Uber Eats, DoorDash and Laalsa. He holds a PGDM in Operations Management from IMT Ghaziabad and is a Lean Six Sigma Green Belt. He is also a specialty coffee practitioner — V60, Clever Dripper, cold brew — and designed Artha's brew bar programme by hand.",
+    bio: "Teja has 8+ years of food-tech operations experience at Uber Eats, DoorDash and Laalsa. He holds a PGDM in Operations Management from IMT Ghaziabad and is a Lean Six Sigma Green Belt, and designed Artha's brew bar programme himself.",
   },
 ];

@@ -121,7 +121,7 @@ export default async function JournalPostPage({
         </Container>
       </article>
 
-      <CtaBand eyebrow="Taste It Yourself" heading="Come find your part of the day." />
+      <CtaBand eyebrow="Taste It Yourself" heading="Come taste it in person." />
     </>
   );
 }

@@ -42,7 +42,7 @@ export default function CoffeePage() {
         ]}
         cta={{
           label: "Read the Full Story",
-          href: "/journal/why-every-cup-tastes-the-same",
+          href: "/journal/how-we-brew",
         }}
         imageCategory="coffee"
         imageSrc="/images/coffee/espresso-pull.jpg"

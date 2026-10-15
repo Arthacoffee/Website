@@ -18,13 +18,13 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
-    slug: "one-address-four-parts-of-the-day",
-    category: "The Concept",
-    title: "One Address, Four Parts Of The Day",
+    slug: "indian-single-origin-coffee",
+    category: "The Coffee",
+    title: "Why We Pour Indian Coffee",
     excerpt:
-      "Why Artha runs four separate service windows across the day, from the morning brew bar to the evening rooftop.",
+      "Our beans come from single-origin estates in Nagaland, the Pulney hills, Udaigiri, and the Hoysala region.",
     metaDescription:
-      "Why Artha Speciality Coffee runs four service windows across the day, from morning brew bar to evening rooftop.",
+      "Artha's coffee comes from single-origin Indian estates in Nagaland, the Pulney hills, Udaigiri, and Hoysala.",
     publishedAt: "2026-06-01",
     cardImage: {
       src: "/images/interior/dining-hall.jpg",
@@ -37,26 +37,30 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Artha runs four service windows across the day. Brunch and the brew bar go from 10am to 12:30pm. Andhra traditional lunch runs from 12pm to 3pm. The brew bar continues quietly from 3pm to 6:30pm, mostly pour-overs. Bistro and the rooftop run from 6:30pm to 11pm.",
-      },
-      {
-        type: "quote",
-        text: "People come to spend a part of their day here. We planned the menu and the rooftop around that.",
+        text: "Our coffee comes from single-origin estates in Nagaland, the Pulney hills, Udaigiri, and the Hoysala region — all grown in India.",
       },
       {
         type: "p",
-        text: "Artha is a Sanskrit word for purpose. That's where the name comes from. We wanted the café to have a purpose across the whole day.",
+        text: "Washed beans come out light and floral, with a gentle acidity. Natural and honey-processed beans turn fruity and full-bodied. Anaerobic micro-lots go intense, almost wine-like. The processing changes the cup as much as the origin does.",
+      },
+      {
+        type: "quote",
+        text: "Filter coffee is where this started for us — the everyday South Indian cup, made properly, every time.",
+      },
+      {
+        type: "p",
+        text: "A tasting flight at the brew bar is three cups, three origins, poured and explained one at a time.",
       },
     ],
   },
   {
-    slug: "why-every-cup-tastes-the-same",
+    slug: "how-we-brew",
     category: "The Coffee",
-    title: "Why Every Cup Tastes The Same",
+    title: "V60, Kalita Wave, Or Clever Dripper",
     excerpt:
-      "The cup at Artha is meant to taste the same at 10am as it does at 11pm, on your first visit or your fifth.",
+      "The same bean tastes different depending on how it's brewed. Here's what each method actually changes.",
     metaDescription:
-      "Why every cup at Artha's brew bar tastes the same, morning to night, visit after visit.",
+      "How V60, Kalita Wave, Clever Dripper, and cold brew each change the taste of the same coffee at Artha.",
     publishedAt: "2026-06-15",
     cardImage: {
       src: "/images/coffee/brew-server.jpg",
@@ -69,19 +73,19 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The cup at Artha is meant to taste the same every time — the first pour of the morning, or the last order at night.",
+        text: "The same bean tastes different depending on how it's brewed. A V60 pulls out brightness and clarity. A Kalita Wave comes out rounder and more even. A Clever Dripper sits closer to immersion, fuller in the mouth.",
       },
       {
         type: "p",
-        text: "Our Head Barista owns the process end to end, from calibrating the espresso machine each morning through to the pour that reaches your hand. One person, one process, every cup.",
+        text: "At the brew bar, you can pick the method and we'll match a bean to it, or tell us what you like and we'll suggest the method.",
       },
       {
         type: "quote",
-        text: "Our Operational Director is an active specialty coffee practitioner himself — V60, Clever Dripper, cold brew — and designed the brew bar's procedure by hand.",
+        text: "A cup of filter coffee here should taste the same on your first visit as it does on your fifth.",
       },
       {
         type: "p",
-        text: "Tasting flights and estate coffees are priced at a premium, so the cup needs to taste the same on a fifth visit as it did on the first.",
+        text: "Our cold brew steeps for 18 hours before it's poured.",
       },
     ],
   },
@@ -90,9 +94,9 @@ export const journalPosts: JournalPost[] = [
     category: "The Kitchen",
     title: "A Fully Vegetarian Kitchen, Done Seriously",
     excerpt:
-      "Andhra, Italian, brunch and bistro, all vegetarian, all from one kitchen — how that actually works.",
+      "San Marzano tomatoes, De Cecco pasta, gongura and nati ghee — the ingredients behind a fully vegetarian kitchen.",
     metaDescription:
-      "How Artha runs Andhra, Italian, brunch and bistro programmes from one fully vegetarian kitchen.",
+      "The ingredients behind Artha's fully vegetarian kitchen — Andhra traditional, Italian pasta, brunch, and bistro.",
     publishedAt: "2026-07-01",
     cardImage: {
       src: "/images/kitchen/andhra-thali.jpg",
@@ -105,12 +109,11 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Artha's kitchen runs four full food programmes — brunch, Andhra traditional, Italian pasta, and bistro — from a single vegetarian pantry. Egg dishes are included. They're prepared on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling.",
+        text: "The kitchen runs four food programmes — brunch, Andhra traditional, Italian pasta, and bistro — all from a single vegetarian pantry, egg dishes included.",
       },
-      { type: "h2", text: "One pantry, four programmes" },
       {
         type: "p",
-        text: "Andhra gravies and Italian pasta come from the same pantry, from brunch through to bistro service. Running four programmes off one pantry takes real coordination day to day.",
+        text: "Italian means San Marzano tomatoes and De Cecco pasta. Andhra means gongura, nati ghee, and curry leaf, cooked the way it's actually made at home.",
       },
       {
         type: "quote",
@@ -118,7 +121,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "The menu covers Andhra, Italian, brunch, and bistro, all from the same kitchen.",
+        text: "Egg dishes are prepared on their own dedicated equipment, with FSSAI green-dot and brown-dot labelling, so there's no ambiguity about what's on the plate.",
       },
     ],
   },

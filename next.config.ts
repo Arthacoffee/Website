@@ -44,12 +44,12 @@ const nextConfig: NextConfig = {
       { source: "/journal.html", destination: "/journal", permanent: true },
       {
         source: "/journal/brew-bar-eagle-one.html",
-        destination: "/journal/why-we-built-our-brew-bar-around-one-machine",
+        destination: "/journal/how-we-brew",
         permanent: true,
       },
       {
         source: "/journal/four-parts-of-the-day.html",
-        destination: "/journal/one-address-four-parts-of-the-day",
+        destination: "/journal",
         permanent: true,
       },
       {
