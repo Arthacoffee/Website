@@ -1,7 +1,7 @@
 export const whyWeExist = {
   eyebrow: "Why We Exist",
   heading: "Artha means purpose. That's the point.",
-  body: "Artha is a Sanskrit word for purpose — one of the four traditional aims of a well-lived life, alongside dharma, kama and moksha. We named the café after it, so we've set ourselves a fairly high bar.",
+  body: "Artha comes from the Sanskrit root arth, meaning to strive for, desire, or aim at. In Indian philosophy it's one of the four Purusharthas — the traditional goals of life, alongside dharma, kama and moksha — and it covers the material side of things: wealth, career, financial security. We named the café after it.",
 };
 
 /**
@@ -13,7 +13,7 @@ export const whyWeExist = {
  * duplicate rather than a reveal.
  */
 export const philosophy = {
-  body: "Artha means purpose, but not in the tidy inspirational-poster sense. In Indian philosophy it's specifically the material, practical side of life — work, stability, livelihood — and it's only considered worthwhile when it's earned honestly. We liked that it's a fairly grounded idea, not just a nice-sounding one. Made With Intention.",
+  body: "Artha is a Sanskrit word — the second of the four Purusharthas, the traditional goals of a life well lived, alongside dharma, kama and moksha. It covers wealth, career, and the material security a life needs, on the condition that it's governed by dharma: artha pursued through deceit isn't considered true artha. We named the café after it. Made With Intention.",
 };
 
 export const ourStory = {
