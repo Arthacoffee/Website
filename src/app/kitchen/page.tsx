@@ -37,8 +37,7 @@ export default function KitchenPage() {
         eyebrow="Range Without Compromise"
         heading="Four programmes. One vegetarian pantry, brunch to bistro."
         paragraphs={[
-          "Andhra gravies and Italian pasta, all out of one vegetarian pantry, brunch through to bistro. It is more work than running a smaller menu, and it is the standard the kitchen is held to.",
-          "The kitchen itself runs on induction rather than gas, which gives tighter heat control station to station and keeps the room noticeably cooler.",
+          "Andhra gravies and Italian pasta, out of one vegetarian pantry, brunch through to bistro — on induction, not gas.",
         ]}
         cta={{
           label: "Read the Full Story",

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageIntro } from "@/components/sections/page-intro";
-import { SplitFeature } from "@/components/sections/split-feature";
 import { PullQuote } from "@/components/sections/pull-quote";
 import { TeamCard } from "@/components/sections/team-card";
 import { ValuesGrid } from "@/components/sections/values-grid";
@@ -8,7 +7,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 import { Container } from "@/components/ui/container";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
-import { ourStory, philosophy, brewBarStory } from "@/content/story";
+import { ourStory, philosophy } from "@/content/story";
 import { team } from "@/content/team";
 import { breadcrumbJsonLd } from "@/lib/structured-data";
 
@@ -63,17 +62,6 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
-
-      <SplitFeature
-        eyebrow={brewBarStory.eyebrow}
-        heading={brewBarStory.heading}
-        paragraphs={brewBarStory.paragraphs}
-        imageCategory="coffee"
-        imageSrc="/images/coffee/latte-art-close.jpg"
-        imageAlt="A cup of latte art at Artha's brew bar"
-        reverse
-        tone="stone"
-      />
 
       <ValuesGrid />
 

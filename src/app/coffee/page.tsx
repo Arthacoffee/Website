@@ -37,7 +37,9 @@ export default function CoffeePage() {
       <SplitFeature
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
-        paragraphs={brewBarStory.paragraphs}
+        paragraphs={[
+          "Every cup made on the same machine, by the same Head Barista, calibration to pour.",
+        ]}
         cta={{
           label: "Read the Full Story",
           href: "/journal/why-we-built-our-brew-bar-around-one-machine",
