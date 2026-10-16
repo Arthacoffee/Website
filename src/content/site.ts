@@ -9,7 +9,7 @@ export const site = {
   fullName: "Artha Speciality Coffee",
   tagline: "Made With Intention.",
   description:
-    "Specialty coffee and vegetarian food in Sainikpuri, Secunderabad, with rooftop seating and table service from 10am to 11pm daily.",
+    "Specialty coffee and vegetarian food in Sainikpuri, Secunderabad. We have rooftop seating, and we're open 10am to 11pm daily.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://arthacoffee.com",
   locale: "en_IN",
   address: {

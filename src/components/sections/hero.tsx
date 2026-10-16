@@ -80,8 +80,8 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
           className="text-body-lg text-background/80 mt-8 max-w-xl"
         >
-          Specialty coffee, vegetarian food, and a rooftop terrace — open daily on
-          Defence Colony Road, Sainikpuri.
+          We serve specialty coffee and vegetarian food on Defence Colony Road,
+          Sainikpuri, with a rooftop terrace open daily.
         </motion.p>
 
         <motion.div

@@ -41,24 +41,24 @@ export const dayParts = [
     time: "10am – 12:30pm",
     title: "Brunch & Brew Bar",
     description:
-      "Filter, V60, cold brew and espresso, plus punugulu, avocado toast, shakshuka and pesarattu.",
+      "We pour filter, V60, cold brew and espresso, and serve punugulu, avocado toast, shakshuka and pesarattu.",
   },
   {
     time: "12pm – 3pm",
     title: "Andhra Traditional",
     description:
-      "Full Andhra meals, rice plates, and gravies — the everyday vegetarian lunch, prepared properly.",
+      "We serve full Andhra meals, rice plates, and gravies for the everyday lunch, made properly.",
   },
   {
     time: "3pm – 6:30pm",
     title: "The Afternoon Pour",
     description:
-      "Quieter hours at the brew bar — mostly filter and espresso, along with tasting flights and estate coffees.",
+      "This is a quieter window at the brew bar. We mostly pour filter and espresso, along with tasting flights and estate coffees.",
   },
   {
     time: "6:30pm – 11pm",
     title: "Bistro & Rooftop",
     description:
-      "Italian pasta, bistro mains, and small plates, served up on the terrace.",
+      "We serve Italian pasta, bistro mains, and small plates, mostly up on the terrace.",
   },
 ] as const;
