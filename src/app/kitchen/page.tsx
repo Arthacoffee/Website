@@ -35,10 +35,14 @@ export default function KitchenPage() {
 
       <SplitFeature
         eyebrow="Range Without Compromise"
-        heading="Four programmes. One vegetarian pantry, brunch to bistro."
+        heading="The same kitchen runs all four programmes."
         paragraphs={[
-          "Andhra gravies and Italian pasta, out of one vegetarian pantry, brunch through to bistro.",
+          "Andhra gravies and Italian pasta both come out of the same vegetarian pantry, from brunch through to bistro.",
         ]}
+        cta={{
+          label: "Read the Full Story",
+          href: "/journal/why-we-built-the-menu-this-way",
+        }}
         imageCategory="kitchen"
         imageSrc="/images/kitchen/pasta-plating.jpg"
         imageAlt="Finishing a pasta dish at the Artha kitchen"

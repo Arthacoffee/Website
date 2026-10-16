@@ -49,18 +49,18 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "A tasting flight at the brew bar is three cups, three origins, poured and explained one at a time.",
+        text: "A tasting flight at the brew bar gives you three different cups, each one explained as it's poured.",
       },
     ],
   },
   {
     slug: "how-we-brew",
     category: "The Coffee",
-    title: "V60, Kalita Wave, Or Clever Dripper",
+    title: "The Same Bean Tastes Different By Brew Method",
     excerpt:
-      "The same bean tastes different depending on how it's brewed. Here's what each method actually changes.",
+      "Pour the same bean through a V60, a Kalita Wave, or a Clever Dripper, and you get a different cup each time.",
     metaDescription:
-      "How V60, Kalita Wave, Clever Dripper, and cold brew each change the taste of the same coffee at Artha.",
+      "Why the same coffee bean tastes different brewed through a V60, Kalita Wave, Clever Dripper, or cold brew.",
     publishedAt: "2026-06-15",
     cardImage: {
       src: "/images/coffee/brew-server.jpg",
@@ -86,6 +86,46 @@ export const journalPosts: JournalPost[] = [
       {
         type: "p",
         text: "Our cold brew steeps for 18 hours before it's poured.",
+      },
+    ],
+  },
+  {
+    slug: "why-we-built-the-menu-this-way",
+    category: "The Kitchen",
+    title: "Why We Built The Menu This Way",
+    excerpt:
+      "Andhra food for the people who grew up on it, pasta and bistro alongside it, and a thali built for a proper sit-down meal.",
+    metaDescription:
+      "Why Artha's menu pairs traditional Andhra food with Italian and bistro dishes, and what that means for a vegetarian table.",
+    publishedAt: "2026-07-15",
+    cardImage: {
+      src: "/images/kitchen/andhra-thali.jpg",
+      alt: "An Andhra thali at Artha",
+    },
+    heroImage: {
+      src: "/images/kitchen/pasta-overhead.jpg",
+      alt: "A plated pasta dish from Artha's Italian programme",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Andhra food is what a lot of our guests grew up on. Few people still have the time to cook it properly at home, so we built the kitchen to do it for them.",
+      },
+      {
+        type: "p",
+        text: "The rest of the menu — Italian pasta, bistro plates, brunch — sits alongside it for everyone who wants something more modern too.",
+      },
+      {
+        type: "p",
+        text: "A thali is a full, proper meal in one sitting: rice, pappu, sambar, rasam, a curry, curd, pickle, papad, all together. That's what people want when they actually sit down to eat.",
+      },
+      {
+        type: "quote",
+        text: "\"Vegetarian eating patterns have been associated with improved health outcomes including lower levels of obesity, a reduced risk of heart disease and lower blood pressure.\" — Academy of Nutrition and Dietetics",
+      },
+      {
+        type: "p",
+        text: "Our menu includes eggs, which puts it in the lacto-ovo category. A 2023 study based in Hyderabad found that group had the best health outcomes of any vegetarian diet studied.",
       },
     ],
   },
