@@ -55,10 +55,6 @@ export const journalPosts: JournalPost[] = [
         type: "quote",
         text: "Filter coffee is where this started for us — the everyday South Indian cup, made properly, every time.",
       },
-      {
-        type: "p",
-        text: "A tasting flight at the brew bar gives you three different cups, each one explained as it's poured.",
-      },
     ],
   },
   {
