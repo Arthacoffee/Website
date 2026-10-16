@@ -108,7 +108,7 @@ export const journalPosts: JournalPost[] = [
     },
     heroImage: {
       src: "/images/kitchen/pasta-overhead.jpg",
-      alt: "A plated pasta dish from Artha's Italian programme",
+      alt: "A plated pasta dish from Artha's Italian menu",
     },
     body: [
       {

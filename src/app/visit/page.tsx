@@ -11,7 +11,7 @@ import { breadcrumbJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Visit & Reservations",
   description:
-    "Find Artha Speciality Coffee on Defence Colony Road, Sainikpuri, Secunderabad. Hours by service window, directions, and table reservations.",
+    "Find Artha Speciality Coffee on Defence Colony Road, Sainikpuri, Secunderabad. Hours by time of day, directions, and table reservations.",
   alternates: { canonical: "/visit" },
 };
 
@@ -28,7 +28,7 @@ export default function VisitPage() {
       <PageIntro
         eyebrow="Visit"
         heading="Find us on Defence Colony Road"
-        lead="There is a lift up to the dining room, and a rooftop open through the evening. Table service, walk-ins welcome."
+        lead="Take the lift up to the dining hall, or grab a table on the rooftop in the evening. Everything is table service, and walk-ins are always welcome."
       />
 
       <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
@@ -114,7 +114,7 @@ export default function VisitPage() {
               <thead>
                 <tr>
                   <th className="border-stone text-caption text-bronze-ink border-b pb-3 text-left font-medium tracking-[0.08em] uppercase">
-                    Service Window
+                    Menu
                   </th>
                   <th className="border-stone text-caption text-bronze-ink border-b pb-3 text-left font-medium tracking-[0.08em] uppercase">
                     Hours

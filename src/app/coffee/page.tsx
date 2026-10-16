@@ -10,7 +10,7 @@ import { breadcrumbJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Coffee",
   description:
-    "Artha's specialty coffee programme: filter, V60, cold brew, tasting flights, and espresso classics, served 10am to 11pm from one brew bar.",
+    "Artha's specialty coffee menu: filter, V60, cold brew, tasting flights, and espresso classics, served 10am to 11pm from one brew bar.",
   alternates: { canonical: "/coffee" },
 };
 
@@ -38,7 +38,7 @@ export default function CoffeePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "We make every cup on the same machine, with the same Head Barista, so your Tuesday coffee tastes the same as your Sunday one.",
+          "Our Head Barista dials in every roast on one machine, so a cup you order on a Tuesday afternoon tastes just as good as your Sunday morning one.",
         ]}
         cta={{
           label: "Read the Full Story",
