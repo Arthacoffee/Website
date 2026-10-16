@@ -65,6 +65,23 @@ it as a plain positive statement instead.
   about their own place in first person ("we," "our"). Use active voice
   and natural contractions — real owner-written copy sounds like someone
   talking, not a Wikipedia entry.
+- **B2B/startup jargon and pitch-deck language**: "owns it end-to-end,"
+  "throughput," "calibration to the pour," "consistency over spectacle,"
+  "range without compromise." This reads like an internal ops deck, not
+  someone describing their own café.
+- **The "built for/built to" formula, repeated sitewide**: "built for
+  slowing down," "built to earn that name," "built for the evening,"
+  "built to last." Banning the literal word isn't the point (plain past
+  tense "we built our kitchen to do X" is fine) — the tell is this exact
+  templated construction reused as a flourish across unrelated sections.
+- **Self-congratulatory filler** that claims quality instead of showing
+  it: "done properly," "do it all properly," "done seriously," "prepared
+  with care/precision," "thoughtful vegetarian food." Cut it or replace
+  with the actual fact that would prove the claim.
+- A short brand tagline (e.g. "Made With Intention.") is fine inside a
+  `<title>` tag, but don't also display it as a standalone line in body
+  copy/hero/footer — that's where it starts reading as a slogan plastered
+  on the page rather than a page title.
 
 ## What's fine
 

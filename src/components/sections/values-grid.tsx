@@ -6,7 +6,7 @@ import { values } from "@/content/values";
 
 export function ValuesGrid({
   eyebrow = "How We Run The Kitchen",
-  heading = "Vegetarian, electric, and built to last.",
+  heading = "Vegetarian, electric, and careful with water and waste.",
 }: {
   eyebrow?: string;
   heading?: string;

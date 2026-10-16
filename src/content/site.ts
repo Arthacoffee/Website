@@ -31,7 +31,7 @@ export const site = {
   hours: {
     opens: "10:00",
     closes: "23:00",
-    display: "Daily — 10:00am to 11:00pm",
+    display: "Daily, 10:00am to 11:00pm",
   },
   social: {
     instagram: "",

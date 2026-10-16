@@ -45,7 +45,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "Our coffee comes from single-origin estates in Nagaland, the Pulney hills, Udaigiri, and the Hoysala region — all grown in India.",
+        text: "Our coffee comes from single-origin estates in Nagaland, the Pulney hills, Udaigiri, and the Hoysala region, all grown in India.",
       },
       {
         type: "p",
@@ -53,7 +53,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "quote",
-        text: "Filter coffee is where this started for us — the everyday South Indian cup, made properly, every time.",
+        text: "Filter coffee is where this started for us: the everyday South Indian cup, made the same way every time.",
       },
     ],
   },
@@ -98,7 +98,7 @@ export const journalPosts: JournalPost[] = [
     category: "The Kitchen",
     title: "Why We Built The Menu This Way",
     excerpt:
-      "Andhra food for the people who grew up on it, pasta and bistro alongside it, and a thali built for a proper sit-down meal.",
+      "Andhra food for the people who grew up on it, a more modern menu alongside it, and a thali for when you want a proper sit-down meal.",
     metaDescription:
       "Why Artha's menu pairs traditional Andhra food with Italian and bistro dishes, and what that means for a vegetarian table.",
     publishedAt: "2026-07-15",
@@ -113,7 +113,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "Andhra food is what a lot of our guests grew up on. Few people still have the time to cook it properly at home, so we built the kitchen to do it for them.",
+        text: "Andhra food is what a lot of our guests grew up on, even if few people have the time to cook it all at home anymore. So we built our kitchen to do it for them.",
       },
       {
         type: "p",
@@ -121,7 +121,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "A thali is a full, proper meal in one sitting: rice, pappu, sambar, rasam, a curry, curd, pickle, papad, all together. That's what people want when they actually sit down to eat.",
+        text: "When you actually sit down for lunch, a thali is a full, proper meal in one sitting: rice, pappu, sambar, rasam, a curry, curd, pickle, and papad, all together.",
       },
       {
         type: "quote",

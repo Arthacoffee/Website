@@ -153,7 +153,7 @@ export default function VisitPage() {
                 Tell us when you&apos;re coming
               </h2>
               <p className="text-body text-foreground/70 mt-3">
-                For groups, the rooftop, or a private booking — send your
+                For groups, the rooftop, or a private booking, send your
                 details and we&apos;ll confirm by phone or email.
               </p>
               <div className="mt-8">

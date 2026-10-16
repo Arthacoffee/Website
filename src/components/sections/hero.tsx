@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { HeaderOverDarkHero } from "@/components/layout/header-variant-context";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { site, reserveNav } from "@/content/site";
+import { reserveNav } from "@/content/site";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -52,26 +52,15 @@ export function Hero({
       </div>
 
       <Container className="relative z-10 pt-40 pb-24 md:pb-28">
-        <motion.p
-          initial={reduceMotion ? false : { opacity: 0, filter: "blur(8px)" }}
-          animate={{ opacity: 1, filter: "blur(0px)" }}
-          transition={{ duration: 0.8, ease: EASE }}
-          className="font-display text-bronze-light text-xl italic md:text-2xl"
-        >
-          {site.tagline}
-        </motion.p>
-
         <motion.h1
           initial={reduceMotion ? false : { opacity: 0, y: 24, filter: "blur(12px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
-          className="font-display text-hero text-background mt-4 leading-[0.98] font-medium tracking-tight"
+          className="font-display text-hero text-background leading-[0.98] font-medium tracking-tight"
         >
-          Coffee.
+          Specialty Coffee.
           <br />
-          Craft.
-          <br />
-          Conversation.
+          Vegetarian Kitchen.
         </motion.h1>
 
         <motion.p
@@ -80,8 +69,8 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
           className="text-body-lg text-background/80 mt-8 max-w-xl"
         >
-          We serve specialty coffee and vegetarian food on Defence Colony Road,
-          Sainikpuri, with a rooftop terrace open daily.
+          We&apos;re on Defence Colony Road in Sainikpuri, open 10am to 11pm
+          daily, with a rooftop terrace upstairs.
         </motion.p>
 
         <motion.div

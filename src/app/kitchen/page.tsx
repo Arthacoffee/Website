@@ -9,7 +9,7 @@ import { breadcrumbJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Kitchen",
   description:
-    "The kitchen at Artha runs four vegetarian food programmes — brunch, Andhra traditional, Italian pasta and bistro — served 10am to 11pm.",
+    "The kitchen at Artha runs four vegetarian food programmes: brunch, Andhra traditional, Italian pasta, and bistro, served 10am to 11pm.",
   alternates: { canonical: "/kitchen" },
 };
 
@@ -28,13 +28,13 @@ export default function KitchenPage() {
       <PageIntro
         eyebrow="Kitchen"
         heading="A full vegetarian table, taken seriously."
-        lead="Andhra traditional, Italian pasta, brunch and bistro — four food programmes, from one vegetarian kitchen."
+        lead="Andhra traditional, Italian pasta, brunch, and bistro: four food programmes, from one vegetarian kitchen."
       />
 
       <MenuLanes lanes={kitchenLanes} note={vegetarianNote} />
 
       <SplitFeature
-        eyebrow="Range Without Compromise"
+        eyebrow="One Kitchen, Four Programmes"
         heading="The same kitchen runs all four programmes."
         paragraphs={[
           "Andhra gravies and Italian pasta both come out of the same vegetarian pantry, from brunch through to bistro.",
@@ -52,7 +52,7 @@ export default function KitchenPage() {
 
       <CtaBand
         eyebrow="Hungry?"
-        heading="Table service only — walk in or reserve ahead."
+        heading="Table service only. Walk in, or reserve ahead."
       />
     </>
   );

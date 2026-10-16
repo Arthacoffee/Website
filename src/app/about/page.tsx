@@ -69,7 +69,7 @@ export default function AboutPage() {
 
       <CtaBand
         eyebrow="Come See It For Yourself"
-        heading="A rooftop, a kitchen, and time to spare."
+        heading="A rooftop upstairs, a kitchen downstairs, open 10am to 11pm daily."
       />
     </>
   );

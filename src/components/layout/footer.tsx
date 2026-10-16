@@ -22,9 +22,6 @@ export function Footer() {
             <p className="text-body text-background/70 mt-5 max-w-sm">
               {site.description}
             </p>
-            <p className="font-display text-bronze-light mt-6 text-lg italic">
-              {site.tagline}
-            </p>
           </div>
 
           <div>

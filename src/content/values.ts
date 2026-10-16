@@ -47,7 +47,7 @@ export const dayParts = [
     time: "12pm – 3pm",
     title: "Andhra Traditional",
     description:
-      "We serve full Andhra meals, rice plates, and gravies for the everyday lunch, made properly.",
+      "We serve full Andhra meals, rice plates, and gravies for the everyday lunch.",
   },
   {
     time: "3pm – 6:30pm",
