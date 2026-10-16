@@ -37,6 +37,14 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
+        text: "A Sufi saint named Baba Budan is said to have carried coffee seeds out of Yemen on his way back from Mecca sometime in the 1600s and planted them in the hills near Chikmagalur, Karnataka. Those hills are still called Baba Budangiri today, and that region now carries a government geographical-indication tag for its coffee, along with Coorg, Wayanad, and Araku Valley.",
+      },
+      {
+        type: "p",
+        text: "Indian coffee is mostly grown in the shade of jungle trees instead of out in the open sun, which is part of why it tends to come out milder than coffee grown elsewhere.",
+      },
+      {
+        type: "p",
         text: "Our coffee comes from single-origin estates in Nagaland, the Pulney hills, Udaigiri, and the Hoysala region — all grown in India.",
       },
       {
@@ -73,7 +81,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The same bean tastes different depending on how it's brewed. A V60 pulls out brightness and clarity. A Kalita Wave comes out rounder and more even. A Clever Dripper sits closer to immersion, fuller in the mouth.",
+        text: "The same bean tastes different depending on how it's brewed. A V60 pulls out more brightness and clarity, a Kalita Wave rounds it out, and a Clever Dripper sits closer to immersion, so it comes out fuller in the mouth.",
       },
       {
         type: "p",
@@ -113,7 +121,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "The rest of the menu — Italian pasta, bistro plates, brunch — sits alongside it for everyone who wants something more modern too.",
+        text: "The rest of the menu sits alongside it for everyone who wants something more modern too.",
       },
       {
         type: "p",
