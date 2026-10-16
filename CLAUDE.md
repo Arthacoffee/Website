@@ -85,9 +85,12 @@ it as a plain positive statement instead.
 
 ## What's fine
 
-- Short, punchy headline-style taglines ("A full vegetarian table, taken
-  seriously.") — these function as titles, not prose, and get more
-  latitude than body copy.
+- Short, punchy headline-style taglines ("A full vegetarian table, served
+  four ways.") — these function as titles, not prose, and get more
+  latitude than body copy. But latitude isn't immunity: "taken seriously"
+  / "done seriously" still reads as self-congratulatory even as a title,
+  so it got rewritten too — prefer a title that states a fact over one
+  that claims a virtue.
 - Plain, impersonal menu/hours/disclaimer text — that's the actual
   convention for that kind of content, confirmed against real competitor
   sites (Karafa, Coffee Katha, Theory Cafe, Paakashala, La Vie En Rose).

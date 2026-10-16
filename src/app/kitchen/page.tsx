@@ -27,7 +27,7 @@ export default function KitchenPage() {
 
       <PageIntro
         eyebrow="Kitchen"
-        heading="A full vegetarian table, taken seriously."
+        heading="A full vegetarian table, served four ways."
         lead="Andhra traditional, Italian pasta, brunch, and bistro: four food programmes, from one vegetarian kitchen."
       />
 
