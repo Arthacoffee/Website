@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { HeaderOverDarkHero } from "@/components/layout/header-variant-context";
@@ -10,16 +11,20 @@ import { reserveNav } from "@/content/site";
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 /**
- * Cinematic homepage hero. Pass `videoSrc`/`posterSrc` once real footage
- * exists — it swaps in with no layout change; until then a brand-toned
- * gradient carries the moment instead of a stock image.
+ * Cinematic homepage hero. Pass `videoSrc`/`posterSrc` for footage, or
+ * `imageSrc` for a still — either swaps in with no layout change; until
+ * then a brand-toned gradient carries the moment instead.
  */
 export function Hero({
   videoSrc,
   posterSrc,
+  imageSrc,
+  imageAlt,
 }: {
   videoSrc?: string;
   posterSrc?: string;
+  imageSrc?: string;
+  imageAlt?: string;
 }) {
   const reduceMotion = useReducedMotion();
 
@@ -37,6 +42,15 @@ export function Hero({
             muted
             loop
             playsInline
+          />
+        ) : imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={imageAlt ?? ""}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
         ) : (
           <div
