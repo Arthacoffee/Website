@@ -29,7 +29,7 @@ export default function CoffeePage() {
       <PageIntro
         eyebrow="Coffee"
         heading="Open from 10am to 11pm."
-        lead="We serve South Indian filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks from 10am to 11pm. Our Head Barista uses the same espresso machine and setup for every cup so your coffee tastes consistent every day of the week."
+        lead="We serve South Indian filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks from 10am to 11pm. Our Head Barista checks and adjusts the recipe each time we get a new batch of beans, so your coffee tastes consistent every day of the week."
       />
 
       <MenuLanes lanes={coffeeLanes} />
@@ -38,7 +38,7 @@ export default function CoffeePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "Our Head Barista uses the same machine and setup for every cup, so your coffee tastes the same from one day to the next.",
+          "Our Head Barista checks and adjusts the recipe each time we get a new batch of beans, so your coffee tastes the same no matter which day you visit.",
         ]}
         cta={{
           label: "Read the Full Story",

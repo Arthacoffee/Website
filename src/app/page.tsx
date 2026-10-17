@@ -42,7 +42,7 @@ export default function HomePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "Our Head Barista uses the same machine and setup for every cup, so your coffee tastes the same from one day to the next.",
+          "Our Head Barista checks and adjusts the recipe each time we get a new batch of beans, so your coffee tastes the same no matter which day you visit.",
         ]}
         cta={{ label: "Explore Coffee", href: "/coffee" }}
         imageCategory="coffee"
