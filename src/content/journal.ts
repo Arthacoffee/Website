@@ -98,7 +98,7 @@ export const journalPosts: JournalPost[] = [
     category: "The Kitchen",
     title: "Why We Built The Menu This Way",
     excerpt:
-      "Andhra food for the people who grew up on it, a more modern menu alongside it, and a thali for when you want a proper sit-down meal.",
+      "Andhra food for the people who grew up on it, a more modern menu alongside it, and a thali for when you want a full sit-down meal.",
     metaDescription:
       "Why Artha's menu pairs traditional Andhra food with Italian and bistro dishes, all vegetarian.",
     publishedAt: "2026-07-15",
@@ -121,7 +121,7 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "p",
-        text: "When you actually sit down for lunch, a thali is a full, proper meal in one sitting: rice, pappu, sambar, rasam, a curry, curd, pickle, and papad, all together.",
+        text: "When you actually sit down for lunch, a thali is a full meal in one sitting: rice, pappu, sambar, rasam, a curry, curd, pickle, and papad, all together.",
       },
       {
         type: "quote",

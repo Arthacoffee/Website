@@ -100,11 +100,11 @@ export default function VisitPage() {
                 />
                 <div>
                   <strong className="text-body text-coffee block font-medium">
-                    The Space
+                    Layout
                   </strong>
                   <span className="text-body text-foreground/70">
-                    A dining hall downstairs, a rooftop above it, and a lift connecting
-                    the two.
+                    We have a dining hall downstairs, a rooftop above it, and a
+                    lift connecting the two.
                   </span>
                 </div>
               </li>

@@ -61,9 +61,8 @@ export const footerNav: NavItem[] = [
 ];
 
 export const serviceWindows = [
-  { label: "Brunch & Brew Bar", hours: "10:00am – 12:30pm" },
-  { label: "Andhra Traditional Lunch", hours: "12:00pm – 3:00pm" },
+  { label: "Morning & Brunch", hours: "10:00am – 12:30pm" },
+  { label: "Andhra Lunch", hours: "12:00pm – 3:00pm" },
   { label: "Afternoon Coffee", hours: "3:00pm – 6:30pm" },
-  { label: "Bistro", hours: "6:30pm – 11:00pm" },
-  { label: "Coffee & Desserts", hours: "10:00am – 11:00pm" },
+  { label: "Evening Bistro", hours: "6:30pm – 11:00pm" },
 ] as const;

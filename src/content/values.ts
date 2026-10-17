@@ -22,7 +22,7 @@ export const values: Value[] = [
   {
     title: "Water conscious",
     description:
-      "The RO system feeding our brew bar reuses its reject water for cleaning, and we've got low-flow fixtures throughout the space.",
+      "The RO system feeding our brew bar reuses its reject water for cleaning, and we've got low-flow fixtures throughout the café.",
   },
   {
     title: "Sourced close to home",
@@ -38,27 +38,25 @@ export const values: Value[] = [
 
 export const dayParts = [
   {
-    time: "10am – 12:30pm",
-    title: "Brunch & Brew Bar",
+    time: "10:00am – 12:30pm",
+    title: "Morning & Brunch",
     description:
-      "We pour filter, V60, cold brew and espresso, and serve punugulu, avocado toast, shakshuka and pesarattu.",
+      "We serve coffee with punugulu, avocado toast, shakshuka, and pesarattu.",
   },
   {
-    time: "12pm – 3pm",
-    title: "Andhra Traditional",
-    description:
-      "We serve full Andhra meals, rice plates, and gravies for the everyday lunch.",
+    time: "12:00pm – 3:00pm",
+    title: "Andhra Lunch",
+    description: "We serve traditional Andhra thalis, rice plates, and gravies.",
   },
   {
-    time: "3pm – 6:30pm",
+    time: "3:00pm – 6:30pm",
     title: "Afternoon Coffee",
     description:
-      "This is a quieter window at the brew bar. We mostly pour filter and espresso, along with tasting flights and estate coffees.",
+      "We serve filter coffee, espresso drinks, tasting flights, and estate coffees.",
   },
   {
-    time: "6:30pm – 11pm",
-    title: "Bistro & Rooftop",
-    description:
-      "We serve Italian pasta, bistro mains, and small plates, mostly up on the terrace.",
+    time: "6:30pm – 11:00pm",
+    title: "Evening Bistro",
+    description: "We serve Italian pasta, soups, and small plates.",
   },
 ] as const;

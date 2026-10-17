@@ -10,7 +10,7 @@ import { breadcrumbJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Coffee",
   description:
-    "Artha's specialty coffee menu: filter, V60, cold brew, tasting flights, and espresso classics, served 10am to 11pm from one brew bar.",
+    "Artha's specialty coffee menu: filter, V60, cold brew, tasting flights, and classic espresso drinks, served 10am to 11pm from one brew bar.",
   alternates: { canonical: "/coffee" },
 };
 
@@ -28,8 +28,8 @@ export default function CoffeePage() {
 
       <PageIntro
         eyebrow="Coffee"
-        heading="Coffee from 10am to 11pm."
-        lead="South Indian filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks."
+        heading="Open from 10am to 11pm."
+        lead="We serve South Indian filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks from 10am to 11pm. Our Head Barista uses the same espresso machine and setup for every cup so your coffee tastes consistent every day of the week."
       />
 
       <MenuLanes lanes={coffeeLanes} />
@@ -38,7 +38,7 @@ export default function CoffeePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "Our Head Barista dials in every roast on one machine, so a cup you order on a Tuesday afternoon tastes just as good as your Sunday morning one.",
+          "Our Head Barista uses the same machine and setup for every cup, so your coffee tastes the same from one day to the next.",
         ]}
         cta={{
           label: "Read the Full Story",
@@ -51,7 +51,7 @@ export default function CoffeePage() {
       />
 
       <CtaBand
-        eyebrow="Drop In"
+        eyebrow="Visit Us"
         heading="The brew bar is open 10am to 11pm, daily."
       />
     </>

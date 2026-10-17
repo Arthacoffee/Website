@@ -8,7 +8,7 @@ export const team: TeamMember[] = [
   {
     name: "Smt. Sri Lakshmi Tatavarthi",
     role: "Founder & Proprietor",
-    bio: "Sri Lakshmi has 19+ years of F&B experience across ITC Kakatiya, Ohri's Group, and Marasa Sarovar Premiere, where she still leads sales. At Artha, she looks after the guest experience, vendor relationships, and kitchen standards.",
+    bio: "Sri Lakshmi has 19+ years of F&B experience across ITC Kakatiya, Ohri's Group, and Marasa Sarovar Premiere, where she still leads sales. At Artha, she looks after guests, vendors, and kitchen standards.",
   },
   {
     name: "Sri Teja Behara",

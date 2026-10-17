@@ -27,17 +27,17 @@ export default function KitchenPage() {
 
       <PageIntro
         eyebrow="Kitchen"
-        heading="One vegetarian kitchen, open all day."
-        lead="We cook Andhra meals for lunch, pasta and small plates in the evening, and brunch in the morning. Everything is vegetarian."
+        heading="Vegetarian Food"
+        lead="We cook Andhra food, brunch, Italian pasta, and bistro food. Everything we cook is vegetarian."
       />
 
       <MenuLanes lanes={kitchenLanes} note={vegetarianNote} />
 
       <SplitFeature
         eyebrow="The Menu"
-        heading="Why we cook all four."
+        heading="What we serve."
         paragraphs={[
-          "Andhra food is what a lot of our guests grew up on, and few people have the time to cook it properly at home anymore, so we built the kitchen to do it for them. The rest of the menu sits alongside it for when you want brunch with your morning coffee, or pasta and small plates on the rooftop at night.",
+          "Andhra food is what a lot of our guests grew up on. Few people still have the time to cook it at home, so we built our kitchen to make it for them. We also serve brunch in the morning, and Italian pasta and bistro food in the evening for anyone who wants something more modern. When you sit down for lunch, our thali is a full meal in one sitting: rice, pappu, sambar, rasam, a curry, curd, pickle, and papad, all together. Everything we cook is 100% vegetarian.",
         ]}
         cta={{
           label: "Read the Full Story",
@@ -51,7 +51,7 @@ export default function KitchenPage() {
       />
 
       <CtaBand
-        eyebrow="Visit"
+        eyebrow="Visit Us"
         heading="Walk in anytime, or book a table for your group."
       />
     </>

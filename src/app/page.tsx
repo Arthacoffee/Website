@@ -26,9 +26,9 @@ export default function HomePage() {
       <SplitFeature
         id="kitchen"
         eyebrow="The Kitchen"
-        heading="Everything on the menu is vegetarian."
+        heading="Our Kitchen"
         paragraphs={[
-          "We serve Andhra classics, Italian pasta, brunch, and bistro, all from one fully vegetarian kitchen, eggs included.",
+          "We cook Andhra food for lunch, brunch in the morning, and Italian pasta and bistro food in the evening. Everything we cook is vegetarian.",
         ]}
         cta={{ label: "Explore Kitchen", href: "/kitchen" }}
         imageCategory="kitchen"
@@ -42,7 +42,7 @@ export default function HomePage() {
         eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
-          "Our Head Barista dials in every roast on one machine, so a cup you order on a Tuesday afternoon tastes just as good as your Sunday morning one.",
+          "Our Head Barista uses the same machine and setup for every cup, so your coffee tastes the same from one day to the next.",
         ]}
         cta={{ label: "Explore Coffee", href: "/coffee" }}
         imageCategory="coffee"

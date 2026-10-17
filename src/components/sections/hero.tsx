@@ -72,7 +72,7 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
           className="font-display text-hero text-background leading-[0.98] font-medium tracking-tight"
         >
-          We serve specialty coffee and vegetarian food.
+          Artha Speciality Coffee
         </motion.h1>
 
         <motion.p
@@ -81,8 +81,10 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
           className="text-body-lg text-background/80 mt-8 max-w-xl"
         >
-          We&apos;re on Defence Colony Road in Sainikpuri, open 10am to 11pm
-          daily, with a rooftop terrace upstairs.
+          We are a specialty coffee shop and vegetarian restaurant on
+          Defence Colony Road in Sainikpuri. We have a dining room
+          downstairs and rooftop seating upstairs, with a lift between the
+          two. We are open every day from 10:00am to 11:00pm.
         </motion.p>
 
         <motion.div

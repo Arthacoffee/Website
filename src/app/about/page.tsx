@@ -69,7 +69,7 @@ export default function AboutPage() {
       <PullQuote>{philosophy.body}</PullQuote>
 
       <CtaBand
-        eyebrow="Come See It For Yourself"
+        eyebrow="Visit Us"
         heading="We have a rooftop upstairs and a kitchen downstairs, open 10am to 11pm daily."
       />
     </>
