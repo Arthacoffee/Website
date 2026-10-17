@@ -47,6 +47,17 @@ it as a plain positive statement instead.
 - **Rule-of-three / tricolon lists** used as a rhetorical device (list
   three parallel things, then land a thesis sentence). Fine for genuinely
   listing facts (menu items, hours); not fine as a persuasion structure.
+  This includes **two-part versions of the same move** ("X. Y." as a
+  pair of sentence fragments, e.g. "Specialty Coffee. Vegetarian
+  Kitchen.") — the tell is the clipped, fragment-not-sentence rhythm
+  itself, not the specific count of three.
+- **Headings, eyebrows, and short descriptions get the least slack, not
+  the most.** It's tempting to let a heading be punchier than body copy
+  "because it's just a title," but short lines are exactly where ad
+  rhythm hides best: "served four ways," "the one that," a comma-pause
+  for emphasis ("Vegetarian, seriously"). If a heading wouldn't survive
+  being read aloud as something an owner actually said, rewrite it as a
+  full, plain sentence instead of a fragment.
 - **Essay architecture**: setup → list of supporting facts → a
   thesis-restating closer, repeated paragraph after paragraph. Real
   owner-written copy is flatter and less argued.

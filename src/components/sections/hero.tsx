@@ -72,9 +72,7 @@ export function Hero({
           transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
           className="font-display text-hero text-background leading-[0.98] font-medium tracking-tight"
         >
-          Specialty Coffee.
-          <br />
-          Vegetarian Kitchen.
+          We serve specialty coffee and vegetarian food.
         </motion.h1>
 
         <motion.p

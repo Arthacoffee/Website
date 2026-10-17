@@ -10,7 +10,7 @@ export const values: Value[] = [
       "We don't have an LPG connection. The kitchen runs entirely on induction.",
   },
   {
-    title: "Vegetarian, seriously",
+    title: "Fully vegetarian",
     description:
       "We run a fully vegetarian kitchen, egg dishes included, and prepare those on their own dedicated equipment with FSSAI green/brown-dot labelling.",
   },
@@ -51,7 +51,7 @@ export const dayParts = [
   },
   {
     time: "3pm – 6:30pm",
-    title: "The Afternoon Pour",
+    title: "Afternoon Coffee",
     description:
       "This is a quieter window at the brew bar. We mostly pour filter and espresso, along with tasting flights and estate coffees.",
   },

@@ -51,7 +51,8 @@ export default function AboutPage() {
           <Reveal className="mx-auto max-w-xl text-center">
             <Eyebrow>Who&apos;s Behind It</Eyebrow>
             <h2 className="text-display-h2 font-display text-coffee mt-4">
-              Nineteen years of selling F&amp;B. Eight years of fixing it.
+              Between them, nineteen years in F&amp;B and eight years in
+              operations.
             </h2>
           </Reveal>
 
@@ -69,7 +70,7 @@ export default function AboutPage() {
 
       <CtaBand
         eyebrow="Come See It For Yourself"
-        heading="A rooftop upstairs, a kitchen downstairs, open 10am to 11pm daily."
+        heading="We have a rooftop upstairs and a kitchen downstairs, open 10am to 11pm daily."
       />
     </>
   );

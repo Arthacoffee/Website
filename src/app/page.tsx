@@ -27,7 +27,7 @@ export default function HomePage() {
       <SplitFeature
         id="kitchen"
         eyebrow="The Kitchen"
-        heading="A vegetarian kitchen, four ways."
+        heading="Everything on the menu is vegetarian."
         paragraphs={[
           "We serve Andhra classics, Italian pasta, brunch, and bistro, all from one fully vegetarian kitchen, eggs included.",
         ]}

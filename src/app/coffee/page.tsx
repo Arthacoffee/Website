@@ -28,8 +28,8 @@ export default function CoffeePage() {
 
       <PageIntro
         eyebrow="Coffee"
-        heading="A brew bar that runs the whole day."
-        lead="Filter, V60, cold brew, tasting flights, and espresso classics, poured all day, every day."
+        heading="Coffee from 10am to 11pm."
+        lead="Traditional filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks."
       />
 
       <MenuLanes lanes={coffeeLanes} />
@@ -51,7 +51,7 @@ export default function CoffeePage() {
       />
 
       <CtaBand
-        eyebrow="Ready For A Pour?"
+        eyebrow="Drop In"
         heading="The brew bar is open 10am to 11pm, daily."
       />
     </>

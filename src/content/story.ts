@@ -23,13 +23,13 @@ export const ourStory = {
 
 export const experience = {
   eyebrow: "The Experience",
-  heading: "Morning to night, every day.",
+  heading: "We're open all day.",
   body: "We're open 10am to 11pm daily. There's a rooftop upstairs and a dining room downstairs. Stay as long as you like.",
 };
 
 export const brewBarStory = {
-  eyebrow: "At The Brew Bar",
-  heading: "Every cup, the same, every time.",
+  eyebrow: "The Brew Bar",
+  heading: "Good coffee, without the show.",
   paragraphs: [
     "Every cup goes through the same machine, run by the same Head Barista, from the first test shot in the morning to the one in your hand.",
     "We wrote up more detail on the machine and how the bar runs day to day in the Journal.",
