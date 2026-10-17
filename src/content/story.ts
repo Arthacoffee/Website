@@ -6,7 +6,7 @@
  * on the page a reader reaches after already choosing to learn more.
  */
 export const philosophy = {
-  body: "Artha is a Sanskrit word. It means purpose, and it's one of four traditional goals in Indian philosophy, alongside dharma, kama and moksha. It covers the practical side of life: wealth, career, and financial stability, earned honestly. We named the café after it.",
+  body: "Artha is a Sanskrit word. It means purpose. It is one of four traditional goals in Indian philosophy, along with dharma, kama, and moksha. Artha is about the practical side of life, like money, career, and financial stability, earned honestly. We named the café after it.",
 };
 
 export const ourStory = {
