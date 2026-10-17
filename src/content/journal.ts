@@ -100,7 +100,7 @@ export const journalPosts: JournalPost[] = [
     excerpt:
       "Andhra food for the people who grew up on it, a more modern menu alongside it, and a thali for when you want a proper sit-down meal.",
     metaDescription:
-      "Why Artha's menu pairs traditional Andhra food with Italian and bistro dishes, and what that means for a vegetarian table.",
+      "Why Artha's menu pairs traditional Andhra food with Italian and bistro dishes, all vegetarian.",
     publishedAt: "2026-07-15",
     cardImage: {
       src: "/images/kitchen/andhra-thali.jpg",

@@ -29,7 +29,7 @@ export const experience = {
 
 export const brewBarStory = {
   eyebrow: "The Brew Bar",
-  heading: "Good coffee, without the show.",
+  heading: "How we run the brew bar.",
   paragraphs: [
     "Every cup goes through the same machine, run by the same Head Barista, from the first test shot in the morning to the one in your hand.",
     "We wrote up more detail on the machine and how the bar runs day to day in the Journal.",

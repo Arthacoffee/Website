@@ -9,7 +9,6 @@ import { site } from "@/content/site";
 import { restaurantJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: `${site.fullName} — ${site.tagline}`,
   description: site.description,
   alternates: { canonical: "/" },
 };

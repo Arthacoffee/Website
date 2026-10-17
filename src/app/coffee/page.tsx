@@ -29,7 +29,7 @@ export default function CoffeePage() {
       <PageIntro
         eyebrow="Coffee"
         heading="Coffee from 10am to 11pm."
-        lead="Traditional filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks."
+        lead="South Indian filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks."
       />
 
       <MenuLanes lanes={coffeeLanes} />

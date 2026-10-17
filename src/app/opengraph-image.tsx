@@ -41,7 +41,7 @@ export default function OpengraphImage() {
         {site.name.toUpperCase()}
       </div>
       <div style={{ fontSize: 30, color: "#f8f5f1cc", marginTop: 28 }}>
-        {site.tagline}
+        Specialty Coffee & Vegetarian Food
       </div>
     </div>,
     { ...size },

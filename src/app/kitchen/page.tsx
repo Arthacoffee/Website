@@ -37,7 +37,7 @@ export default function KitchenPage() {
         eyebrow="The Menu"
         heading="Why we cook all four."
         paragraphs={[
-          "Most of our guests grew up on Andhra food, so we make a proper thali for lunch. The rest of the menu is there for when you want brunch with your morning coffee, or pasta and small plates on the rooftop at night.",
+          "Andhra food is what a lot of our guests grew up on, and few people have the time to cook it properly at home anymore, so we built the kitchen to do it for them. The rest of the menu sits alongside it for when you want brunch with your morning coffee, or pasta and small plates on the rooftop at night.",
         ]}
         cta={{
           label: "Read the Full Story",
@@ -51,7 +51,7 @@ export default function KitchenPage() {
       />
 
       <CtaBand
-        eyebrow="Come Eat"
+        eyebrow="Visit"
         heading="Walk in anytime, or book a table for your group."
       />
     </>

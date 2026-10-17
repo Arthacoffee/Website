@@ -8,7 +8,7 @@ import { SkipLink } from "@/components/ui/skip-link";
 import { SiteAnalytics } from "@/components/layout/analytics";
 import "./globals.css";
 
-const fullTitle = `${site.fullName} — ${site.tagline}`;
+const fullTitle = site.fullName;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

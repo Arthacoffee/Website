@@ -25,10 +25,10 @@ export const coffeeLanes: MenuLane[] = [
 ];
 
 /**
- * The full-meal vegetarian kitchen: four programmes — brunch, Andhra
+ * The full-meal vegetarian kitchen: four menus — brunch, Andhra
  * traditional, Italian pasta, and bistro. Indo-Chinese and tandoor are no
- * longer on the menu; prose elsewhere ("four programmes") counts these
- * four lanes, so update both together if a lane is ever added or removed
+ * longer on the menu; prose elsewhere that counts "four" menus should
+ * stay in sync with these four lanes if one is ever added or removed
  * here.
  */
 export const kitchenLanes: MenuLane[] = [
