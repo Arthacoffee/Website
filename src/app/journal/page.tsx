@@ -28,7 +28,7 @@ export default function JournalIndexPage() {
       <PageIntro
         eyebrow="Journal"
         heading="Notes from the brew bar and kitchen"
-        lead="Short reads on the coffee, the food, and the idea behind Artha."
+        lead="Short posts about our coffee and our food, and why we make them this way."
       />
 
       <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
