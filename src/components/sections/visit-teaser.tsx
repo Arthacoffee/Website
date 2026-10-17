@@ -53,8 +53,6 @@ export function VisitTeaser() {
         <Reveal kind="scale">
           <ImageFrame
             category="terrace"
-            src="/images/terrace/rooftop-sunset.jpg"
-            alt="A rooftop terrace at sunset"
             sizes="(min-width: 768px) 50vw, 100vw"
             className="aspect-[4/3.4] w-full rounded-[var(--radius-editorial)]"
           />

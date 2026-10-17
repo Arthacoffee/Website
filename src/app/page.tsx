@@ -22,10 +22,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd()) }}
       />
 
-      <Hero
-        imageSrc="/images/terrace/rooftop-sunset.jpg"
-        imageAlt="Artha's rooftop terrace at sunset"
-      />
+      <Hero />
 
       <SplitFeature
         id="kitchen"
