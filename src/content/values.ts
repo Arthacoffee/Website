@@ -40,23 +40,22 @@ export const dayParts = [
   {
     time: "10:00am – 12:30pm",
     title: "Morning & Brunch",
-    description:
-      "We serve coffee with punugulu, avocado toast, shakshuka, and pesarattu.",
+    description: "Coffee with punugulu, avocado toast, shakshuka, and pesarattu.",
   },
   {
     time: "12:00pm – 3:00pm",
     title: "Andhra Lunch",
-    description: "We serve traditional Andhra thalis, rice plates, and gravies.",
+    description: "Traditional Andhra thalis, rice plates, and gravies.",
   },
   {
     time: "3:00pm – 6:30pm",
     title: "Afternoon Coffee",
     description:
-      "We serve filter coffee, espresso drinks, tasting flights, and estate coffees.",
+      "Filter coffee, espresso drinks, tasting flights, and estate coffees.",
   },
   {
     time: "6:30pm – 11:00pm",
     title: "Evening Bistro",
-    description: "We serve Italian pasta, soups, and small plates.",
+    description: "Italian pasta, soups, and small plates.",
   },
 ] as const;

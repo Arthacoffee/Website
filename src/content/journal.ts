@@ -125,11 +125,11 @@ export const journalPosts: JournalPost[] = [
       },
       {
         type: "quote",
-        text: "\"Vegetarian eating patterns have been associated with improved health outcomes including lower levels of obesity, a reduced risk of heart disease and lower blood pressure.\" — Academy of Nutrition and Dietetics",
+        text: "When people actually sit down to eat, they want a full, proper meal in one sitting.",
       },
       {
         type: "p",
-        text: "Our menu includes eggs, which puts it in the lacto-ovo category. A 2023 study based in Hyderabad found that group had the best health outcomes of any vegetarian diet studied.",
+        text: "Everything in our kitchen is vegetarian. We do use eggs in some of our brunch and bakery dishes, which we cook on separate, dedicated equipment so everything stays clearly separated.",
       },
     ],
   },
