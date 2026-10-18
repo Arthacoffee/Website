@@ -77,7 +77,7 @@ export const journalPosts: JournalPost[] = [
     body: [
       {
         type: "p",
-        text: "The same bean tastes different depending on how it's brewed. A V60 pulls out more brightness and clarity, a Kalita Wave rounds it out, and a Clever Dripper sits closer to immersion, so it comes out fuller in the mouth.",
+        text: "The same bean tastes different depending on how it's brewed. A V60 gives a lighter cup, a Kalita Wave is more balanced, and a Clever Dripper comes out stronger.",
       },
       {
         type: "p",
