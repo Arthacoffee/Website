@@ -1,21 +1,17 @@
 import { Leaf } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
 import { values } from "@/content/values";
 
 export function ValuesGrid({
-  eyebrow = "How We Run The Kitchen",
   heading = "A few things we pay attention to in the kitchen.",
 }: {
-  eyebrow?: string;
   heading?: string;
 }) {
   return (
     <section className="bg-stone py-24 md:py-32">
       <Container>
         <Reveal className="mx-auto max-w-xl text-center">
-          <Eyebrow>{eyebrow}</Eyebrow>
           <h2 className="text-display-h2 font-display text-coffee mt-4">{heading}</h2>
         </Reveal>
 

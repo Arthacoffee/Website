@@ -93,7 +93,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-background/10 text-caption text-background/50 mt-16 flex flex-col items-start justify-between gap-4 border-t pt-8 md:flex-row md:items-center">
+        <div className="text-caption text-background/50 mt-16 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <span>
             &copy; {year} {site.fullName}. All rights reserved.
           </span>

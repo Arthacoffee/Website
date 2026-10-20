@@ -3,7 +3,6 @@ import { Building2, Mail, MapPin, Phone } from "lucide-react";
 import { PageIntro } from "@/components/sections/page-intro";
 import { ReservationForm } from "@/components/sections/reservation-form";
 import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
 import { site, serviceWindows } from "@/content/site";
 import { breadcrumbJsonLd } from "@/lib/structured-data";
@@ -26,7 +25,6 @@ export default function VisitPage() {
       />
 
       <PageIntro
-        eyebrow="Visit"
         heading="Find us on Defence Colony Road"
         lead="Take the lift up to the dining hall, or grab a table on the rooftop in the evening. Everything is table service, and walk-ins are always welcome."
       />
@@ -148,8 +146,7 @@ export default function VisitPage() {
 
           <Reveal delay={0.1} id="reserve" className="scroll-mt-28">
             <div className="border-stone bg-stone/40 border p-8 md:p-10">
-              <Eyebrow>Reserve A Table</Eyebrow>
-              <h2 className="text-display-h3 font-display text-coffee mt-3">
+              <h2 className="text-display-h3 font-display text-coffee">
                 Tell us when you&apos;re coming
               </h2>
               <p className="text-body text-foreground/70 mt-3">

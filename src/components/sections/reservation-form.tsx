@@ -150,7 +150,7 @@ export function ReservationForm() {
         </div>
 
         {confirmed ? (
-          <dl className="border-stone grid w-full grid-cols-2 gap-x-6 gap-y-3 border-t pt-6 sm:grid-cols-4">
+          <dl className="grid w-full grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-4">
             <div>
               <dt className="text-caption text-bronze-ink tracking-[0.08em] uppercase">
                 Date

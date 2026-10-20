@@ -140,7 +140,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="border-stone font-display text-coffee block border-b py-5 text-3xl"
+                    className="font-display text-coffee block py-5 text-3xl"
                   >
                     {item.label}
                   </Link>

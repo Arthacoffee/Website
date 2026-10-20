@@ -25,7 +25,6 @@ export default function HomePage() {
 
       <SplitFeature
         id="kitchen"
-        eyebrow="The Kitchen"
         heading="Our Kitchen"
         paragraphs={[
           "We cook Andhra food for lunch, brunch in the morning, and Italian pasta and bistro food in the evening. Everything we cook is vegetarian.",
@@ -39,7 +38,6 @@ export default function HomePage() {
 
       <SplitFeature
         id="coffee-stories"
-        eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
           "Our Head Barista checks and adjusts the recipe each time we get a new batch of beans, so your coffee tastes the same no matter which day you visit.",

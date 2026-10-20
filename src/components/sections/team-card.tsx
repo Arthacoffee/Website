@@ -3,7 +3,7 @@ import type { TeamMember } from "@/content/team";
 
 export function TeamCard({ member }: { member: TeamMember }) {
   return (
-    <div className="border-stone grid grid-cols-1 gap-6 border-t py-10 last:border-b sm:grid-cols-[160px_1fr] sm:gap-10">
+    <div className="grid grid-cols-1 gap-6 py-10 sm:grid-cols-[160px_1fr] sm:gap-10">
       <ImageFrame
         category="people"
         className="aspect-square w-40 rounded-full sm:w-full"

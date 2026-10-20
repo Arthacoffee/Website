@@ -13,7 +13,6 @@ export default function NotFound() {
   return (
     <>
       <PageIntro
-        eyebrow="Lost?"
         heading="This page is not on the menu."
         lead="This page does not exist, or has moved. Here is where to go instead."
       />

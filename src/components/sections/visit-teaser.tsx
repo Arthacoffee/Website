@@ -1,7 +1,6 @@
 import { Clock, MapPin } from "lucide-react";
 import { site } from "@/content/site";
 import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { ImageFrame } from "@/components/ui/image-frame";
@@ -11,7 +10,6 @@ export function VisitTeaser() {
     <section id="visit" className="bg-stone py-24 md:py-32">
       <Container className="grid grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-20">
         <Reveal>
-          <Eyebrow>Visit</Eyebrow>
           <h2 className="text-display-h2 font-display text-coffee mt-4">
             Defence Colony Road, Sainikpuri
           </h2>

@@ -1,6 +1,5 @@
 import { journalPosts } from "@/content/journal";
 import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { JournalCard } from "@/components/sections/journal-card";
@@ -12,7 +11,6 @@ export function JournalTeaser() {
     <section id="journal" className="bg-background py-24 md:py-32">
       <Container>
         <Reveal className="mx-auto max-w-xl text-center">
-          <Eyebrow>Journal</Eyebrow>
           <h2 className="text-display-h2 font-display text-coffee mt-4">
             Notes from the brew bar and kitchen
           </h2>

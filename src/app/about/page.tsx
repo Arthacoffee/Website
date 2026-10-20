@@ -5,7 +5,6 @@ import { TeamCard } from "@/components/sections/team-card";
 import { ValuesGrid } from "@/components/sections/values-grid";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
 import { ourStory, philosophy } from "@/content/story";
 import { team } from "@/content/team";
@@ -30,7 +29,7 @@ export default function AboutPage() {
         }}
       />
 
-      <PageIntro eyebrow={ourStory.eyebrow} heading={ourStory.heading} />
+      <PageIntro heading={ourStory.heading} />
 
       <section className="bg-background pt-4 pb-24 md:pt-8 md:pb-32">
         <Container>
@@ -49,7 +48,6 @@ export default function AboutPage() {
       <section className="bg-background py-24 md:py-32">
         <Container>
           <Reveal className="mx-auto max-w-xl text-center">
-            <Eyebrow>Who&apos;s Behind It</Eyebrow>
             <h2 className="text-display-h2 font-display text-coffee mt-4">
               Between them, nineteen years in F&amp;B and eight years in
               operations.
@@ -69,7 +67,6 @@ export default function AboutPage() {
       <PullQuote>{philosophy.body}</PullQuote>
 
       <CtaBand
-        eyebrow="Visit Us"
         heading="We have a rooftop upstairs and a kitchen downstairs, open 10am to 11pm daily."
       />
     </>

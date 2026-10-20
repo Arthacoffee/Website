@@ -26,7 +26,6 @@ export default function JournalIndexPage() {
       />
 
       <PageIntro
-        eyebrow="Journal"
         heading="Notes from the brew bar and kitchen"
         lead="Short posts about our coffee and our food, and why we make them this way."
       />

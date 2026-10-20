@@ -27,7 +27,6 @@ export default function CoffeePage() {
       />
 
       <PageIntro
-        eyebrow="Coffee"
         heading="Open from 10am to 11pm."
         lead="We serve South Indian filter coffee, V60 pour-overs, cold brew, tasting flights, and classic espresso drinks every day."
       />
@@ -35,7 +34,6 @@ export default function CoffeePage() {
       <MenuLanes lanes={coffeeLanes} />
 
       <SplitFeature
-        eyebrow={brewBarStory.eyebrow}
         heading={brewBarStory.heading}
         paragraphs={[
           "Our Head Barista checks and adjusts the recipe each time we get a new batch of beans, so your coffee tastes the same no matter which day you visit.",
@@ -51,7 +49,6 @@ export default function CoffeePage() {
       />
 
       <CtaBand
-        eyebrow="Visit Us"
         heading="The brew bar is open 10am to 11pm, daily."
       />
     </>
