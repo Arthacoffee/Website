@@ -33,7 +33,7 @@ export type ButtonProps = ButtonAsLink | ButtonAsButton;
 // color rather than hard-coding the light-background brand color, which
 // would be invisible against a dark button on a dark section.
 const base =
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-sans font-medium tracking-[0.02em] transition-colors duration-300 ease-[var(--ease-editorial)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-sans font-medium tracking-[0.02em] transition-[color,background-color,transform] duration-150 ease-[var(--ease-editorial)] active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
   primary:

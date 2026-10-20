@@ -90,7 +90,10 @@ export function Header() {
             aria-expanded={open}
             aria-controls="mobile-nav-panel"
             onClick={() => setOpen((v) => !v)}
-            className={cn("p-2 md:hidden", textTone)}
+            className={cn(
+              "p-2 transition-transform duration-150 ease-[var(--ease-editorial)] active:scale-90 md:hidden",
+              textTone,
+            )}
           >
             {open ? (
               <X size={22} aria-hidden="true" />
