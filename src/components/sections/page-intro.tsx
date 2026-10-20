@@ -10,7 +10,7 @@ export function PageIntro({
   lead,
   children,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   heading: string;
   lead?: string;
   children?: ReactNode;
@@ -19,7 +19,7 @@ export function PageIntro({
     <section className="bg-stone pt-40 pb-14 md:pt-48 md:pb-20">
       <Container>
         <Reveal className="mx-auto max-w-3xl text-center">
-          <Eyebrow>{eyebrow}</Eyebrow>
+          {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
           <h1 className="text-display-h1 font-display text-coffee mt-4">{heading}</h1>
           {lead ? (
             <p className="text-body-lg text-foreground/70 mx-auto mt-6 max-w-2xl">

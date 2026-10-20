@@ -20,7 +20,7 @@ export function SplitFeature({
   tone = "light",
 }: {
   id?: string;
-  eyebrow: string;
+  eyebrow?: string;
   heading: string;
   paragraphs: string[];
   cta?: { label: string; href: string };
@@ -54,7 +54,7 @@ export function SplitFeature({
         </Reveal>
 
         <Reveal delay={0.1}>
-          <Eyebrow>{eyebrow}</Eyebrow>
+          {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
           <h2 className="text-display-h2 font-display text-coffee mt-4">{heading}</h2>
           <div className="mt-6 flex flex-col gap-4">
             {paragraphs.map((p) => (

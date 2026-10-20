@@ -9,7 +9,7 @@ export function CtaBand({
   body,
   cta = { label: "Reserve a Table", href: "/visit#reserve" },
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   heading: string;
   body?: string;
   cta?: { label: string; href: string };
@@ -18,7 +18,7 @@ export function CtaBand({
     <section className="bg-coffee text-background py-24 text-center md:py-28">
       <Container>
         <Reveal className="mx-auto max-w-xl">
-          <Eyebrow className="text-bronze-light">{eyebrow}</Eyebrow>
+          {eyebrow ? <Eyebrow className="text-bronze-light">{eyebrow}</Eyebrow> : null}
           <h2 className="text-display-h2 font-display text-background mt-4">
             {heading}
           </h2>

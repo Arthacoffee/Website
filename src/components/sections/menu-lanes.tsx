@@ -6,10 +6,10 @@ export function MenuLanes({ lanes, note }: { lanes: MenuLane[]; note?: string })
   return (
     <section className="bg-background pt-4 pb-20 md:pt-8 md:pb-28">
       <Container>
-        <div>
+        <div className="flex flex-col gap-14 md:gap-16">
           {lanes.map((lane, i) => (
             <Reveal key={lane.slug} delay={Math.min(i * 0.05, 0.3)}>
-              <div className="border-stone grid grid-cols-1 gap-3 border-t py-9 last:border-b md:grid-cols-[1.1fr_0.5fr_2fr] md:items-baseline md:gap-10">
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-[1.1fr_0.5fr_2fr] md:items-baseline md:gap-10">
                 <div>
                   <span className="text-caption text-bronze-ink block font-medium tracking-[0.1em] uppercase">
                     {lane.hours}
@@ -35,7 +35,7 @@ export function MenuLanes({ lanes, note }: { lanes: MenuLane[]; note?: string })
         </div>
 
         {note ? (
-          <Reveal className="border-bronze-ink bg-stone text-body text-foreground/70 mt-10 border-l-2 p-6">
+          <Reveal className="bg-stone text-body text-foreground/70 mt-10 p-6">
             {note}
           </Reveal>
         ) : null}
